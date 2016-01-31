@@ -1,0 +1,12 @@
+﻿User Stories
+1. As a customer, I want to search the available inventory of Willie’s Cycles so that I can find certain parts.
+  • Only the items matching the search criteria’s arguments are displayed in the search results.
+  • Search is attempted only if the search criteria for model, year, and part type have been selected.
+2. As a customer, I can select a model to search so that I can narrow down potential items.
+3. As a customer, I can select a year to search so that I can narrow down potential items.
+4. As a customer, I can select a part type to search so that I can narrow down potential items.
+5. As a customer, I can change the year of the search results so that I can view similar results without having to clear the search.
+6. As a customer, I can clear the search arguments so that I can search for different criteria.
+7. As a customer, I want to purchase an item with a listed price so that I can buy it directly.
+8. As a customer, I can use PayPal to pay for an item so that I have a secure payment method.
+9. As a customer, I want to request additional information for an item without a listed price so that I can receive its price. 

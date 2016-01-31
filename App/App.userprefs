@@ -1,0 +1,20 @@
+﻿<Properties StartupItem="App.iOS/App.iOS.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.Pierce's iPhone" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="App.iOS/Info.plist">
+    <Files>
+      <File FileName="App.iOS/PaymentDelegate.cs" Line="42" Column="19" />
+      <File FileName="App.iOS/API/API.cs" Line="7" Column="30" />
+      <File FileName="App.iOS/Views/YearView.cs" Line="126" Column="20" />
+      <File FileName="App.iOS/Views/PartNameView.cs" Line="119" Column="6" />
+      <File FileName="App.iOS/Info.plist" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="c:\Users\swalk_000\Documents\GitHub\WilliesCycles\App\App.Android\dialog_list_item.cs" line="48" column="1" />
+      <Breakpoint file="C:\Users\swalk_000\Documents\GitHub\WilliesCycles\App\App.Android\SearchMakeFragment.cs" line="47" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.App.Android AndroidDesignerPreferredDevice="Nexus 4" />
+</Properties>
