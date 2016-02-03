@@ -5,7 +5,7 @@ using CoreGraphics;
 using Foundation;
 using UIKit;
 using BigTed;
-using Connectivity.Plugin;
+using Plugin.Connectivity;
 
 namespace App.iOS
 {

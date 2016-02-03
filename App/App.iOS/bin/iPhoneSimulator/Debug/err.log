@@ -1,0 +1,286 @@
+2016-02-03 16:34:55.814 AppiOS[7455:325395] -canOpenURL: failed for URL: "ebay://" - error: "This app is not allowed to query for scheme ebay"
+2016-02-03 16:34:55.816 AppiOS[7455:325395] -canOpenURL: failed for URL: "fb267453465127://" - error: "This app is not allowed to query for scheme fb267453465127"
+2016-02-03 16:34:55.816 AppiOS[7455:325395] -canOpenURL: failed for URL: "ADX1140://" - error: "This app is not allowed to query for scheme ADX1140"
+2016-02-03 16:34:55.817 AppiOS[7455:325395] -canOpenURL: failed for URL: "ppclient://" - error: "This app is not allowed to query for scheme ppclient"
+2016-02-03 16:34:55.817 AppiOS[7455:325395] -canOpenURL: failed for URL: "paypal://" - error: "This app is not allowed to query for scheme paypal"
+2016-02-03 16:34:55.817 AppiOS[7455:325395] -canOpenURL: failed for URL: "paypal-local-search://" - error: "This app is not allowed to query for scheme paypal-local-search"
+2016-02-03 16:34:55.818 AppiOS[7455:325395] -canOpenURL: failed for URL: "halfdotcom://" - error: "This app is not allowed to query for scheme halfdotcom"
+2016-02-03 16:34:55.818 AppiOS[7455:325395] -canOpenURL: failed for URL: "redlaser://" - error: "This app is not allowed to query for scheme redlaser"
+2016-02-03 16:34:55.819 AppiOS[7455:325395] -canOpenURL: failed for URL: "where://" - error: "This app is not allowed to query for scheme where"
+2016-02-03 16:34:55.819 AppiOS[7455:325395] -canOpenURL: failed for URL: "ebaymotors://" - error: "This app is not allowed to query for scheme ebaymotors"
+2016-02-03 16:34:55.820 AppiOS[7455:325395] -canOpenURL: failed for URL: "fb164705030244434://" - error: "This app is not allowed to query for scheme fb164705030244434"
+2016-02-03 16:34:55.820 AppiOS[7455:325395] -canOpenURL: failed for URL: "ebayfashion://" - error: "This app is not allowed to query for scheme ebayfashion"
+2016-02-03 16:34:55.820 AppiOS[7455:325395] -canOpenURL: failed for URL: "stubhub://" - error: "This app is not allowed to query for scheme stubhub"
+2016-02-03 16:34:55.821 AppiOS[7455:325395] -canOpenURL: failed for URL: "sdc://" - error: "This app is not allowed to query for scheme sdc"
+2016-02-03 16:34:55.821 AppiOS[7455:325395] -canOpenURL: failed for URL: "fb299473330131984://" - error: "This app is not allowed to query for scheme fb299473330131984"
+2016-02-03 16:34:55.821 AppiOS[7455:325395] -canOpenURL: failed for URL: "paypalhere://" - error: "This app is not allowed to query for scheme paypalhere"
+2016-02-03 16:34:55.822 AppiOS[7455:325395] -canOpenURL: failed for URL: "ebaynow://" - error: "This app is not allowed to query for scheme ebaynow"
+2016-02-03 16:34:55.822 AppiOS[7455:325395] -canOpenURL: failed for URL: "cydia://" - error: "This app is not allowed to query for scheme cydia"
+2016-02-03 16:34:55.823 AppiOS[7455:325395] -canOpenURL: failed for URL: "loch://" - error: "This app is not allowed to query for scheme loch"
+2016-02-03 16:34:55.823 AppiOS[7455:325395] -canOpenURL: failed for URL: "fb1b1cca46cd75ebc75ad67e6904d5f176://" - error: "This app is not allowed to query for scheme fb1b1cca46cd75ebc75ad67e6904d5f176"
+2016-02-03 16:34:55.824 AppiOS[7455:325395] -canOpenURL: failed for URL: "hotspotshield://" - error: "This app is not allowed to query for scheme hotspotshield"
+2016-02-03 16:34:55.827 AppiOS[7455:325395] -canOpenURL: failed for URL: "cydia://" - error: "This app is not allowed to query for scheme cydia"
+2016-02-03 16:34:55.958 AppiOS[7455:325395] Error loading /System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib:  dlopen(/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib, 262): no suitable image found.  Did find:
+	/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib: mach-o, but not built for iOS simulator
+2016-02-03 16:34:55.958 AppiOS[7455:325395] Cannot find function pointer IOHIDLibFactory for factory 13AA9C44-6F1B-11D4-907C-0005028F18D5 in CFBundle/CFPlugIn 0x7903e5e0 </System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin> (bundle, not loaded)
+2016-02-03 16:34:55.959 AppiOS[7455:325395] Error loading /System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib:  dlopen(/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib, 262): no suitable image found.  Did find:
+	/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib: mach-o, but not built for iOS simulator
+2016-02-03 16:34:55.959 AppiOS[7455:325395] Cannot find function pointer IOHIDLibFactory for factory 13AA9C44-6F1B-11D4-907C-0005028F18D5 in CFBundle/CFPlugIn 0x7903e5e0 </System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin> (bundle, not loaded)
+2016-02-03 16:34:55.959 AppiOS[7455:325395] Error loading /System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib:  dlopen(/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib, 262): no suitable image found.  Did find:
+	/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib: mach-o, but not built for iOS simulator
+2016-02-03 16:34:55.959 AppiOS[7455:325395] Cannot find function pointer IOHIDLibFactory for factory 13AA9C44-6F1B-11D4-907C-0005028F18D5 in CFBundle/CFPlugIn 0x7903e5e0 </System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin> (bundle, not loaded)
+2016-02-03 16:34:55.960 AppiOS[7455:325395] Error loading /System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib:  dlopen(/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib, 262): no suitable image found.  Did find:
+	/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib: mach-o, but not built for iOS simulator
+2016-02-03 16:34:55.960 AppiOS[7455:325395] Cannot find function pointer IOHIDLibFactory for factory 13AA9C44-6F1B-11D4-907C-0005028F18D5 in CFBundle/CFPlugIn 0x7903e5e0 </System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin> (bundle, not loaded)
+2016-02-03 16:34:55.964 AppiOS[7455:325395] -canOpenURL: failed for URL: "ebay://" - error: "This app is not allowed to query for scheme ebay"
+2016-02-03 16:34:55.964 AppiOS[7455:325395] -canOpenURL: failed for URL: "fb267453465127://" - error: "This app is not allowed to query for scheme fb267453465127"
+2016-02-03 16:34:55.965 AppiOS[7455:325395] -canOpenURL: failed for URL: "ADX1140://" - error: "This app is not allowed to query for scheme ADX1140"
+2016-02-03 16:34:55.965 AppiOS[7455:325395] -canOpenURL: failed for URL: "ppclient://" - error: "This app is not allowed to query for scheme ppclient"
+2016-02-03 16:34:55.966 AppiOS[7455:325395] -canOpenURL: failed for URL: "paypal://" - error: "This app is not allowed to query for scheme paypal"
+2016-02-03 16:34:55.966 AppiOS[7455:325395] -canOpenURL: failed for URL: "paypal-local-search://" - error: "This app is not allowed to query for scheme paypal-local-search"
+2016-02-03 16:34:55.966 AppiOS[7455:325395] -canOpenURL: failed for URL: "halfdotcom://" - error: "This app is not allowed to query for scheme halfdotcom"
+2016-02-03 16:34:55.967 AppiOS[7455:325395] -canOpenURL: failed for URL: "redlaser://" - error: "This app is not allowed to query for scheme redlaser"
+2016-02-03 16:34:55.967 AppiOS[7455:325395] -canOpenURL: failed for URL: "where://" - error: "This app is not allowed to query for scheme where"
+2016-02-03 16:34:55.967 AppiOS[7455:325395] -canOpenURL: failed for URL: "ebaymotors://" - error: "This app is not allowed to query for scheme ebaymotors"
+2016-02-03 16:34:55.967 AppiOS[7455:325395] -canOpenURL: failed for URL: "fb164705030244434://" - error: "This app is not allowed to query for scheme fb164705030244434"
+2016-02-03 16:34:55.968 AppiOS[7455:325395] -canOpenURL: failed for URL: "ebayfashion://" - error: "This app is not allowed to query for scheme ebayfashion"
+2016-02-03 16:34:55.968 AppiOS[7455:325395] -canOpenURL: failed for URL: "stubhub://" - error: "This app is not allowed to query for scheme stubhub"
+2016-02-03 16:34:55.968 AppiOS[7455:325395] -canOpenURL: failed for URL: "sdc://" - error: "This app is not allowed to query for scheme sdc"
+2016-02-03 16:34:55.969 AppiOS[7455:325395] -canOpenURL: failed for URL: "fb299473330131984://" - error: "This app is not allowed to query for scheme fb299473330131984"
+2016-02-03 16:34:55.969 AppiOS[7455:325395] -canOpenURL: failed for URL: "paypalhere://" - error: "This app is not allowed to query for scheme paypalhere"
+2016-02-03 16:34:55.969 AppiOS[7455:325395] -canOpenURL: failed for URL: "ebaynow://" - error: "This app is not allowed to query for scheme ebaynow"
+2016-02-03 16:34:55.970 AppiOS[7455:325395] -canOpenURL: failed for URL: "cydia://" - error: "This app is not allowed to query for scheme cydia"
+2016-02-03 16:34:55.970 AppiOS[7455:325395] -canOpenURL: failed for URL: "loch://" - error: "This app is not allowed to query for scheme loch"
+2016-02-03 16:34:55.970 AppiOS[7455:325395] -canOpenURL: failed for URL: "fb1b1cca46cd75ebc75ad67e6904d5f176://" - error: "This app is not allowed to query for scheme fb1b1cca46cd75ebc75ad67e6904d5f176"
+2016-02-03 16:34:55.971 AppiOS[7455:325395] -canOpenURL: failed for URL: "hotspotshield://" - error: "This app is not allowed to query for scheme hotspotshield"
+2016-02-03 16:34:55.971 AppiOS[7455:325395] -canOpenURL: failed for URL: "cydia://" - error: "This app is not allowed to query for scheme cydia"
+2016-02-03 16:34:56.205 AppiOS[7455:325490] CFNetwork SSLHandshake failed (-9824)
+2016-02-03 16:34:56.205 AppiOS[7455:325490] NSURLSession/NSURLConnection HTTP load failed (kCFStreamErrorDomainSSL, -9824)
+2016-02-03 16:34:56.225 AppiOS[7455:325395] -canOpenURL: failed for URL: "ebay://" - error: "This app is not allowed to query for scheme ebay"
+2016-02-03 16:34:56.226 AppiOS[7455:325395] -canOpenURL: failed for URL: "fb267453465127://" - error: "This app is not allowed to query for scheme fb267453465127"
+2016-02-03 16:34:56.226 AppiOS[7455:325395] -canOpenURL: failed for URL: "ADX1140://" - error: "This app is not allowed to query for scheme ADX1140"
+2016-02-03 16:34:56.227 AppiOS[7455:325395] -canOpenURL: failed for URL: "ppclient://" - error: "This app is not allowed to query for scheme ppclient"
+2016-02-03 16:34:56.227 AppiOS[7455:325395] -canOpenURL: failed for URL: "paypal://" - error: "This app is not allowed to query for scheme paypal"
+2016-02-03 16:34:56.227 AppiOS[7455:325395] -canOpenURL: failed for URL: "paypal-local-search://" - error: "This app is not allowed to query for scheme paypal-local-search"
+2016-02-03 16:34:56.228 AppiOS[7455:325395] -canOpenURL: failed for URL: "halfdotcom://" - error: "This app is not allowed to query for scheme halfdotcom"
+2016-02-03 16:34:56.228 AppiOS[7455:325395] -canOpenURL: failed for URL: "redlaser://" - error: "This app is not allowed to query for scheme redlaser"
+2016-02-03 16:34:56.229 AppiOS[7455:325395] -canOpenURL: failed for URL: "where://" - error: "This app is not allowed to query for scheme where"
+2016-02-03 16:34:56.229 AppiOS[7455:325395] -canOpenURL: failed for URL: "ebaymotors://" - error: "This app is not allowed to query for scheme ebaymotors"
+2016-02-03 16:34:56.229 AppiOS[7455:325395] -canOpenURL: failed for URL: "fb164705030244434://" - error: "This app is not allowed to query for scheme fb164705030244434"
+2016-02-03 16:34:56.230 AppiOS[7455:325395] -canOpenURL: failed for URL: "ebayfashion://" - error: "This app is not allowed to query for scheme ebayfashion"
+2016-02-03 16:34:56.230 AppiOS[7455:325395] -canOpenURL: failed for URL: "stubhub://" - error: "This app is not allowed to query for scheme stubhub"
+2016-02-03 16:34:56.230 AppiOS[7455:325395] -canOpenURL: failed for URL: "sdc://" - error: "This app is not allowed to query for scheme sdc"
+2016-02-03 16:34:56.231 AppiOS[7455:325395] -canOpenURL: failed for URL: "fb299473330131984://" - error: "This app is not allowed to query for scheme fb299473330131984"
+2016-02-03 16:34:56.231 AppiOS[7455:325395] -canOpenURL: failed for URL: "paypalhere://" - error: "This app is not allowed to query for scheme paypalhere"
+2016-02-03 16:34:56.232 AppiOS[7455:325395] -canOpenURL: failed for URL: "ebaynow://" - error: "This app is not allowed to query for scheme ebaynow"
+2016-02-03 16:34:56.232 AppiOS[7455:325395] -canOpenURL: failed for URL: "cydia://" - error: "This app is not allowed to query for scheme cydia"
+2016-02-03 16:34:56.233 AppiOS[7455:325395] -canOpenURL: failed for URL: "loch://" - error: "This app is not allowed to query for scheme loch"
+2016-02-03 16:34:56.233 AppiOS[7455:325395] -canOpenURL: failed for URL: "fb1b1cca46cd75ebc75ad67e6904d5f176://" - error: "This app is not allowed to query for scheme fb1b1cca46cd75ebc75ad67e6904d5f176"
+2016-02-03 16:34:56.233 AppiOS[7455:325395] -canOpenURL: failed for URL: "hotspotshield://" - error: "This app is not allowed to query for scheme hotspotshield"
+2016-02-03 16:34:56.234 AppiOS[7455:325395] -canOpenURL: failed for URL: "cydia://" - error: "This app is not allowed to query for scheme cydia"
+2016-02-03 16:34:56.236 AppiOS[7455:325395] -canOpenURL: failed for URL: "ebay://" - error: "This app is not allowed to query for scheme ebay"
+2016-02-03 16:34:56.236 AppiOS[7455:325395] -canOpenURL: failed for URL: "fb267453465127://" - error: "This app is not allowed to query for scheme fb267453465127"
+2016-02-03 16:34:56.237 AppiOS[7455:325395] -canOpenURL: failed for URL: "ADX1140://" - error: "This app is not allowed to query for scheme ADX1140"
+2016-02-03 16:34:56.237 AppiOS[7455:325395] -canOpenURL: failed for URL: "ppclient://" - error: "This app is not allowed to query for scheme ppclient"
+2016-02-03 16:34:56.237 AppiOS[7455:325395] -canOpenURL: failed for URL: "paypal://" - error: "This app is not allowed to query for scheme paypal"
+2016-02-03 16:34:56.238 AppiOS[7455:325395] -canOpenURL: failed for URL: "paypal-local-search://" - error: "This app is not allowed to query for scheme paypal-local-search"
+2016-02-03 16:34:56.238 AppiOS[7455:325395] -canOpenURL: failed for URL: "halfdotcom://" - error: "This app is not allowed to query for scheme halfdotcom"
+2016-02-03 16:34:56.238 AppiOS[7455:325395] -canOpenURL: failed for URL: "redlaser://" - error: "This app is not allowed to query for scheme redlaser"
+2016-02-03 16:34:56.239 AppiOS[7455:325395] -canOpenURL: failed for URL: "where://" - error: "This app is not allowed to query for scheme where"
+2016-02-03 16:34:56.239 AppiOS[7455:325395] -canOpenURL: failed for URL: "ebaymotors://" - error: "This app is not allowed to query for scheme ebaymotors"
+2016-02-03 16:34:56.239 AppiOS[7455:325395] -canOpenURL: failed for URL: "fb164705030244434://" - error: "This app is not allowed to query for scheme fb164705030244434"
+2016-02-03 16:34:56.240 AppiOS[7455:325395] -canOpenURL: failed for URL: "ebayfashion://" - error: "This app is not allowed to query for scheme ebayfashion"
+2016-02-03 16:34:56.240 AppiOS[7455:325395] -canOpenURL: failed for URL: "stubhub://" - error: "This app is not allowed to query for scheme stubhub"
+2016-02-03 16:34:56.240 AppiOS[7455:325395] -canOpenURL: failed for URL: "sdc://" - error: "This app is not allowed to query for scheme sdc"
+2016-02-03 16:34:56.241 AppiOS[7455:325395] -canOpenURL: failed for URL: "fb299473330131984://" - error: "This app is not allowed to query for scheme fb299473330131984"
+2016-02-03 16:34:56.241 AppiOS[7455:325395] -canOpenURL: failed for URL: "paypalhere://" - error: "This app is not allowed to query for scheme paypalhere"
+2016-02-03 16:34:56.241 AppiOS[7455:325395] -canOpenURL: failed for URL: "ebaynow://" - error: "This app is not allowed to query for scheme ebaynow"
+2016-02-03 16:34:56.242 AppiOS[7455:325395] -canOpenURL: failed for URL: "cydia://" - error: "This app is not allowed to query for scheme cydia"
+2016-02-03 16:34:56.242 AppiOS[7455:325395] -canOpenURL: failed for URL: "loch://" - error: "This app is not allowed to query for scheme loch"
+2016-02-03 16:34:56.242 AppiOS[7455:325395] -canOpenURL: failed for URL: "fb1b1cca46cd75ebc75ad67e6904d5f176://" - error: "This app is not allowed to query for scheme fb1b1cca46cd75ebc75ad67e6904d5f176"
+2016-02-03 16:34:56.243 AppiOS[7455:325395] -canOpenURL: failed for URL: "hotspotshield://" - error: "This app is not allowed to query for scheme hotspotshield"
+2016-02-03 16:34:56.243 AppiOS[7455:325395] -canOpenURL: failed for URL: "cydia://" - error: "This app is not allowed to query for scheme cydia"
+2016-02-03 16:34:56.422 AppiOS[7455:325490] CFNetwork SSLHandshake failed (-9824)
+2016-02-03 16:34:56.422 AppiOS[7455:325490] NSURLSession/NSURLConnection HTTP load failed (kCFStreamErrorDomainSSL, -9824)
+2016-02-03 16:34:56.496 AppiOS[7455:325395] -canOpenURL: failed for URL: "ebay://" - error: "This app is not allowed to query for scheme ebay"
+2016-02-03 16:34:56.497 AppiOS[7455:325395] -canOpenURL: failed for URL: "fb267453465127://" - error: "This app is not allowed to query for scheme fb267453465127"
+2016-02-03 16:34:56.497 AppiOS[7455:325395] -canOpenURL: failed for URL: "ADX1140://" - error: "This app is not allowed to query for scheme ADX1140"
+2016-02-03 16:34:56.498 AppiOS[7455:325395] -canOpenURL: failed for URL: "ppclient://" - error: "This app is not allowed to query for scheme ppclient"
+2016-02-03 16:34:56.499 AppiOS[7455:325395] -canOpenURL: failed for URL: "paypal://" - error: "This app is not allowed to query for scheme paypal"
+2016-02-03 16:34:56.499 AppiOS[7455:325395] -canOpenURL: failed for URL: "paypal-local-search://" - error: "This app is not allowed to query for scheme paypal-local-search"
+2016-02-03 16:34:56.500 AppiOS[7455:325395] -canOpenURL: failed for URL: "halfdotcom://" - error: "This app is not allowed to query for scheme halfdotcom"
+2016-02-03 16:34:56.500 AppiOS[7455:325395] -canOpenURL: failed for URL: "redlaser://" - error: "This app is not allowed to query for scheme redlaser"
+2016-02-03 16:34:56.501 AppiOS[7455:325395] -canOpenURL: failed for URL: "where://" - error: "This app is not allowed to query for scheme where"
+2016-02-03 16:34:56.501 AppiOS[7455:325395] -canOpenURL: failed for URL: "ebaymotors://" - error: "This app is not allowed to query for scheme ebaymotors"
+2016-02-03 16:34:56.501 AppiOS[7455:325395] -canOpenURL: failed for URL: "fb164705030244434://" - error: "This app is not allowed to query for scheme fb164705030244434"
+2016-02-03 16:34:56.502 AppiOS[7455:325395] -canOpenURL: failed for URL: "ebayfashion://" - error: "This app is not allowed to query for scheme ebayfashion"
+2016-02-03 16:34:56.502 AppiOS[7455:325395] -canOpenURL: failed for URL: "stubhub://" - error: "This app is not allowed to query for scheme stubhub"
+2016-02-03 16:34:56.502 AppiOS[7455:325395] -canOpenURL: failed for URL: "sdc://" - error: "This app is not allowed to query for scheme sdc"
+2016-02-03 16:34:56.503 AppiOS[7455:325395] -canOpenURL: failed for URL: "fb299473330131984://" - error: "This app is not allowed to query for scheme fb299473330131984"
+2016-02-03 16:34:56.503 AppiOS[7455:325395] -canOpenURL: failed for URL: "paypalhere://" - error: "This app is not allowed to query for scheme paypalhere"
+2016-02-03 16:34:56.503 AppiOS[7455:325395] -canOpenURL: failed for URL: "ebaynow://" - error: "This app is not allowed to query for scheme ebaynow"
+2016-02-03 16:34:56.504 AppiOS[7455:325395] -canOpenURL: failed for URL: "cydia://" - error: "This app is not allowed to query for scheme cydia"
+2016-02-03 16:34:56.504 AppiOS[7455:325395] -canOpenURL: failed for URL: "loch://" - error: "This app is not allowed to query for scheme loch"
+2016-02-03 16:34:56.504 AppiOS[7455:325395] -canOpenURL: failed for URL: "fb1b1cca46cd75ebc75ad67e6904d5f176://" - error: "This app is not allowed to query for scheme fb1b1cca46cd75ebc75ad67e6904d5f176"
+2016-02-03 16:34:56.505 AppiOS[7455:325395] -canOpenURL: failed for URL: "hotspotshield://" - error: "This app is not allowed to query for scheme hotspotshield"
+2016-02-03 16:34:56.506 AppiOS[7455:325395] -canOpenURL: failed for URL: "cydia://" - error: "This app is not allowed to query for scheme cydia"
+2016-02-03 16:34:56.674 AppiOS[7455:325490] CFNetwork SSLHandshake failed (-9824)
+2016-02-03 16:34:56.674 AppiOS[7455:325490] NSURLSession/NSURLConnection HTTP load failed (kCFStreamErrorDomainSSL, -9824)
+2016-02-03 16:35:04.653 AppiOS[7455:325395] 
+Unhandled Exception:
+System.Net.WebException: Error: ConnectFailure (Network is unreachable) ---> System.Net.Sockets.SocketException: Network is unreachable
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP) <0x19d19ea0 + 0x00167> in <filename unknown>:0 
+  at System.Net.WebConnection.Connect (System.Net.HttpWebRequest request) <0x19cfe830 + 0x004cf> in <filename unknown>:0 
+  --- End of inner exception stack trace ---
+  at System.Net.HttpWebRequest.EndGetResponse (IAsyncResult asyncResult) <0x19d20840 + 0x00187> in <filename unknown>:0 
+  at System.Threading.Tasks.TaskFactory`1[TResult].FromAsyncCoreLogic (IAsyncResult iar, System.Func`2 endFunction, System.Action`1 endAction, System.Threading.Tasks.Task`1 promise, Boolean requiresSynchronization) <0x19d20220 + 0x0005c> in <filename unknown>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () <0x19d25480 + 0x0002b> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) <0x19d24c80 + 0x000bb> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) <0x19d249d8 + 0x0007f> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) <0x19d24948 + 0x00033> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[TResult].GetResult () <0x19d24870 + 0x00017> in <filename unknown>:0 
+  at System.Net.Http.HttpClientHandler+<SendAsync>c__async0.MoveNext () <0x19ce5c30 + 0x00dbb> in <filename unknown>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () <0x19d25480 + 0x0002b> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) <0x19d24c80 + 0x000bb> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) <0x19d249d8 + 0x0007f> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) <0x19d24948 + 0x00033> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[TResult].GetResult () <0x19d24870 + 0x00017> in <filename unknown>:0 
+  at System.Net.Http.HttpClient+<SendAsyncWorker>c__async0.MoveNext () <0x19ce0488 + 0x0039f> in <filename unknown>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () <0x19d25480 + 0x0002b> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) <0x19d24c80 + 0x000bb> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) <0x19d249d8 + 0x0007f> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) <0x19d24948 + 0x00033> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[TResult].GetResult () <0x19d24870 + 0x00017> in <filename unknown>:0 
+  at System.Net.Http.HttpClient+<GetStringAsync>c__async5.MoveNext () <0x19cdc998 + 0x0015b> in <filename unknown>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () <0x19d25480 + 0x0002b> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) <0x19d24c80 + 0x000bb> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) <0x19d249d8 + 0x0007f> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) <0x19d24948 + 0x00033> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () <0x1a090360 + 0x00017> in <filename unknown>:0 
+  at App.iOS.API+<GetPickerData>c__async0.MoveNext () <0x19ccd8a8 + 0x00257> in <filename unknown>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () <0x19d25480 + 0x0002b> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) <0x19d24c80 + 0x000bb> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) <0x19d249d8 + 0x0007f> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) <0x19d24948 + 0x00033> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () <0x1a090360 + 0x00017> in <filename unknown>:0 
+  at App.iOS.YearView+<SetupPropertyChanged>c__async0.MoveNext () <0x19c692d0 + 0x0017f> in <filename unknown>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () <0x19d25480 + 0x0002b> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<ThrowAsync>m__0 (System.Object state) <0x1a091100 + 0x0002b> in <filename unknown>:0 
+  at UIKit.UIKitSynchronizationContext+<Post>c__AnonStorey0.<>m__0 () <0x1a0902c0 + 0x0001b> in <filename unknown>:0 
+  at Foundation.NSAsyncActionDispatcher.Apply () <0x1a090240 + 0x00014> in <filename unknown>:0 
+  at (wrapper managed-to-native) UIKit.UIApplication:UIApplicationMain (int,string[],intptr,intptr)
+  at UIKit.UIApplication.Main (System.String[] args, IntPtr principal, IntPtr delegate) <0x161c8a58 + 0x0002b> in <filename unknown>:0 
+  at UIKit.UIApplication.Main (System.String[] args, System.String principalClassName, System.String delegateClassName) <0x161c77f8 + 0x00087> in <filename unknown>:0 
+  at App.iOS.Application.Main (System.String[] args) <0x161c76f0 + 0x00023> in <filename unknown>:0 
+2016-02-03 16:35:04.653 AppiOS[7455:325395] Unhandled managed exception:
+Error: ConnectFailure (Network is unreachable) (System.Net.WebException)
+  at System.Net.HttpWebRequest.EndGetResponse (IAsyncResult asyncResult) <0x19d20840 + 0x00187> in <filename unknown>:0 
+  at System.Threading.Tasks.TaskFactory`1[TResult].FromAsyncCoreLogic (IAsyncResult iar, System.Func`2 endFunction, System.Action`1 endAction, System.Threading.Tasks.Task`1 promise, Boolean requiresSynchronization) <0x19d20220 + 0x0005c> in <filename unknown>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () <0x19d25480 + 0x0002b> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) <0x19d24c80 + 0x000bb> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) <0x19d249d8 + 0x0007f> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) <0x19d24948 + 0x00033> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[TResult].GetResult () <0x19d24870 + 0x00017> in <filename unknown>:0 
+  at System.Net.Http.HttpClientHandler+<SendAsync>c__async0.MoveNext () <0x19ce5c30 + 0x00dbb> in <filename unknown>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () <0x19d25480 + 0x0002b> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) <0x19d24c80 + 0x000bb> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) <0x19d249d8 + 0x0007f> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) <0x19d24948 + 0x00033> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[TResult].GetResult () <0x19d24870 + 0x00017> in <filename unknown>:0 
+  at System.Net.Http.HttpClient+<SendAsyncWorker>c__async0.MoveNext () <0x19ce0488 + 0x0039f> in <filename unknown>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () <0x19d25480 + 0x0002b> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) <0x19d24c80 + 0x000bb> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) <0x19d249d8 + 0x0007f> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) <0x19d24948 + 0x00033> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[TResult].GetResult () <0x19d24870 + 0x00017> in <filename unknown>:0 
+  at System.Net.Http.HttpClient+<GetStringAsync>c__async5.MoveNext () <0x19cdc998 + 0x0015b> in <filename unknown>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () <0x19d25480 + 0x0002b> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) <0x19d24c80 + 0x000bb> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) <0x19d249d8 + 0x0007f> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) <0x19d24948 + 0x00033> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () <0x1a090360 + 0x00017> in <filename unknown>:0 
+  at App.iOS.API+<GetPickerData>c__async0.MoveNext () <0x19ccd8a8 + 0x00257> in <filename unknown>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () <0x19d25480 + 0x0002b> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) <0x19d24c80 + 0x000bb> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) <0x19d249d8 + 0x0007f> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) <0x19d24948 + 0x00033> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () <0x1a090360 + 0x00017> in <filename unknown>:0 
+  at App.iOS.YearView+<SetupPropertyChanged>c__async0.MoveNext () <0x19c692d0 + 0x0017f> in <filename unknown>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () <0x19d25480 + 0x0002b> in <filename unknown>:0 
+  at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<ThrowAsync>m__0 (System.Object state) <0x1a091100 + 0x0002b> in <filename unknown>:0 
+  at UIKit.UIKitSynchronizationContext+<Post>c__AnonStorey0.<>m__0 () <0x1a0902c0 + 0x0001b> in <filename unknown>:0 
+  at Foundation.NSAsyncActionDispatcher.Apply () <0x1a090240 + 0x00014> in <filename unknown>:0 
+  at (wrapper managed-to-native) UIKit.UIApplication:UIApplicationMain (int,string[],intptr,intptr)
+  at UIKit.UIApplication.Main (System.String[] args, IntPtr principal, IntPtr delegate) <0x161c8a58 + 0x0002b> in <filename unknown>:0 
+  at UIKit.UIApplication.Main (System.String[] args, System.String principalClassName, System.String delegateClassName) <0x161c77f8 + 0x00087> in <filename unknown>:0 
+  at App.iOS.Application.Main (System.String[] args) <0x161c76f0 + 0x00023> in <filename unknown>:0 
+ --- inner exception ---
+Network is unreachable (System.Net.Sockets.SocketException)
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP) <0x19d19ea0 + 0x00167> in <filename unknown>:0 
+  at System.Net.WebConnection.Connect (System.Net.HttpWebRequest request) <0x19cfe830 + 0x004cf> in <filename unknown>:0 
+2016-02-03 16:35:04.654 AppiOS[7455:325395] critical: Stacktrace:
+
+2016-02-03 16:35:04.654 AppiOS[7455:325395] critical: 
+Native stacktrace:
+
+2016-02-03 16:35:04.685 AppiOS[7455:325395] critical: 	0   AppiOS                              0x00245ef7 mono_handle_native_sigsegv + 311
+2016-02-03 16:35:04.685 AppiOS[7455:325395] critical: 	1   AppiOS                              0x0024d541 sigabrt_signal_handler + 145
+2016-02-03 16:35:04.685 AppiOS[7455:325395] critical: 	2   libsystem_platform.dylib            0x095e701b _sigtramp + 43
+2016-02-03 16:35:04.685 AppiOS[7455:325395] critical: 	3   ???                                 0xffffffff 0x0 + 4294967295
+2016-02-03 16:35:04.685 AppiOS[7455:325395] critical: 	4   libsystem_c.dylib                   0x0937b65d abort + 156
+2016-02-03 16:35:04.685 AppiOS[7455:325395] critical: 	5   AppiOS                              0x003ccd46 xamarin_unhandled_exception_handler + 342
+2016-02-03 16:35:04.686 AppiOS[7455:325395] critical: 	6   AppiOS                              0x0024675b mono_invoke_unhandled_exception_hook + 91
+2016-02-03 16:35:04.686 AppiOS[7455:325395] critical: 	7   AppiOS                              0x002455dd mono_handle_exception_internal + 6061
+2016-02-03 16:35:04.686 AppiOS[7455:325395] critical: 	8   AppiOS                              0x00243e29 mono_handle_exception + 41
+2016-02-03 16:35:04.686 AppiOS[7455:325395] critical: 	9   AppiOS                              0x001e028e mono_x86_throw_exception + 142
+2016-02-03 16:35:04.686 AppiOS[7455:325395] critical: 	10  ???                                 0x14a7ef57 0x0 + 346550103
+2016-02-03 16:35:04.687 AppiOS[7455:325395] critical: 	11  ???                                 0x1a09112c 0x0 + 436801836
+2016-02-03 16:35:04.687 AppiOS[7455:325395] critical: 	12  ???                                 0x1a0902dc 0x0 + 436798172
+2016-02-03 16:35:04.687 AppiOS[7455:325395] critical: 	13  ???                                 0x1a090255 0x0 + 436798037
+2016-02-03 16:35:04.687 AppiOS[7455:325395] critical: 	14  ???                                 0x14aeed50 0x0 + 347008336
+2016-02-03 16:35:04.687 AppiOS[7455:325395] critical: 	15  AppiOS                              0x00252bf3 mono_jit_runtime_invoke + 707
+2016-02-03 16:35:04.687 AppiOS[7455:325395] critical: 	16  AppiOS                              0x003087ef mono_runtime_invoke + 127
+2016-02-03 16:35:04.687 AppiOS[7455:325395] critical: 	17  AppiOS                              0x0014cc81 _ZL30native_to_managed_trampoline_3P11objc_objectP13objc_selectorPP11_MonoMethodPKcS7_ + 257
+2016-02-03 16:35:04.687 AppiOS[7455:325395] critical: 	18  AppiOS                              0x0015eada -[__MonoMac_NSAsyncActionDispatcher xamarinApplySelector] + 74
+2016-02-03 16:35:04.688 AppiOS[7455:325395] critical: 	19  libobjc.A.dylib                     0x08e0f059 -[NSObject performSelector:withObject:] + 70
+2016-02-03 16:35:04.688 AppiOS[7455:325395] critical: 	20  Foundation                          0x00fe90d8 __NSThreadPerformPerform + 323
+2016-02-03 16:35:04.688 AppiOS[7455:325395] critical: 	21  CoreFoundation                      0x0897a6ff __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 15
+2016-02-03 16:35:04.688 AppiOS[7455:325395] critical: 	22  CoreFoundation                      0x0897038b __CFRunLoopDoSources0 + 523
+2016-02-03 16:35:04.688 AppiOS[7455:325395] critical: 	23  CoreFoundation                      0x0896f7a8 __CFRunLoopRun + 1032
+2016-02-03 16:35:04.688 AppiOS[7455:325395] critical: 	24  CoreFoundation                      0x0896f0e6 CFRunLoopRunSpecific + 470
+2016-02-03 16:35:04.688 AppiOS[7455:325395] critical: 	25  CoreFoundation                      0x0896eefb CFRunLoopRunInMode + 123
+2016-02-03 16:35:04.688 AppiOS[7455:325395] critical: 	26  GraphicsServices                    0x09e82664 GSEventRunModal + 192
+2016-02-03 16:35:04.688 AppiOS[7455:325395] critical: 	27  GraphicsServices                    0x09e824a1 GSEventRun + 104
+2016-02-03 16:35:04.689 AppiOS[7455:325395] critical: 	28  UIKit                               0x014c5bfa UIApplicationMain + 160
+2016-02-03 16:35:04.689 AppiOS[7455:325395] critical: 	29  ???                                 0x161c8b98 0x0 + 370969496
+2016-02-03 16:35:04.689 AppiOS[7455:325395] critical: 	30  ???                                 0x161c8a84 0x0 + 370969220
+2016-02-03 16:35:04.689 AppiOS[7455:325395] critical: 	31  ???                                 0x161c7880 0x0 + 370964608
+2016-02-03 16:35:04.689 AppiOS[7455:325395] critical: 	32  ???                                 0x161c7714 0x0 + 370964244
+2016-02-03 16:35:04.689 AppiOS[7455:325395] critical: 	33  ???                                 0x161c77cc 0x0 + 370964428
+2016-02-03 16:35:04.689 AppiOS[7455:325395] critical: 	34  AppiOS                              0x00252bf3 mono_jit_runtime_invoke + 707
+2016-02-03 16:35:04.689 AppiOS[7455:325395] critical: 	35  AppiOS                              0x003087ef mono_runtime_invoke + 127
+2016-02-03 16:35:04.689 AppiOS[7455:325395] critical: 	36  AppiOS                              0x0030d501 mono_runtime_exec_main + 401
+2016-02-03 16:35:04.689 AppiOS[7455:325395] critical: 	37  AppiOS                              0x0030d2c5 mono_runtime_run_main + 629
+2016-02-03 16:35:04.689 AppiOS[7455:325395] critical: 	38  AppiOS                              0x001db5ad mono_jit_exec + 93
+2016-02-03 16:35:04.689 AppiOS[7455:325395] critical: 	39  AppiOS                              0x003e0cd4 xamarin_main + 2052
+2016-02-03 16:35:04.689 AppiOS[7455:325395] critical: 	40  AppiOS                              0x0019c411 main + 113
+2016-02-03 16:35:04.690 AppiOS[7455:325395] critical: 	41  libdyld.dylib                       0x092d4a21 start + 1
+2016-02-03 16:35:04.690 AppiOS[7455:325395] critical: 
+=================================================================
+Got a SIGABRT while executing native code. This usually indicates
+a fatal error in the mono runtime or one of the native libraries 
+used by your application.
+=================================================================
+
