@@ -16,16 +16,32 @@ namespace App.Portable
 
 		public static async Task<List<string>> GetPickerData (string make)
 		{
-			var makeAbbreviation = make[0].ToString ();
-			var request = string.Format ("api/Parts?make={0}&token={1}", makeAbbreviation, KEY);
+               List<string> result = new List<string>();
 
-			var client = new HttpClient () {
-				BaseAddress = new Uri (BASE_URL),
-			};
-			client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+               using (var conn = new SqlConnection("Server=tcp:willies.database.windows.net,1433;Database=Willies Database;User ID=seniordesign@willies;Password=Williescycles1;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"))
+               {
+                    try
+                    {
+                         conn.Open();
+                    }
+                    catch (Exception e)
+                    {
+                         
+                    }
 
-			var json = await client.GetStringAsync (request);
-			return JsonConvert.DeserializeObject <List<string>> (json);
+                    SqlDataReader myReader = null;
+                    SqlCommand myCommand = new SqlCommand("SELECT DISTINCT YR FROM Parts Where Make LIKE 'H%'", conn);
+                    myReader = myCommand.ExecuteReader();
+
+                    while (myReader.Read())
+                    {
+                         result.Add(myReader.GetString(0));
+                    }
+
+                    conn.Close();
+
+               }
+               return result;
 		}
 
 		public static async Task<List<string>> GetPickerData (string year, string make)

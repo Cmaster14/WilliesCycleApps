@@ -40,6 +40,7 @@
     <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
     <Reference Include="Newtonsoft.Json">
@@ -67,15 +68,27 @@
     <Reference Include="Cirrious.MvvmCross">
       <HintPath>..\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.5.0\lib\MonoAndroid\Cirrious.MvvmCross.dll</HintPath>
     </Reference>
-    <Reference Include="Mono.Android.Support.v4" />
     <Reference Include="Paypal.Droid.Test">
-      <HintPath>..\..\..\..\..\Desktop\Mono.Droid.Paypal-0.9\bin\Release\Paypal.Droid.Test.dll</HintPath>
+      <HintPath>..\Dependencies\Paypal.Droid.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Android.Support.v4">
       <HintPath>..\packages\Xamarin.Android.Support.v4.21.0.3.0\lib\MonoAndroid10\Xamarin.Android.Support.v4.dll</HintPath>
     </Reference>
+    <Reference Include="PayPalMobileXamarinBindings">
+      <HintPath>..\Dependencies\PayPalMobileXamarinBindings.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.iOS">
+      <HintPath>..\..\..\..\Xamarin.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Security" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API\API.cs" />
+    <Compile Include="ASPdb_AppData599DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ASPdb_AppData599DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MyPagerAdapter.cs" />
@@ -85,13 +98,56 @@
     <Compile Include="SliderPageActivity.cs" />
     <Compile Include="PartListViewAdapter.cs" />
     <Compile Include="dialog_list_item.cs" />
+    <Compile Include="WilliesDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WilliesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Willies_DatabaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Willies_DatabaseDataSet.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="ASPdb_AppData599DataSet.xsc">
+      <DependentUpon>ASPdb_AppData599DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ASPdb_AppData599DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ASPdb_AppData599DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ASPdb_AppData599DataSet.xss">
+      <DependentUpon>ASPdb_AppData599DataSet.xsd</DependentUpon>
+    </None>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <Compile Include="PartsActivity.cs" />
     <None Include="packages.config" />
+    <None Include="WilliesDataSet.xsc">
+      <DependentUpon>WilliesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="WilliesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WilliesDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WilliesDataSet.xss">
+      <DependentUpon>WilliesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Willies_DatabaseDataSet.xsc">
+      <DependentUpon>Willies_DatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Willies_DatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Willies_DatabaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Willies_DatabaseDataSet.xss">
+      <DependentUpon>Willies_DatabaseDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Values\Strings.xml" />
