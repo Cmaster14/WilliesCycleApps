@@ -23,7 +23,7 @@ public final class R {
     }
     public static final class id {
         public static final int List=0x7f06001b;
-        public static final int Name=0x7f060019;
+        public static final int Make=0x7f060019;
         public static final int Price=0x7f06001a;
         public static final int Search_button=0x7f060017;
         public static final int bottom_space=0x7f060012;

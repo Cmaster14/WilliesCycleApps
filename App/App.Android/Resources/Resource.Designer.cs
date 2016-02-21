@@ -95,7 +95,7 @@ namespace App.Android
 			public const int List = 2131099675;
 			
 			// aapt resource value: 0x7f060019
-			public const int Name = 2131099673;
+			public const int Make = 2131099673;
 			
 			// aapt resource value: 0x7f06001a
 			public const int Price = 2131099674;

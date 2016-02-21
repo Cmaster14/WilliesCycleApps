@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using CoreGraphics;
 using Foundation;
 using UIKit;
-using Plugin.Connectivity;
+using Connectivity.Plugin;
 using BigTed;
 
 namespace App.iOS

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="App.Android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="Willie_s_Cycle.Willie_s_Cycle" android:versionCode="1" android:versionName="1.0">
   <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="19" />
   <!-- for card.io card scanning -->
   <uses-permission android:name="android.permission.CAMERA" />
@@ -12,7 +12,7 @@
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.INTERNET" />
-  <application android:label="Willie's Cycle" android:name="mono.android.app.Application" android:allowBackup="true" android:debuggable="true">
+  <application android:label="Willie's Cycle 2" android:name="mono.android.app.Application" android:allowBackup="true" android:debuggable="true">
     <service android:name="com.paypal.android.sdk.payments.PayPalService" android:exported="false" />
     <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
     <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
@@ -27,12 +27,12 @@
       </intent-filter>
     </activity>
     <activity android:label="Search Results" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Light" android:name="md55a1f45ef199c1a82ce4be4158870bdd4.PartsActivity" />
-    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="App.Android.mono.MonoRuntimeProvider.__mono_init__" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="Willie_s_Cycle.Willie_s_Cycle.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">
       <intent-filter>
         <action android:name="mono.android.intent.action.SEPPUKU" />
-        <category android:name="mono.android.intent.category.SEPPUKU.App.Android" />
+        <category android:name="mono.android.intent.category.SEPPUKU.Willie_s_Cycle.Willie_s_Cycle" />
       </intent-filter>
     </receiver>
   </application>

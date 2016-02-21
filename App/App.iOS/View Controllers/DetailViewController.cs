@@ -7,7 +7,7 @@ using UIKit;
 using MessageUI;
 using Newtonsoft.Json;
 using PayPalMobileXamarinBindings;
-using Plugin.Connectivity;
+using Connectivity.Plugin;
 
 namespace App.iOS
 {
