@@ -97,6 +97,10 @@ namespace App.Portable
 
                     }
 
+                    if (partName.Contains("'"))
+                    {
+                         partName = partName.Replace("'", "''");
+                    }
                     using (SqlCommand myCommand = new SqlCommand("SELECT * FROM Parts Where Make LIKE '" + make.Substring(0, 1) + "%' AND YR LIKE " + year + " AND PartName LIKE '" + partName + "'", conn))
                     {
                          using (SqlDataReader myReader = myCommand.ExecuteReader())
@@ -106,10 +110,11 @@ namespace App.Portable
                               {
                                    result.Add(new Part()
                                    {
-                                        PartName = partName,
-                                        Year = year,
+                                        PartName = myReader.GetString(myReader.GetOrdinal("PartName")),
+                                        Year = myReader.GetString(myReader.GetOrdinal("YR")),
                                         Make = myReader.GetString(myReader.GetOrdinal("Make")),
                                         Price = myReader.GetString(myReader.GetOrdinal("Price")),
+                                        Interchange = myReader.GetString(myReader.GetOrdinal("Interchange")),
 
                                    });
                               }
