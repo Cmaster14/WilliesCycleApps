@@ -26,7 +26,7 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <activity android:label="Search Results" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Light" android:name="md55a1f45ef199c1a82ce4be4158870bdd4.PartsActivity" />
+    <activity android:label="Search Results " android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Light" android:name="md55a1f45ef199c1a82ce4be4158870bdd4.PartsActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="Willie_s_Cycle.Willie_s_Cycle.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">

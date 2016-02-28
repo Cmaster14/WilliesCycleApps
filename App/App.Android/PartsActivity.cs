@@ -13,7 +13,7 @@ using PayPal.Droid.Sdk.Payments;
 
 namespace App.Android
 {
-	[Activity(Label = "Search Results", ScreenOrientation = global::Android.Content.PM.ScreenOrientation.Portrait, Theme = "@android:style/Theme.Holo.Light")]
+     [Activity(Label = "Search Results ", ScreenOrientation = global::Android.Content.PM.ScreenOrientation.Portrait, Theme = "@android:style/Theme.Holo.Light")]
 	public class PartsActivity : Activity, dialog_list_item.DialogListener
 	{
 		string[] searchCriteria = null;
@@ -37,6 +37,7 @@ namespace App.Android
 			parts = await FetchPartsFromServer ();
 			listview.Adapter = new PartListViewAdapter (this, parts);
 			listview.ItemClick += OnListItemClick;
+               this.Title = "Search Results for " + parts[0].Model + " " + parts[0].PartName.Substring(0, parts[0].PartName.IndexOf('-'));
 
 		}
 		protected override void OnDestroy ()
@@ -95,7 +96,7 @@ namespace App.Android
 		private void launchEmail()
 		{
 			var email = new Intent (global::Android.Content.Intent.ActionSend);
-			email.PutExtra (global::Android.Content.Intent.ExtraEmail, new string[] { "email@email.com" });
+			email.PutExtra (global::Android.Content.Intent.ExtraEmail, new string[] { "cmaster14x@gmail.com" });
 			email.PutExtra (global::Android.Content.Intent.ExtraSubject, "Information Request");
 			string message = string.Format ("Requesting more information about:\n ID:{0} - Year:{1} - Make:{2} - Model:{3} - Part:{4} - Part#:{5} - Interchange:{6} - Price:{7} - Inventory Loc:{8} \n\nCustomer Question: \n\n",
 				                 selectedPart.ID.ToString (), selectedPart.Year, selectedPart.Make, selectedPart.Model, selectedPart.PartName, selectedPart.PartNumber, selectedPart.Interchange,

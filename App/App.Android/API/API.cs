@@ -72,7 +72,7 @@ namespace App.Portable
 
                               while (myReader.Read())
                               {
-                                   result.Add(myReader.GetString(0));
+                                   result.Add(myReader.GetString(0).Substring(0, myReader.GetString(0).IndexOf('-')));
                               }
                          }
                     }
@@ -101,7 +101,7 @@ namespace App.Portable
                     {
                          partName = partName.Replace("'", "''");
                     }
-                    using (SqlCommand myCommand = new SqlCommand("SELECT * FROM Parts Where Make LIKE '" + make.Substring(0, 1) + "%' AND YR LIKE " + year + " AND PartName LIKE '" + partName + "'", conn))
+                    using (SqlCommand myCommand = new SqlCommand("SELECT * FROM Parts Where Make LIKE '" + make.Substring(0, 1) + "%' AND YR LIKE " + year + " AND PartName LIKE '" + partName + "%'", conn))
                     {
                          using (SqlDataReader myReader = myCommand.ExecuteReader())
                          {
@@ -113,6 +113,7 @@ namespace App.Portable
                                         PartName = myReader.GetString(myReader.GetOrdinal("PartName")),
                                         Year = myReader.GetString(myReader.GetOrdinal("YR")),
                                         Make = myReader.GetString(myReader.GetOrdinal("Make")),
+                                        Model = make,
                                         Price = myReader.GetString(myReader.GetOrdinal("Price")),
                                         Interchange = myReader.GetString(myReader.GetOrdinal("Interchange")),
 

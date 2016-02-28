@@ -48,19 +48,13 @@ namespace App.Android
                if (view == null)
                     view = context.LayoutInflater.Inflate(Resource.Layout.PartListView, null);
                var makeText = view.FindViewById<TextView>(Resource.Id.Make);
-               makeText.Text = item.Make + "\n" + item.PartName;
+               makeText.Text = item.Make.Substring(item.Make.IndexOf('-') + 1) + "\n" + item.Interchange;
                Typeface f = Typeface.CreateFromAsset(Application.Context.Assets, "SegoeUILight.ttf");
                makeText.SetTypeface(f, TypefaceStyle.Normal);
                string price = "$" + item.Price;
                var priceText = view.FindViewById<TextView>(Resource.Id.Price);
-               priceText.Text = price + "\n" + item.Interchange;
+               priceText.Text = price;
                priceText.SetTypeface(f, TypefaceStyle.Normal);
-               //var nameText = view.FindViewById<TextView>(Resource.Id.Name);
-               //nameText.Text = item.PartName;
-               //nameText.SetTypeface(f, TypefaceStyle.Normal);
-               //var descrText = view.FindViewById<TextView>(Resource.Id.Description);
-               //descrText.Text = item.Interchange;
-               //descrText.SetTypeface(f, TypefaceStyle.Normal);
                return view;
 		}
 	}
