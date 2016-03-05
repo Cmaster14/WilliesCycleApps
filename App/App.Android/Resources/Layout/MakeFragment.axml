@@ -53,13 +53,4 @@
         p1:id="@+id/make_spinner"
         p1:layout_gravity="center"
         p1:spinnerMode="dialog" />
-    <Space
-        p1:layout_width="match_parent"
-        p1:layout_height="75dp"
-        p1:id="@+id/space6" />
-    <Space
-        p1:layout_width="match_parent"
-        p1:layout_height="wrap_content"
-        p1:id="@+id/bottom_space"
-        p1:layout_weight="1.3" />
 </LinearLayout>
