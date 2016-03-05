@@ -25,21 +25,18 @@ namespace App.Android
           private List<string> mParts = new List<string>() { "none" };
           private string make = "make", year = "year", part = "part";
 		private string[] searchString = new string[3]; //0: make, 1: year, 2: part
-          ArrayAdapter<global::Android.Support.V4.App.Fragment> adapter;
-		protected override void OnCreate (Bundle bundle)
+
+          ArrayAdapter<string> yearAdapter;
+          ArrayAdapter<string> partAdapter;
+
+          protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
 			SetContentView (Resource.Layout.ViewPagerActivity);
 
-               adapter = new ArrayAdapter<global::Android.Support.V4.App.Fragment>(this, Resource.Layout.ViewPagerActivity);
-
                SearchMakeFragment fragment = new SearchMakeFragment();
                SearchYearFragment fragment2 = new SearchYearFragment();
                SearchPartFragment fragment3 = new SearchPartFragment();
-
-               adapter.Add(fragment);
-               adapter.Add(fragment2);
-               adapter.Add(fragment3);
                
                fragment.setListener(this);
                fragment.Arguments = Intent.Extras;
@@ -71,19 +68,32 @@ namespace App.Android
                {
                     make = makeIn;
                     mYears = await getYears(make);
-                    SearchYearFragment yf;
-                    yf = (SearchYearFragment) SupportFragmentManager.FindFragmentByTag("year");
-                    yf.setYears(mYears);
+
+                    global::Android.Support.V4.App.FragmentTransaction transaction = SupportFragmentManager.BeginTransaction();
+                    SearchYearFragment newYears = SearchYearFragment.newInstance(mYears);
+                    newYears.setListener(this);
+
+                    transaction.Replace(Resource.Id.frame_container2, newYears, "year");
+                    transaction.Commit();
+
+                    SupportFragmentManager.ExecutePendingTransactions();
                }
           }
           public async void passYear(string yearIn)
           {
                if (!year.Equals(yearIn))
                {
-                    yearIn = mYears[0];
                     year = yearIn;
                     mParts = await getParts(year);
-                    adapter.NotifyDataSetChanged();
+
+                    global::Android.Support.V4.App.FragmentTransaction transaction = SupportFragmentManager.BeginTransaction();
+                    SearchPartFragment newParts = SearchPartFragment.newInstance(mParts);
+                    newParts.setListener(this);
+
+                    transaction.Replace(Resource.Id.frame_container3, newParts, "part");
+                    transaction.Commit();
+
+                    SupportFragmentManager.ExecutePendingTransactions();
                }
           }
 
