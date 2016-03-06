@@ -37,6 +37,8 @@ namespace App.Android
 			parts = await FetchPartsFromServer ();
 			listview.Adapter = new PartListViewAdapter (this, parts);
 			listview.ItemClick += OnListItemClick;
+
+               //This lines displays the make and specific part at the top of Activity.
                this.Title = "Search Results for " + parts[0].Model + " " + parts[0].PartName.Substring(0, parts[0].PartName.IndexOf('-'));
 
 		}
@@ -95,7 +97,9 @@ namespace App.Android
 
 		private void launchEmail()
 		{
+               
 			var email = new Intent (global::Android.Content.Intent.ActionSend);
+                                                                                       //Sending emails to Cooper for demos, must change.
 			email.PutExtra (global::Android.Content.Intent.ExtraEmail, new string[] { "cmaster14x@gmail.com" });
 			email.PutExtra (global::Android.Content.Intent.ExtraSubject, "Information Request");
 			string message = string.Format ("Requesting more information about:\n ID:{0} - Year:{1} - Make:{2} - Model:{3} - Part:{4} - Part#:{5} - Interchange:{6} - Price:{7} - Inventory Loc:{8} \n\nCustomer Question: \n\n",

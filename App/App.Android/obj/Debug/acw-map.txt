@@ -2,22 +2,18 @@ App.Android.SearchMakeFragment, App.Android;md55a1f45ef199c1a82ce4be4158870bdd4.
 App.Android.SearchMakeFragment, App.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md55a1f45ef199c1a82ce4be4158870bdd4.SearchMakeFragment
 App.Android.SearchMakeFragment;md55a1f45ef199c1a82ce4be4158870bdd4.SearchMakeFragment
 app.android.SearchMakeFragment;md55a1f45ef199c1a82ce4be4158870bdd4.SearchMakeFragment
-App.Android.SearchYearFragment, App.Android;md55a1f45ef199c1a82ce4be4158870bdd4.SearchYearFragment
-App.Android.SearchYearFragment, App.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md55a1f45ef199c1a82ce4be4158870bdd4.SearchYearFragment
-App.Android.SearchYearFragment;md55a1f45ef199c1a82ce4be4158870bdd4.SearchYearFragment
-app.android.SearchYearFragment;md55a1f45ef199c1a82ce4be4158870bdd4.SearchYearFragment
 App.Android.SearchPartFragment, App.Android;md55a1f45ef199c1a82ce4be4158870bdd4.SearchPartFragment
 App.Android.SearchPartFragment, App.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md55a1f45ef199c1a82ce4be4158870bdd4.SearchPartFragment
 App.Android.SearchPartFragment;md55a1f45ef199c1a82ce4be4158870bdd4.SearchPartFragment
 app.android.SearchPartFragment;md55a1f45ef199c1a82ce4be4158870bdd4.SearchPartFragment
-App.Android.MyPagerAdapter, App.Android;md55a1f45ef199c1a82ce4be4158870bdd4.MyPagerAdapter
-App.Android.MyPagerAdapter, App.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md55a1f45ef199c1a82ce4be4158870bdd4.MyPagerAdapter
-App.Android.MyPagerAdapter;md55a1f45ef199c1a82ce4be4158870bdd4.MyPagerAdapter
-app.android.MyPagerAdapter;md55a1f45ef199c1a82ce4be4158870bdd4.MyPagerAdapter
-App.Android.SliderPageActivity, App.Android;md55a1f45ef199c1a82ce4be4158870bdd4.SliderPageActivity
-App.Android.SliderPageActivity, App.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md55a1f45ef199c1a82ce4be4158870bdd4.SliderPageActivity
-App.Android.SliderPageActivity;md55a1f45ef199c1a82ce4be4158870bdd4.SliderPageActivity
-app.android.SliderPageActivity;md55a1f45ef199c1a82ce4be4158870bdd4.SliderPageActivity
+App.Android.SearchYearFragment, App.Android;md55a1f45ef199c1a82ce4be4158870bdd4.SearchYearFragment
+App.Android.SearchYearFragment, App.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md55a1f45ef199c1a82ce4be4158870bdd4.SearchYearFragment
+App.Android.SearchYearFragment;md55a1f45ef199c1a82ce4be4158870bdd4.SearchYearFragment
+app.android.SearchYearFragment;md55a1f45ef199c1a82ce4be4158870bdd4.SearchYearFragment
+App.Android.SearchCriteriaActivity, App.Android;md55a1f45ef199c1a82ce4be4158870bdd4.SearchCriteriaActivity
+App.Android.SearchCriteriaActivity, App.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md55a1f45ef199c1a82ce4be4158870bdd4.SearchCriteriaActivity
+App.Android.SearchCriteriaActivity;md55a1f45ef199c1a82ce4be4158870bdd4.SearchCriteriaActivity
+app.android.SearchCriteriaActivity;md55a1f45ef199c1a82ce4be4158870bdd4.SearchCriteriaActivity
 App.Android.PartListViewAdapter, App.Android;md55a1f45ef199c1a82ce4be4158870bdd4.PartListViewAdapter
 App.Android.PartListViewAdapter, App.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md55a1f45ef199c1a82ce4be4158870bdd4.PartListViewAdapter
 App.Android.PartListViewAdapter;md55a1f45ef199c1a82ce4be4158870bdd4.PartListViewAdapter

@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -48,6 +47,7 @@ namespace App.Android
                if (view == null)
                     view = context.LayoutInflater.Inflate(Resource.Layout.PartListView, null);
                var makeText = view.FindViewById<TextView>(Resource.Id.Make);
+               //Specifies what to display about each item on the Search Results page.
                makeText.Text = item.Make.Substring(item.Make.IndexOf('-') + 1) + "\n" + item.Interchange;
                Typeface f = Typeface.CreateFromAsset(Application.Context.Assets, "SegoeUILight.ttf");
                makeText.SetTypeface(f, TypefaceStyle.Normal);

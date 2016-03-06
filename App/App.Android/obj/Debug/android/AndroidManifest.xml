@@ -20,7 +20,7 @@
     <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
     <activity android:name="io.card.payment.CardIOActivity" android:configChanges="keyboardHidden|orientation" />
     <activity android:name="io.card.payment.DataEntryActivity" />
-    <activity android:icon="@drawable/icon" android:label="Willie's Cycle" android:screenOrientation="portrait" android:name="md55a1f45ef199c1a82ce4be4158870bdd4.SliderPageActivity">
+    <activity android:icon="@drawable/logo" android:label="Willie's Cycle" android:screenOrientation="portrait" android:name="md55a1f45ef199c1a82ce4be4158870bdd4.SearchCriteriaActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

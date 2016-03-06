@@ -59,7 +59,6 @@ C:\Users\Jeremy Woods\Desktop\WilliesCycleApps\App\App.Android\obj\Debug\App.And
 C:\Users\Jeremy Woods\Desktop\WilliesCycleApps\App\App.Android\obj\Debug\App.Android.dll
 C:\Users\Jeremy Woods\Desktop\WilliesCycleApps\App\App.Android\obj\Debug\App.Android.pdb
 C:\Users\Jeremy Woods\Desktop\WilliesCycleApps\App\App.Android\obj\Debug\res\values\strings.xml
-C:\Users\Jeremy Woods\Desktop\WilliesCycleApps\App\App.Android\obj\Debug\res\layout\main.xml
 C:\Users\Jeremy Woods\Desktop\WilliesCycleApps\App\App.Android\obj\Debug\res\layout\yearfragment.xml
 C:\Users\Jeremy Woods\Desktop\WilliesCycleApps\App\App.Android\obj\Debug\res\layout\makefragment.xml
 C:\Users\Jeremy Woods\Desktop\WilliesCycleApps\App\App.Android\obj\Debug\res\layout\partfragment.xml
@@ -76,6 +75,5 @@ C:\Users\Jeremy Woods\Desktop\WilliesCycleApps\App\App.Android\obj\Debug\uploadf
 C:\Users\Jeremy Woods\Desktop\WilliesCycleApps\App\App.Android\bin\Debug\Willie_s_Cycle.Willie_s_Cycle.apk
 C:\Users\Jeremy Woods\Desktop\WilliesCycleApps\App\App.Android\bin\Debug\Willie_s_Cycle.Willie_s_Cycle-Signed.apk
 C:\Users\Jeremy Woods\Desktop\WilliesCycleApps\App\App.Android\obj\Debug\android\bin\Willie_s_Cycle.Willie_s_Cycle.apk
-C:\Users\Jeremy Woods\Desktop\WilliesCycleApps\App\App.Android\bin\Debug\App.Portable.dll.mdb
 C:\Users\Jeremy Woods\Desktop\WilliesCycleApps\App\App.Android\obj\Debug\App.Android.dll.mdb
 C:\Users\Jeremy Woods\Desktop\WilliesCycleApps\App\App.Android\bin\Debug\App.Android.dll.mdb
