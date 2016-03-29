@@ -4,4 +4,7 @@
     <SelectedDevice>visual</SelectedDevice>
     <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
   </PropertyGroup>
+  <PropertyGroup>
+    <ReferencePath>C:\Users\Jeremy Woods\Desktop\Willies\WilliesCycles-master\App\App.Android\Assets\</ReferencePath>
+  </PropertyGroup>
 </Project>
