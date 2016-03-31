@@ -51,7 +51,7 @@ namespace App.Android
                makeText.Text = item.Make.Substring(item.Make.IndexOf('-') + 1) + "\n" + item.Interchange;
                Typeface f = Typeface.CreateFromAsset(Application.Context.Assets, "SegoeUILight.ttf");
                makeText.SetTypeface(f, TypefaceStyle.Normal);
-               string price = "$" + item.Price;
+               string price = "$" + item.Price + "\n" + item.Year;
                var priceText = view.FindViewById<TextView>(Resource.Id.Price);
                priceText.Text = price;
                priceText.SetTypeface(f, TypefaceStyle.Normal);

@@ -1,8 +1,8 @@
 ﻿<Properties StartupItem="App.iOS\App.iOS.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="App.Android\API\API.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="App.Android\LicensureActivity.cs">
     <Files>
-      <File FileName="App.Android\API\API.cs" Line="10" Column="29" />
+      <File FileName="App.Android\LicensureActivity.cs" Line="30" Column="29" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

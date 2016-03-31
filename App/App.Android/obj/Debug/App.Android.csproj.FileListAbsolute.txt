@@ -36,6 +36,8 @@ C:\Users\Jeremy Woods\Desktop\WilliesCycleApps\App\App.Android\bin\Debug\Willie_
 C:\Users\Jeremy Woods\Desktop\WilliesCycleApps\App\App.Android\bin\Debug\Willie_s_Cycle.Willie_s_Cycle-Signed.apk
 C:\Users\Jeremy Woods\Desktop\WilliesCycleApps\App\App.Android\obj\Debug\android\bin\Willie_s_Cycle.Willie_s_Cycle.apk
 C:\Users\Jeremy Woods\Desktop\WilliesCycleApps\App\App.Android\bin\Debug\App.Portable.dll.mdb
+C:\Users\Jeremy Woods\Desktop\WilliesCycleApps\App\App.Android\obj\Debug\App.Android.dll.mdb
+C:\Users\Jeremy Woods\Desktop\WilliesCycleApps\App\App.Android\bin\Debug\App.Android.dll.mdb
 C:\Users\Jeremy Woods\Desktop\Willies\WilliesCycles-master\App\App.Android\bin\Debug\App.Android.dll.config
 C:\Users\Jeremy Woods\Desktop\Willies\WilliesCycles-master\App\App.Android\bin\Debug\App.Android.dll
 C:\Users\Jeremy Woods\Desktop\Willies\WilliesCycles-master\App\App.Android\bin\Debug\App.Android.pdb
@@ -77,5 +79,3 @@ C:\Users\Jeremy Woods\Desktop\Willies\WilliesCycles-master\App\App.Android\obj\D
 C:\Users\Jeremy Woods\Desktop\Willies\WilliesCycles-master\App\App.Android\bin\Debug\App.Portable.dll.mdb
 C:\Users\Jeremy Woods\Desktop\Willies\WilliesCycles-master\App\App.Android\obj\Debug\App.Android.dll.mdb
 C:\Users\Jeremy Woods\Desktop\Willies\WilliesCycles-master\App\App.Android\bin\Debug\App.Android.dll.mdb
-C:\Users\Jeremy Woods\Desktop\WilliesCycleApps\App\App.Android\obj\Debug\App.Android.dll.mdb
-C:\Users\Jeremy Woods\Desktop\WilliesCycleApps\App\App.Android\bin\Debug\App.Android.dll.mdb

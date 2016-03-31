@@ -37,8 +37,8 @@ namespace App.Android
 			parts = await FetchPartsFromServer ();
 			listview.Adapter = new PartListViewAdapter (this, parts);
 			listview.ItemClick += OnListItemClick;
-               this.Title = "Search Results for " + parts[0].Model + " " + parts[0].PartName.Substring(0, parts[0].PartName.IndexOf('-'));
-
+               this.ActionBar.Title = "Search Results for " + parts[0].Model + " " + parts[0].PartName.Substring(0, parts[0].PartName.IndexOf('-'));
+               this.ActionBar.Subtitle = " from " + searchCriteria[1] + " to " + searchCriteria[3];
 		}
 		protected override void OnDestroy ()
 		{
@@ -65,8 +65,11 @@ namespace App.Android
 
 		private async Task<List<Part>> FetchPartsFromServer ()
 		{
-			var listOfParts = await API.GetParts (searchCriteria[2], searchCriteria[0], searchCriteria[1]);
-			
+               var listOfParts = new List<Part>();
+               for (int i = int.Parse(searchCriteria[1]); i <= int.Parse(searchCriteria[3]); i++)
+               {
+                    listOfParts.AddRange(await API.GetParts (searchCriteria[2], searchCriteria[0], i.ToString()));
+               }
 			return listOfParts;
 		}
 

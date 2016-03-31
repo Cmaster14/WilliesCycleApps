@@ -24,7 +24,7 @@ namespace App.Android
           private List<string> mYears = new List<string>() { "none" };
           private List<string> mParts = new List<string>() { "none" };
           private string make = "make", year = "year", part = "part", yearhigh = "yearhigh";
-		private string[] searchString = new string[3]; //0: make, 1: year, 2: part
+		private string[] searchString = new string[4]; //0: make, 1: year, 2: part
 
           protected override void OnCreate (Bundle bundle)
 		{
@@ -50,11 +50,12 @@ namespace App.Android
                transaction.Commit();
 		
 		}
-		public void search(string makeIn, string yearIn, string partIn)
+		public void search(string makeIn, string yearlow, string partIn, string yearUp)
 		{
 			searchString[0] = makeIn;
-			searchString[1] = yearIn;
+			searchString[1] = yearlow;
 			searchString[2] = partIn;
+               searchString[3] = yearUp;
 			var partsActivity = new Intent (this, typeof(PartsActivity));
 			partsActivity.PutExtra ("search", searchString);
 			StartActivity (partsActivity);
@@ -89,6 +90,7 @@ namespace App.Android
                          mParts.AddRange(await getParts(i.ToString()));
                     }
                     mParts = mParts.Where(s => !string.IsNullOrWhiteSpace(s)).Distinct().ToList();
+                    mParts.Sort();
                     global::Android.Support.V4.App.FragmentTransaction transaction = SupportFragmentManager.BeginTransaction();
                     SearchPartFragment newParts = SearchPartFragment.newInstance(mParts);
                     newParts.setListener(this);
@@ -105,7 +107,7 @@ namespace App.Android
                part = partIn;
                if (this != null)
                {
-                    this.search(make, year, part);
+                    this.search(make, year, part, yearhigh);
                }
           }
 
