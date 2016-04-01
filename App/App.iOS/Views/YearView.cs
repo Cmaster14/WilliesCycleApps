@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using CoreGraphics;
 using Foundation;
 using UIKit;
-using Connectivity.Plugin;
+using Plugin.Connectivity;
 using BigTed;
 
 namespace App.iOS
@@ -34,7 +34,7 @@ namespace App.iOS
 
 		private void SetupUserInterface ()
 		{
-			BackgroundColor = UIColor.Clear.FromHexString ("#336699", 1.0f);
+			BackgroundColor = UIColor.Clear.FromHexString ("#094074", 1.0f);
 
 			goUpButton = new UIButton {
 				Font = UIFont.FromName ("SegoeUI-Light", 17f),
@@ -43,7 +43,7 @@ namespace App.iOS
 			goUpButton.SetTitle ("Go back to \"Select a Make\".", UIControlState.Normal);
 			goUpButton.SetTitleColor (UIColor.White, UIControlState.Normal);
 			goUpButton.Center = new CGPoint (this.Bounds.Width / 2, 15);
-			goUpButton.TouchUpInside += SetupGoUpTapped;
+			//goUpButton.TouchUpInside += SetupGoUpTapped;
 
 			stepTwoLabel = new UILabel {
 				Font = UIFont.FromName ("SegoeUI-Light", 42.5f),
@@ -55,19 +55,19 @@ namespace App.iOS
 
 			yearLabel = new UILabel {
 				Font = UIFont.FromName ("SegoeUI-Light", 32f),
-				Frame = new CGRect (0, 120, this.Bounds.Width, 40),
+				Frame = new CGRect (0, 0, this.Bounds.Width, 40),
 				Text = "Choose a year.",
 				TextAlignment = UITextAlignment.Center,
 				TextColor = UIColor.White
 			};
 
 			yearButton = new PickerButton {
-				Frame = new CGRect (40, 175, this.Bounds.Width - 80, 30)
+				Frame = new CGRect (40, Frame.Height*1/5 + 10, this.Bounds.Width - 80, 30)
 			};
 			yearButton.SetTitleColor (UIColor.Clear.FromHexString("#9B9B9B", 1.0f), UIControlState.Normal);
 
 			yearPicker = new UIPickerView {
-				Frame = new CGRect (0, 165, this.Bounds.Width, 40),
+				Frame = new CGRect (0, Frame.Height*1/5, this.Bounds.Width, 40),
 				Hidden = true,
 				Model = new YearPickerViewModel (new List<string> { "Loading Years..." }, yearButton)
 			};
@@ -79,16 +79,16 @@ namespace App.iOS
 			goDownButton.SetTitle ("Continue to \"Select a Part\".", UIControlState.Normal);
 			goDownButton.SetTitleColor (UIColor.White, UIControlState.Normal);
 			goDownButton.Center = new CGPoint (this.Bounds.Width / 2, this.Bounds.Height - 30);
-			goDownButton.TouchUpInside += SetupGoDownTapped;
+			//goDownButton.TouchUpInside += SetupGoDownTapped;
 
 			buttonClickable = false;
 
-			Add (goUpButton);
-			Add (stepTwoLabel);
+			//Add (goUpButton);
+			//Add (stepTwoLabel);
 			Add (yearLabel);
 			Add (yearButton);
 			Add (yearPicker);
-			Add (goDownButton);
+			//Add (goDownButton);
 		}
 
 		private void SetupEventHandlers ()
@@ -98,13 +98,13 @@ namespace App.iOS
 					yearPicker.Hidden = false;
 					yearButton.Hidden = true;
 				} else {
-					var alert = new UIAlertView ("One Moment Please", "Interaction with the Willie's Cycles inventory is taking longer than expected.", null, "Okay", null);
+					var alert = new UIAlertView ("Improper Order you shit", "Choose a Make before selecting the Year.", null, "Okay", null);
 					alert.Show ();
 				}
 			};
 		}
 			
-		private void SetupGoUpTapped (object sender, EventArgs e)
+		/*private void SetupGoUpTapped (object sender, EventArgs e)
 		{
 			searchViewController.StepTwoSwipeDown ();
 		}
@@ -117,7 +117,7 @@ namespace App.iOS
 			} else {
 				searchViewController.StepTwoSwipeUp ();
 			}
-		}
+		}*/
 
 		private void SetupPropertyChanged ()
 		{

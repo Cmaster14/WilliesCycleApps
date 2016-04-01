@@ -15,6 +15,7 @@ namespace App.iOS
 		public PartNamePickerViewModel (List<string> pickerData, UIButton pickerButton, UIButton searchForItemsButton)
 		{
 			items = pickerData;
+
 			selectedButton = pickerButton;
 			searchButton = searchForItemsButton;
 		}
@@ -38,6 +39,7 @@ namespace App.iOS
 		public override void Selected (UIPickerView pickerView, nint row, nint component)
 		{
 			SearchParameters.PartName = items [(int) row];
+
 			selectedButton.Hidden = false;
 			searchButton.Hidden = false;
 			pickerView.Hidden = true;
@@ -46,6 +48,9 @@ namespace App.iOS
 		public override NSAttributedString GetAttributedTitle (UIPickerView pickerView, nint row, nint component)
 		{
 			var title = items [(int) row];
+			int hyphenIndex = title.IndexOf ("-"); // Added to attempt to solve issue with displaying -xx in picker
+			if (hyphenIndex > 0)
+				title = title.Substring (0, hyphenIndex);
 			var font = UIFont.FromName ("SegoeUI-Light", 17f);
 			var attributedTitle = new NSAttributedString (title, font, UIColor.White, null, null, null, (NSLigatureType) 1, 0, (NSUnderlineStyle) 0, null, 0, NSUnderlineStyle.None);
 

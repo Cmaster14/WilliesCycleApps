@@ -12,7 +12,7 @@ namespace App.iOS
 	[Register ("SearchViewController")]
 	public class SearchViewController : UIViewController
 	{
-		UIScrollView scrollView;
+		UIView scrollView;
 
 		FlyoutNavigationController flyout;
 
@@ -42,8 +42,8 @@ namespace App.iOS
 		{
 			NavigationController.NavigationBarHidden = true;
 
-			scrollView = new UIScrollView {
-				Frame = new CGRect (0, 0, 320, View.Frame.Height * 3),
+			scrollView = new UIView {
+				Frame = new CGRect (0, 0, 320, View.Frame.Height),
 				UserInteractionEnabled = true
 			};
 
@@ -57,17 +57,17 @@ namespace App.iOS
 				
 			// Step 1: Choose a make.
 			makeView = new MakeView (View.Frame, this) {
-				Frame = new CGRect (0, 0, View.Frame.Width, View.Frame.Height)
+				Frame = new CGRect (0, 0, View.Frame.Width, View.Frame.Height/3)
 			};
 
 			// Step 2: Choose a year.
 			yearView = new YearView (View.Frame, this) {
-				Frame = new CGRect (0, View.Bounds.Height, View.Bounds.Width, View.Bounds.Height)
+				Frame = new CGRect (0, View.Bounds.Height/3, View.Bounds.Width, View.Bounds.Height/3)
 			};
 
 			// Step 3: Choose a part name.
 			partNameView = new PartNameView (View.Frame, this) {
-				Frame = new CGRect (0, View.Bounds.Height * 2, View.Bounds.Width, View.Bounds.Height)
+				Frame = new CGRect (0, View.Bounds.Height * 2/3, View.Bounds.Width, View.Bounds.Height/3)
 			};
 
 			scrollView.Add (makeView);
@@ -78,7 +78,7 @@ namespace App.iOS
 			View.Add (scrollView);
 		}
 
-		public void StepOneSwipeUp ()
+		/*public void StepOneSwipeUp ()
 		{
 			var stepTwoOffset = new CGPoint (0, View.Bounds.Height);
 			scrollView.SetContentOffset (stepTwoOffset, true);
@@ -100,6 +100,6 @@ namespace App.iOS
 		{
 			var stepTwoOffset = new CGPoint (0, View.Bounds.Height);
 			scrollView.SetContentOffset (stepTwoOffset, true);
-		}
+		}*/
 	}
 }

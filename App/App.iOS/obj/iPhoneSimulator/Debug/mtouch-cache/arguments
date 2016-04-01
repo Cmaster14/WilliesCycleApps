@@ -1,10 +1,10 @@
-# Version: 9.4.1.25 (cycle6-xi: 962a050)
-# [first argument, ignore] # /Users/jbw0033/Downloads/WilliesCycles-master/App/App.iOS/mtouch.exe
-/Library/Frameworks/Xamarin.iOS.framework/Versions/9.4.1.25/bin/mtouch \
+# Version: 9.6.0.0 (ios9.3: d7cac50)
+# [first argument, ignore] # /Users/TheRiddler/WilliesCycleApps/App/App.iOS/mtouch.exe
+/Library/Frameworks/Xamarin.iOS.framework/Versions/9.6.0.0/bin/mtouch \
 	--cache \
-	/Users/jbw0033/Downloads/WilliesCycles-master/App/App.iOS/obj/iPhoneSimulator/Debug/mtouch-cache \
+	/Users/TheRiddler/WilliesCycleApps/App/App.iOS/obj/iPhoneSimulator/Debug/mtouch-cache \
 	--sim \
-	/Users/jbw0033/Downloads/WilliesCycles-master/App/App.iOS/bin/iPhoneSimulator/Debug/AppiOS.app \
+	/Users/TheRiddler/WilliesCycleApps/App/App.iOS/bin/iPhoneSimulator/Debug/AppiOS.app \
 	--executable \
 	AppiOS \
 	--nolink \
@@ -17,7 +17,7 @@
 	--new-refcount \
 	--abi=i386 \
 	--symbollist \
-	/Users/jbw0033/Downloads/WilliesCycles-master/App/App.iOS/obj/iPhoneSimulator/Debug/mtouch-symbols.list \
+	/Users/TheRiddler/WilliesCycleApps/App/App.iOS/obj/iPhoneSimulator/Debug/mtouch-symbols.list \
 	--dsym=no \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll \
@@ -32,25 +32,25 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Net.Http.dll \
 	-r \
-	/Users/jbw0033/Downloads/WilliesCycles-master/App/Dependencies/PayPalMobileXamarinBindings.dll \
+	/Users/TheRiddler/WilliesCycleApps/App/Dependencies/PayPalMobileXamarinBindings.dll \
 	-r \
-	/Users/jbw0033/Downloads/WilliesCycles-master/App/Components/flyoutnavigation-1.5/lib/ios-unified/FlyoutNavigation.dll \
+	/Users/TheRiddler/WilliesCycleApps/App/Components/flyoutnavigation-1.5/lib/ios-unified/FlyoutNavigation.dll \
 	-r \
-	/Users/jbw0033/Downloads/WilliesCycles-master/App/Components/json.net-4.5.11.1/lib/ios-unified/Newtonsoft.Json.dll \
+	/Users/TheRiddler/WilliesCycleApps/App/Components/json.net-4.5.11.1/lib/ios-unified/Newtonsoft.Json.dll \
 	-r \
-	/Users/jbw0033/Downloads/WilliesCycles-master/App/App.iOS/packages/Xam.Plugin.Connectivity.2.0.2/lib/Xamarin.iOS10/Plugin.Connectivity.dll \
+	/Users/TheRiddler/WilliesCycleApps/App/packages/Xam.Plugin.Connectivity.2.1.1/lib/Xamarin.iOS10/Plugin.Connectivity.dll \
 	-r \
-	/Users/jbw0033/Downloads/WilliesCycles-master/App/App.iOS/packages/Xam.Plugin.Connectivity.2.0.2/lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.dll \
+	/Users/TheRiddler/WilliesCycleApps/App/packages/Xam.Plugin.Connectivity.2.1.1/lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.dll \
 	-r \
-	/Users/jbw0033/Downloads/WilliesCycles-master/App/App.iOS/packages/Splat.1.6.2/lib/Xamarin.iOS10/Splat.dll \
+	/Users/TheRiddler/WilliesCycleApps/App/packages/Splat.1.6.2/lib/Xamarin.iOS10/Splat.dll \
 	-r \
-	/Users/jbw0033/Downloads/WilliesCycles-master/App/App.iOS/packages/Acr.Support.1.1.1/lib/Xamarin.iOS10/Acr.Support.iOS.dll \
+	/Users/TheRiddler/WilliesCycleApps/App/packages/Acr.Support.1.1.1/lib/Xamarin.iOS10/Acr.Support.iOS.dll \
 	-r \
-	/Users/jbw0033/Downloads/WilliesCycles-master/App/App.iOS/packages/Acr.UserDialogs.4.2.1/lib/Xamarin.iOS10/Acr.UserDialogs.dll \
+	/Users/TheRiddler/WilliesCycleApps/App/packages/Acr.UserDialogs.4.3.2/lib/Xamarin.iOS10/Acr.UserDialogs.dll \
 	-r \
-	/Users/jbw0033/Downloads/WilliesCycles-master/App/App.iOS/packages/Acr.UserDialogs.4.2.1/lib/Xamarin.iOS10/Acr.UserDialogs.Interface.dll \
+	/Users/TheRiddler/WilliesCycleApps/App/packages/Acr.UserDialogs.4.3.2/lib/Xamarin.iOS10/Acr.UserDialogs.Interface.dll \
 	-r \
-	/Users/jbw0033/Downloads/WilliesCycles-master/App/Components/btprogresshud-1.15/lib/ios-unified/BTProgressHUD.dll \
+	/Users/TheRiddler/WilliesCycleApps/App/packages/Acr.UserDialogs.4.3.2/lib/Xamarin.iOS10/BTProgressHUD.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
 	-r \
@@ -148,23 +148,25 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.XmlSerializer.dll \
 	-r \
-	/Users/jbw0033/Downloads/WilliesCycles-master/App/Dependencies/PayPalMobileXamarinBindings.dll \
+	/Users/TheRiddler/WilliesCycleApps/App/Dependencies/PayPalMobileXamarinBindings.dll \
 	-r \
-	/Users/jbw0033/Downloads/WilliesCycles-master/App/Components/flyoutnavigation-1.5/lib/ios-unified/FlyoutNavigation.dll \
+	/Users/TheRiddler/WilliesCycleApps/App/Components/flyoutnavigation-1.5/lib/ios-unified/FlyoutNavigation.dll \
 	-r \
-	/Users/jbw0033/Downloads/WilliesCycles-master/App/Components/json.net-4.5.11.1/lib/ios-unified/Newtonsoft.Json.dll \
+	/Users/TheRiddler/WilliesCycleApps/App/Components/json.net-4.5.11.1/lib/ios-unified/Newtonsoft.Json.dll \
 	-r \
-	/Users/jbw0033/Downloads/WilliesCycles-master/App/App.iOS/packages/Xam.Plugin.Connectivity.2.0.2/lib/Xamarin.iOS10/Plugin.Connectivity.dll \
+	/Users/TheRiddler/WilliesCycleApps/App/packages/Xam.Plugin.Connectivity.2.1.1/lib/Xamarin.iOS10/Plugin.Connectivity.dll \
 	-r \
-	/Users/jbw0033/Downloads/WilliesCycles-master/App/App.iOS/packages/Xam.Plugin.Connectivity.2.0.2/lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.dll \
+	/Users/TheRiddler/WilliesCycleApps/App/packages/Xam.Plugin.Connectivity.2.1.1/lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.dll \
 	-r \
-	/Users/jbw0033/Downloads/WilliesCycles-master/App/App.iOS/packages/Splat.1.6.2/lib/Xamarin.iOS10/Splat.dll \
+	/Users/TheRiddler/WilliesCycleApps/App/packages/Splat.1.6.2/lib/Xamarin.iOS10/Splat.dll \
 	-r \
-	/Users/jbw0033/Downloads/WilliesCycles-master/App/App.iOS/packages/Acr.Support.1.1.1/lib/Xamarin.iOS10/Acr.Support.iOS.dll \
+	/Users/TheRiddler/WilliesCycleApps/App/packages/Acr.Support.1.1.1/lib/Xamarin.iOS10/Acr.Support.iOS.dll \
 	-r \
-	/Users/jbw0033/Downloads/WilliesCycles-master/App/App.iOS/packages/Acr.UserDialogs.4.2.1/lib/Xamarin.iOS10/Acr.UserDialogs.Interface.dll \
+	/Users/TheRiddler/WilliesCycleApps/App/packages/Acr.UserDialogs.4.3.2/lib/Xamarin.iOS10/Acr.UserDialogs.dll \
 	-r \
-	/Users/jbw0033/Downloads/WilliesCycles-master/App/Components/btprogresshud-1.15/lib/ios-unified/BTProgressHUD.dll \
+	/Users/TheRiddler/WilliesCycleApps/App/packages/Acr.UserDialogs.4.3.2/lib/Xamarin.iOS10/Acr.UserDialogs.Interface.dll \
+	-r \
+	/Users/TheRiddler/WilliesCycleApps/App/packages/Acr.UserDialogs.4.3.2/lib/Xamarin.iOS10/BTProgressHUD.dll \
 	--target-framework \
 	"Xamarin.iOS,v1.0" \
-	/Users/jbw0033/Downloads/WilliesCycles-master/App/App.iOS/bin/iPhoneSimulator/Debug//AppiOS.exe \
+	/Users/TheRiddler/WilliesCycleApps/App/App.iOS/bin/iPhoneSimulator/Debug//AppiOS.exe \
