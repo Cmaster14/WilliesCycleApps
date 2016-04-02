@@ -1,3 +1,7 @@
+App.Android.dialog_list_item, App.Android;md55a1f45ef199c1a82ce4be4158870bdd4.dialog_list_item
+App.Android.dialog_list_item, App.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md55a1f45ef199c1a82ce4be4158870bdd4.dialog_list_item
+App.Android.dialog_list_item;md55a1f45ef199c1a82ce4be4158870bdd4.dialog_list_item
+app.android.dialog_list_item;md55a1f45ef199c1a82ce4be4158870bdd4.dialog_list_item
 App.Android.TermsActivity, App.Android;md55a1f45ef199c1a82ce4be4158870bdd4.TermsActivity
 App.Android.TermsActivity, App.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md55a1f45ef199c1a82ce4be4158870bdd4.TermsActivity
 App.Android.TermsActivity;md55a1f45ef199c1a82ce4be4158870bdd4.TermsActivity
@@ -10,18 +14,14 @@ App.Android.SearchMakeFragment, App.Android;md55a1f45ef199c1a82ce4be4158870bdd4.
 App.Android.SearchMakeFragment, App.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md55a1f45ef199c1a82ce4be4158870bdd4.SearchMakeFragment
 App.Android.SearchMakeFragment;md55a1f45ef199c1a82ce4be4158870bdd4.SearchMakeFragment
 app.android.SearchMakeFragment;md55a1f45ef199c1a82ce4be4158870bdd4.SearchMakeFragment
-App.Android.SearchYearFragment, App.Android;md55a1f45ef199c1a82ce4be4158870bdd4.SearchYearFragment
-App.Android.SearchYearFragment, App.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md55a1f45ef199c1a82ce4be4158870bdd4.SearchYearFragment
-App.Android.SearchYearFragment;md55a1f45ef199c1a82ce4be4158870bdd4.SearchYearFragment
-app.android.SearchYearFragment;md55a1f45ef199c1a82ce4be4158870bdd4.SearchYearFragment
 App.Android.SearchPartFragment, App.Android;md55a1f45ef199c1a82ce4be4158870bdd4.SearchPartFragment
 App.Android.SearchPartFragment, App.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md55a1f45ef199c1a82ce4be4158870bdd4.SearchPartFragment
 App.Android.SearchPartFragment;md55a1f45ef199c1a82ce4be4158870bdd4.SearchPartFragment
 app.android.SearchPartFragment;md55a1f45ef199c1a82ce4be4158870bdd4.SearchPartFragment
-App.Android.MyPagerAdapter, App.Android;md55a1f45ef199c1a82ce4be4158870bdd4.MyPagerAdapter
-App.Android.MyPagerAdapter, App.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md55a1f45ef199c1a82ce4be4158870bdd4.MyPagerAdapter
-App.Android.MyPagerAdapter;md55a1f45ef199c1a82ce4be4158870bdd4.MyPagerAdapter
-app.android.MyPagerAdapter;md55a1f45ef199c1a82ce4be4158870bdd4.MyPagerAdapter
+App.Android.SearchYearFragment, App.Android;md55a1f45ef199c1a82ce4be4158870bdd4.SearchYearFragment
+App.Android.SearchYearFragment, App.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md55a1f45ef199c1a82ce4be4158870bdd4.SearchYearFragment
+App.Android.SearchYearFragment;md55a1f45ef199c1a82ce4be4158870bdd4.SearchYearFragment
+app.android.SearchYearFragment;md55a1f45ef199c1a82ce4be4158870bdd4.SearchYearFragment
 App.Android.SliderPageActivity, App.Android;md55a1f45ef199c1a82ce4be4158870bdd4.SliderPageActivity
 App.Android.SliderPageActivity, App.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md55a1f45ef199c1a82ce4be4158870bdd4.SliderPageActivity
 App.Android.SliderPageActivity;md55a1f45ef199c1a82ce4be4158870bdd4.SliderPageActivity
@@ -30,10 +30,6 @@ App.Android.PartListViewAdapter, App.Android;md55a1f45ef199c1a82ce4be4158870bdd4
 App.Android.PartListViewAdapter, App.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md55a1f45ef199c1a82ce4be4158870bdd4.PartListViewAdapter
 App.Android.PartListViewAdapter;md55a1f45ef199c1a82ce4be4158870bdd4.PartListViewAdapter
 app.android.PartListViewAdapter;md55a1f45ef199c1a82ce4be4158870bdd4.PartListViewAdapter
-App.Android.dialog_list_item, App.Android;md55a1f45ef199c1a82ce4be4158870bdd4.dialog_list_item
-App.Android.dialog_list_item, App.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md55a1f45ef199c1a82ce4be4158870bdd4.dialog_list_item
-App.Android.dialog_list_item;md55a1f45ef199c1a82ce4be4158870bdd4.dialog_list_item
-app.android.dialog_list_item;md55a1f45ef199c1a82ce4be4158870bdd4.dialog_list_item
 App.Android.PartsActivity, App.Android;md55a1f45ef199c1a82ce4be4158870bdd4.PartsActivity
 App.Android.PartsActivity, App.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md55a1f45ef199c1a82ce4be4158870bdd4.PartsActivity
 App.Android.PartsActivity;md55a1f45ef199c1a82ce4be4158870bdd4.PartsActivity

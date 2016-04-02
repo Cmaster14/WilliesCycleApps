@@ -9,12 +9,15 @@ using Newtonsoft.Json;
 using System.Data;
 using System.Data.SqlClient;
 using Mono.Security.Protocol;
+using Android.Widget;
+using Android.OS;
 
 namespace App.Portable
 {
 	public class API
 	{
-          private const string BASE_URL = "Data Source=willies.database.windows.net;Initial Catalog='Willies Database';User ID=seniordesign;Password=Williescycles1;";
+          private const string pass = "Password = Williescycles1;";
+          private const string BASE_URL = "Data Source=willies.database.windows.net;Initial Catalog='Willies Database';User ID=seniordesign;" + pass;
 		private const string KEY = "y8fN9sLekaKFNvi2apo409MxBv0e";
 
 		public static async Task<List<string>> GetPickerData (string make)
@@ -22,14 +25,14 @@ namespace App.Portable
                List<string> result = new List<string>();
 
              SqlConnection conn = new SqlConnection(BASE_URL);
-             
+
                     try
                     {
                          conn.Open();
                     }
                     catch (Exception e)
                     {
-
+                         return null;
                     }
 
                     using (SqlCommand myCommand = new SqlCommand("SELECT DISTINCT YR FROM Parts Where Make LIKE '" + make.Substring(0, 1) + "%' ORDER BY YR", conn))
@@ -56,14 +59,7 @@ namespace App.Portable
 
                using (SqlConnection conn = new SqlConnection(BASE_URL))
                {
-                    try
-                    {
-                         conn.Open();
-                    }
-                    catch (Exception e)
-                    {
-
-                    }
+                    conn.Open();
 
                     using (SqlCommand myCommand = new SqlCommand("SELECT DISTINCT PartName FROM Parts Where Make LIKE '" + make.Substring(0, 1) + "%' AND YR LIKE " + year + " ORDER BY PartName", conn))
                     {
@@ -88,14 +84,7 @@ namespace App.Portable
 
                using (SqlConnection conn = new SqlConnection(BASE_URL))
                {
-                    try
-                    {
-                         conn.Open();
-                    }
-                    catch (Exception e)
-                    {
-
-                    }
+                    conn.Open();
 
                     if (partName.Contains("'"))
                     {

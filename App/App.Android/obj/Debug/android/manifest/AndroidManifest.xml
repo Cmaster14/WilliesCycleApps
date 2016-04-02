@@ -22,7 +22,7 @@
     <activity android:name="io.card.payment.DataEntryActivity" />
     <activity android:label="Terms and Conditions" android:name="md55a1f45ef199c1a82ce4be4158870bdd4.TermsActivity" />
     <activity android:label="LicensureActivity" android:name="md55a1f45ef199c1a82ce4be4158870bdd4.LicensureActivity" />
-    <activity android:icon="@drawable/icon" android:label="Willie's Cycle" android:screenOrientation="portrait" android:name="md55a1f45ef199c1a82ce4be4158870bdd4.SliderPageActivity">
+    <activity android:icon="@drawable/logo" android:label="Willie's Cycle" android:screenOrientation="portrait" android:name="md55a1f45ef199c1a82ce4be4158870bdd4.SliderPageActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

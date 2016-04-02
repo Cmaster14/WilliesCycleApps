@@ -17,7 +17,7 @@ using App.Portable;
 
 namespace App.Android
 {
-	[Activity (Label = "Willie's Cycle", MainLauncher = true, Icon = "@drawable/icon", ScreenOrientation = global::Android.Content.PM.ScreenOrientation.Portrait)]			
+	[Activity (Label = "Willie's Cycle", MainLauncher = true, Icon = "@drawable/logo", ScreenOrientation = global::Android.Content.PM.ScreenOrientation.Portrait)]			
 	public class SliderPageActivity : FragmentActivity, SearchMakeFragment.MakeListener, SearchYearFragment.YearListener, SearchPartFragment.PartListener
 
 	{
@@ -80,7 +80,7 @@ namespace App.Android
           }
           public async void passYear(string yearLow, string yearHigh)
           {
-               if (!year.Equals(yearLow) || !yearhigh.Equals(yearHigh))
+               if ((!year.Equals(yearLow) || !yearhigh.Equals(yearHigh)) && !yearLow.Equals("None"))
                {
                     year = yearLow;
                     yearhigh = yearHigh;
@@ -114,6 +114,17 @@ namespace App.Android
           private async Task<List<string>> getYears(string make)
           {
                List<string> years = await API.GetPickerData(make);
+               
+               if (years == null) {
+                    new AlertDialog.Builder(this)
+                    .SetPositiveButton("OK", (sender, args) =>
+                    {
+                         Process.KillProcess(Process.MyPid());
+                    })
+                    .SetMessage("There is currently an issue connecting to the Willie's Cycles Database" +
+                         " Please contact Willie's Cycles at 555-555-5555 to purchase a part").SetTitle("Database" +
+                         " Connection Error").SetCancelable(false).Show();       
+               }
                return years;
           }
 
