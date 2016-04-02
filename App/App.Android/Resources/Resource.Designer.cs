@@ -91,20 +91,26 @@ namespace App.Android
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060016
-			public const int List = 2131099670;
-			
 			// aapt resource value: 0x7f060014
-			public const int Make = 2131099668;
+			public const int Licensure = 2131099668;
+			
+			// aapt resource value: 0x7f060017
+			public const int List = 2131099671;
 			
 			// aapt resource value: 0x7f060015
-			public const int Price = 2131099669;
+			public const int Make = 2131099669;
 			
-			// aapt resource value: 0x7f060011
-			public const int Search_button = 2131099665;
+			// aapt resource value: 0x7f060016
+			public const int Price = 2131099670;
+			
+			// aapt resource value: 0x7f060010
+			public const int Search_button = 2131099664;
 			
 			// aapt resource value: 0x7f060013
-			public const int bottom_space = 2131099667;
+			public const int Terms_of_service = 2131099667;
+			
+			// aapt resource value: 0x7f060012
+			public const int bottom_space = 2131099666;
 			
 			// aapt resource value: 0x7f060003
 			public const int dialog_contact = 2131099651;
@@ -112,14 +118,17 @@ namespace App.Android
 			// aapt resource value: 0x7f060002
 			public const int dialog_purchase = 2131099650;
 			
-			// aapt resource value: 0x7f060017
-			public const int frame_container = 2131099671;
-			
 			// aapt resource value: 0x7f060018
-			public const int frame_container2 = 2131099672;
+			public const int frame_container = 2131099672;
 			
 			// aapt resource value: 0x7f060019
-			public const int frame_container3 = 2131099673;
+			public const int frame_container2 = 2131099673;
+			
+			// aapt resource value: 0x7f06001a
+			public const int frame_container3 = 2131099674;
+			
+			// aapt resource value: 0x7f06001e
+			public const int high_year_spinner = 2131099678;
 			
 			// aapt resource value: 0x7f060008
 			public const int imageView1 = 2131099656;
@@ -127,35 +136,38 @@ namespace App.Android
 			// aapt resource value: 0x7f060004
 			public const int linearLayout1 = 2131099652;
 			
-			// aapt resource value: 0x7f06000f
-			public const int linearLayout2 = 2131099663;
+			// aapt resource value: 0x7f06000e
+			public const int linearLayout2 = 2131099662;
 			
 			// aapt resource value: 0x7f060006
 			public const int linearLayout3 = 2131099654;
 			
+			// aapt resource value: 0x7f06001d
+			public const int low_year_spinner = 2131099677;
+			
+			// aapt resource value: 0x7f06000a
+			public const int makeHeader = 2131099658;
+			
 			// aapt resource value: 0x7f06000b
-			public const int makeHeader = 2131099659;
+			public const int make_spinner = 2131099659;
 			
 			// aapt resource value: 0x7f06000c
-			public const int make_spinner = 2131099660;
-			
-			// aapt resource value: 0x7f06000d
-			public const int partHeader = 2131099661;
+			public const int partHeader = 2131099660;
 			
 			// aapt resource value: 0x7f060001
 			public const int partText = 2131099649;
 			
-			// aapt resource value: 0x7f06000e
-			public const int part_spinner = 2131099662;
+			// aapt resource value: 0x7f06000d
+			public const int part_spinner = 2131099661;
 			
 			// aapt resource value: 0x7f060000
 			public const int relativeLayout1 = 2131099648;
 			
-			// aapt resource value: 0x7f060010
-			public const int space1 = 2131099664;
+			// aapt resource value: 0x7f06000f
+			public const int space1 = 2131099663;
 			
-			// aapt resource value: 0x7f060012
-			public const int space2 = 2131099666;
+			// aapt resource value: 0x7f060011
+			public const int space2 = 2131099665;
 			
 			// aapt resource value: 0x7f060007
 			public const int space3 = 2131099655;
@@ -163,20 +175,14 @@ namespace App.Android
 			// aapt resource value: 0x7f060009
 			public const int space4 = 2131099657;
 			
-			// aapt resource value: 0x7f06000a
-			public const int space5 = 2131099658;
-			
 			// aapt resource value: 0x7f060005
 			public const int top_space = 2131099653;
 			
-			// aapt resource value: 0x7f06001b
-			public const int yearHeader = 2131099675;
-			
-			// aapt resource value: 0x7f06001a
-			public const int year_fragment = 2131099674;
-			
 			// aapt resource value: 0x7f06001c
-			public const int year_spinner = 2131099676;
+			public const int yearHeader = 2131099676;
+			
+			// aapt resource value: 0x7f06001b
+			public const int year_fragment = 2131099675;
 			
 			static Id()
 			{
@@ -227,6 +233,9 @@ namespace App.Android
 			
 			// aapt resource value: 0x7f040000
 			public const int ApplicationName = 2130968576;
+			
+			// aapt resource value: 0x7f040001
+			public const int TitleFrame = 2130968577;
 			
 			static String()
 			{

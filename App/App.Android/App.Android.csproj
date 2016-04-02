@@ -21,9 +21,9 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DefineConstants>DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <WarningLevel>0</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -83,15 +83,19 @@
     <Reference Include="Mono.Security" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dialog_list_item.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TermsActivity.cs" />
     <Compile Include="API\API.cs" />
+    <Compile Include="LicensureActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SearchMakeFragment.cs" />
     <Compile Include="SearchPartFragment.cs" />
     <Compile Include="SearchYearFragment.cs" />
-    <Compile Include="SearchCriteriaActivity.cs" />
+    <Compile Include="SliderPageActivity.cs" />
     <Compile Include="PartListViewAdapter.cs" />
-    <Compile Include="dialog_list_item.cs" />
     <Compile Include="Willies_DatabaseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -104,6 +108,7 @@
     <None Include="Assets\AboutAssets.txt" />
     <Compile Include="PartsActivity.cs" />
     <None Include="packages.config" />
+    <AndroidResource Include="Resources\Layout\item_dialog.axml" />
     <None Include="Willies_DatabaseDataSet.xsc">
       <DependentUpon>Willies_DatabaseDataSet.xsd</DependentUpon>
     </None>
@@ -115,9 +120,12 @@
     <None Include="Willies_DatabaseDataSet.xss">
       <DependentUpon>Willies_DatabaseDataSet.xsd</DependentUpon>
     </None>
+    <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\Values\Strings.xml" />
+    <AndroidResource Include="Resources\Values\Strings.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
     <AndroidResource Include="Resources\Layout\YearFragment.axml" />
     <AndroidResource Include="Resources\Layout\MakeFragment.axml" />
     <AndroidResource Include="Resources\Layout\PartFragment.axml" />
@@ -126,14 +134,18 @@
     <AndroidResource Include="Resources\Layout\PartsListLayout.axml" />
     <AndroidResource Include="Resources\Layout\ViewPagerActivity.axml" />
     <AndroidResource Include="Resources\Layout\PartListView.axml" />
-    <AndroidResource Include="Resources\Layout\item_dialog.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Drawable\Icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Properties\AndroidManifest.xml" />
+    <AndroidAsset Include="Assets\licensure.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidAsset>
     <AndroidResource Include="Resources\Drawable\logo.png" />
+    <AndroidAsset Include="Assets\TermsOfService.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidAsset>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

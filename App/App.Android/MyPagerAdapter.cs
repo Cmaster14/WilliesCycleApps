@@ -94,7 +94,7 @@ namespace App.Android
 			}
 		}
 
-		public async void passYear(string yearIn)
+		public async void passYear(string yearIn, string yearhigh)
 		{
 			if (!year.Equals(yearIn))
 			{

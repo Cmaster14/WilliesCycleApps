@@ -18,6 +18,7 @@ namespace App.Android
 	[Activity(Theme= "@android:style/Theme.Holo.Light.NoActionBar")]
 	public class dialog_list_item : DialogFragment
 	{
+		string[] part;
 		string textHeader;
 		private DialogListener mListener;
 

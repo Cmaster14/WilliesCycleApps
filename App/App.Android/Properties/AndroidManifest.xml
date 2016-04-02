@@ -9,7 +9,7 @@
 	<!-- for most things, including card.io & paypal -->
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	<uses-permission android:name="android.permission.INTERNET" />
-	<application android:label="Willie's Cycle 2" android:icon="@drawable/logo">
+	<application android:label="Willie's Cycle" android:icon="@drawable/logo">
 		<service android:name="com.paypal.android.sdk.payments.PayPalService" android:exported="false" />
 		<activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
 		<activity android:name="com.paypal.android.sdk.payments.LoginActivity" />

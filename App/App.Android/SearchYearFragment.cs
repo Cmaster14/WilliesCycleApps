@@ -15,29 +15,22 @@ using Android.Graphics;
 
 namespace App.Android
 {
-     /*
-      * This is the class that handles the Make search fragment of Willies Cycle Application.
-      */
 	public class SearchYearFragment : global::Android.Support.V4.App.Fragment
 	{
 		List<string> mYears = new List<string>(){"None"};
-
-          //Variable to describle which Object is this Fragment's listener.
+          List<string> mYears2 = new List<string>();
 		private YearListener mListener;
 
-          //This is an interface to be implemented by a parent class that uses this Fragment.
 		public interface YearListener 
 		{
-			void passYear(string year);
+			void passYear(string yearlow, string yearhigh);
 		}
 
-          //Called by an Object to become the listener of this class.
 		public void setListener(YearListener listener)
 		{
 			mListener = listener;
 		}
-          //If a Fragment is created and has argments, it sets the List from the arguments
-          //as the List of the Fragment and be put in its Spinner.
+
 		public override void OnCreate (Bundle savedInstanceState)
 		{
 			base.OnCreate (savedInstanceState);
@@ -61,42 +54,46 @@ namespace App.Android
 		public override View OnCreateView (LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 		{
 			var view = inflater.Inflate (Resource.Layout.YearFragment, container, false);
-
-               //Adapter to feed the Spinner the proper Lists
 			ArrayAdapter<string> yearAdapter = new ArrayAdapter<string> (this.Activity, global::Android.Resource.Layout.SimpleListItem1, mYears);
-			Spinner yearSpinner =  view.FindViewById<Spinner> (Resource.Id.year_spinner);
-			yearSpinner.Adapter = yearAdapter;
-
-               //Creates the header to specify the Typeface of it.
-               TextView header = view.FindViewById<TextView> (Resource.Id.yearHeader);
+			Spinner lowyearSpinner =  view.FindViewById<Spinner> (Resource.Id.low_year_spinner);
+			lowyearSpinner.Adapter = yearAdapter;
+			TextView header = view.FindViewById<TextView> (Resource.Id.yearHeader);
 			Typeface f = Typeface.CreateFromAsset (Application.Context.Assets, "SegoeUILight.ttf");
 			header.SetTypeface (f, TypefaceStyle.Normal);
-
-               //This calls the method below and actually sets based on the current item that is selected in the spinner.
-			yearSpinner.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs> (ItemSelectedHandler);
-
+			lowyearSpinner.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs> (ItemSelectedHandler1);
 			return view;
 		}
-          /*
-           * Is called in the on createView above.
-           * It gets the Year that is currently selected in the spinner and then passes
-           * it back to the listener that created the Fragment.
-           */
-		void ItemSelectedHandler( object sender, AdapterView.ItemSelectedEventArgs e) 
+
+		void ItemSelectedHandler1( object sender, AdapterView.ItemSelectedEventArgs e) 
 		{
 			Spinner spinner = (Spinner)sender;
 			var yearToPass = Convert.ToString (spinner.GetItemAtPosition (e.Position));
-			mListener.passYear (yearToPass);
+               Spinner highyearSpinner = this.Activity.FindViewById<Spinner>(Resource.Id.high_year_spinner);
+               mYears2 = new List<string>();
+               for (int i = mYears.IndexOf(yearToPass); i < mYears.Count; i++)
+               {
+                    mYears2.Add(mYears[i]);
+               }
+               ArrayAdapter<string> yearAdapter = new ArrayAdapter<string>(this.Activity, global::Android.Resource.Layout.SimpleListItem1, mYears2);
+               highyearSpinner.Adapter = yearAdapter;
+               highyearSpinner.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(ItemSelectedHandler2);
+
 
 
 			//TO-DO:
 			//Need to share data between the fragments, most likely through savedstate in the activity
 		}
-          /*
-           * Creates a new Year Fragment with the specified paramenter for the
-           * parts list, saves it in a bundle, and then puts the bundle in the
-           * fragment arguments.
-           */
+          void ItemSelectedHandler2(object sender, AdapterView.ItemSelectedEventArgs e)
+          {
+               Spinner spinner = (Spinner)sender;
+               var yearToPass = Convert.ToString(spinner.GetItemAtPosition(e.Position));
+               mListener.passYear(mYears2[0],yearToPass);
+
+
+               //TO-DO:
+               //Need to share data between the fragments, most likely through savedstate in the activity
+          }
+
 		public static SearchYearFragment newInstance(List<string> yearsIn)
 		{
 			SearchYearFragment yf = new SearchYearFragment ();
@@ -106,6 +103,10 @@ namespace App.Android
 			yf.Arguments = bdl;
 
 			return yf;
+		}
+		public void setYears(List<string> yearsIn)
+		{
+			mYears = yearsIn;
 		}
 	}
 }
