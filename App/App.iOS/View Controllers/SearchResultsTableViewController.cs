@@ -11,6 +11,10 @@ namespace App.iOS
 		public SearchResultsTableViewController (List<Part> parts)
 		{
 			this.parts = parts;
+			for (int i = 0; i < this.parts.Count; i++){
+				int hyphenIndex = this.parts[i].PartName.IndexOf("-"); // Added to fix -xx issue in search results display
+				this.parts[i].PartName = this.parts[i].PartName.Substring(0,hyphenIndex);
+			}
 		}
 
 		public override void ViewDidLoad ()
