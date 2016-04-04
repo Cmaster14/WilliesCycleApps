@@ -1,0 +1,44 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl320
+
+\f0\fs24 \cf0 \expnd0\expndtw0\kerning0
+Senior Design getting the shit on one page\
+\
+in the searchviewcontroller file: looking at lines 58-61, this is the make view setup.\
+\
+First thing I\'92m trying is to make the make selection view 1/3 of the height of the frame\'85\
+result? it just cuts off the bottom 2/3 of the make frame\
+\
+Second thing I\'92m trying is going to be to merge the MakeView, YearView, and PartNameView into one view file. It\'92s possible to remove the big ass STEP 1/2/3 tags from each of the pages. I\'92m gonna do that and then work on putting everything together.\
+\
+	This has been partially achieved by altering line 46 of searchviewcontroller.cs:\
+	Frame\'a0=\'a0new\'a0CGRect\'a0(0,\'a00,\'a0320,\'a0View.Frame.Height /* * 3*/) (frame height is now just the height of 	the frame of the application as opposed to 3x the height\'85\
+	\
+	The MakeView, YearView, and PartNameView frames from the same file (lines 60, 65, 70) have also 	been altered to match the new full frame height. Each one takes up 1/3 of the frame. The CGRect 	structure was easy to alter to make them start at the right place and take up the correct amount of 	room.\
+\
+	altered the specific x positions that the pieces had with this:\'a0Frame.Height*1/5\
+\
+\
+\
+\
+\
+*CGRect(nfloat x, nfloat y, nfloat width, nfloat height) :: starting x position, starting y position, full width, full height.*\
+\
+\
+Got the second year picker into the app, copied the stuff from yearButton into a second one, altering the positioning of the picker in the frame with CGRect..\'a0\
+\
+Pretty soon I\'92m gonna go through all of this and clear up the unnecessary code.\
+\
+\
+\
+In order to use the range of years in the iOS application, it\'92s necessary to change the PartsController.cs file in the webserver.api folder of the WilliesCyclesApp folder. I\'92ll try to make it so that it takes in both years and can return parts based on a range of years. *this may not be the case*\
+\
+I\'92ve changed up the searchparameters file to have another file, that being a Year2 that allows for the second year in the range.\
+\
+\
+There is another solutions that has been identified, in that the API.cs, I can likely change the entirety of it to match the one for the Android app\'8520 minutes later, I just did that, and had to\'a0\
+}

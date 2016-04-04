@@ -36,7 +36,7 @@ namespace App.iOS
 
 		public void UpdateCell (Part part)
 		{
-			var bottomText = string.Format ("{0} {1}", part.Model, part.Interchange);//{1} {2}", part.Year, part.Make, part.Model);
+			var bottomText = string.Format ("{0} {1} {2} {3}", part.Year, part.Make, part.Model, part.Interchange);
 
 			TextInfo textInfo = new CultureInfo("en-US", false).TextInfo;
 			TopLabel.Text = textInfo.ToTitleCase (part.PartName.ToLower ());

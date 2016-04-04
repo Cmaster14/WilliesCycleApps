@@ -41,6 +41,7 @@ namespace App.iOS
 		{
 			SearchParameters.Make = items [(int) row];
 			SearchParameters.Year = "";
+			//SearchParameters.Year2 = "";
 			SearchParameters.PartName = "";
 			selectedButton.SetTitle (SearchParameters.Make, UIControlState.Normal);
 			selectedButton.Hidden = false;

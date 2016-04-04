@@ -9,6 +9,7 @@ namespace App.iOS
 	{
 		private static string make;
 		private static string year;
+		private static string year2;
 		private static string partName;
 
 		public static event PropertyChangedEventHandler PropertyChanged;
@@ -24,7 +25,13 @@ namespace App.iOS
 			get { return year; }
 			set { year = value; OnPropertyChanged("Year"); }
 		}
-			
+
+		/*public static string Year2 
+		{
+			get { return year2; }
+			set { year2 = value; OnPropertyChanged ("Year2"); }
+		}	*/
+
 		public static string PartName
 		{
 			get { return partName; }

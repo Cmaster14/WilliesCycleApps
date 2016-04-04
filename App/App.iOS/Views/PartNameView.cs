@@ -13,7 +13,6 @@ namespace App.iOS
 	public class PartNameView : UIView
 	{
 		UIButton goUpButton;
-		UILabel stepThreeLabel;
 		UILabel partNameLabel;
 		PickerButton partNameButton;
 		UIPickerView partNamePicker;
@@ -44,15 +43,6 @@ namespace App.iOS
 			goUpButton.SetTitle ("Go back to \"Select a Year\".", UIControlState.Normal);
 			goUpButton.SetTitleColor (UIColor.White, UIControlState.Normal);
 			goUpButton.Center = new CGPoint (this.Bounds.Width / 2, 15);
-			//goUpButton.TouchUpInside += SetupGoUpTapped;
-
-			stepThreeLabel = new UILabel {
-				Font = UIFont.FromName ("SegoeUI-Light", 42.5f),
-				Frame = new CGRect (0, 70, this.Bounds.Width, 45),
-				Text = "Step 3",
-				TextAlignment = UITextAlignment.Center,
-				TextColor = UIColor.White
-			};
 
 			partNameLabel = new UILabel {
 				Font = UIFont.FromName ("SegoeUI-Light", 32f),
@@ -63,7 +53,7 @@ namespace App.iOS
 			};
 
 			partNameButton = new PickerButton {
-				Frame = new CGRect (40, Frame.Height*1/5 + 10, this.Bounds.Width - 80, 30)
+				Frame = new CGRect (40, Frame.Height*1/8 + 10, this.Bounds.Width - 80, 30)
 			};
 			partNameButton.SetTitleColor (UIColor.Clear.FromHexString("#9B9B9B", 1.0f), UIControlState.Normal);
 
@@ -74,14 +64,12 @@ namespace App.iOS
 			searchButton.SetTitleColor (UIColor.White, UIControlState.Normal);
 
 			partNamePicker = new UIPickerView {
-				Frame = new CGRect (0, Frame.Height*1/5, this.Bounds.Width, 40),
+				Frame = new CGRect (0, Frame.Height*1/8, this.Bounds.Width, 40),
 				Hidden = true,
 			};
 
 			buttonClickable = false;
 
-			//Add (goUpButton);
-			//Add (stepThreeLabel);
 			Add (partNameLabel);
 			Add (partNameButton);
 			Add (partNamePicker);
@@ -106,11 +94,6 @@ namespace App.iOS
 			};
 		}
 
-		/*private void SetupGoUpTapped (object sender, EventArgs e)
-		{
-			searchViewController.StepThreeGoUp ();
-		}*/
-
 		private void SetupPropertyChanged ()
 		{
 			SearchParameters.PropertyChanged += async (sender, e) => {
@@ -122,7 +105,7 @@ namespace App.iOS
 					BTProgressHUD.Dismiss ();
 					buttonClickable = true;
 				}
-	if (e.PropertyName == "PartName") {
+				if (e.PropertyName == "PartName") {
 					string name;
 					int hyphenIndex = SearchParameters.PartName.IndexOf("-");
 					if (hyphenIndex > 0)
@@ -139,7 +122,7 @@ namespace App.iOS
 			var partName = SearchParameters.PartName;
 			var make = SearchParameters.Make [0].ToString ();
 			var year = SearchParameters.Year;
-	if (string.IsNullOrEmpty (partName) || string.IsNullOrEmpty (make) || string.IsNullOrEmpty (year) || string.Equals (partName, "Loading") || string.Equals (year, "Loading")) {
+			if (string.IsNullOrEmpty (partName) || string.IsNullOrEmpty (make) || string.IsNullOrEmpty (year) || string.Equals (partName, "Loading") || string.Equals (year, "Loading")) {
 				var alertView = new UIAlertView ("Error", "Select a valid make, year, and part name before searching.", null, "Okay", null);
 				alertView.Show ();
 			} else {

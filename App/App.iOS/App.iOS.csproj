@@ -134,6 +134,7 @@
     <Reference Include="BTProgressHUD">
       <HintPath>..\packages\Acr.UserDialogs.4.3.2\lib\Xamarin.iOS10\BTProgressHUD.dll</HintPath>
     </Reference>
+    <Reference Include="System.Data" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json">

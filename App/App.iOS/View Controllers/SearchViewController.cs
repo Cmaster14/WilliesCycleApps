@@ -12,7 +12,7 @@ namespace App.iOS
 	[Register ("SearchViewController")]
 	public class SearchViewController : UIViewController
 	{
-		UIView scrollView;
+		UIView mainView;
 
 		FlyoutNavigationController flyout;
 
@@ -42,7 +42,7 @@ namespace App.iOS
 		{
 			NavigationController.NavigationBarHidden = true;
 
-			scrollView = new UIView {
+			mainView = new UIView {
 				Frame = new CGRect (0, 0, 320, View.Frame.Height),
 				UserInteractionEnabled = true
 			};
@@ -70,36 +70,12 @@ namespace App.iOS
 				Frame = new CGRect (0, View.Bounds.Height * 2/3, View.Bounds.Width, View.Bounds.Height/3)
 			};
 
-			scrollView.Add (makeView);
-			scrollView.Add (hamburgerMenu);
-			scrollView.Add (yearView);
-			scrollView.Add (partNameView);
+			mainView.Add (makeView);
+			mainView.Add (hamburgerMenu);
+			mainView.Add (yearView);
+			mainView.Add (partNameView);
 
-			View.Add (scrollView);
+			View.Add (mainView);
 		}
-
-		/*public void StepOneSwipeUp ()
-		{
-			var stepTwoOffset = new CGPoint (0, View.Bounds.Height);
-			scrollView.SetContentOffset (stepTwoOffset, true);
-		}
-
-		public void StepTwoSwipeDown ()
-		{
-			var stepOneOffset = new CGPoint (0, 0);
-			scrollView.SetContentOffset (stepOneOffset, true);
-		}
-
-		public void StepTwoSwipeUp ()
-		{
-			var stepTwoOffset = new CGPoint (0, View.Bounds.Height * 2);
-			scrollView.SetContentOffset (stepTwoOffset, true);
-		}
-
-		public void StepThreeGoUp ()
-		{
-			var stepTwoOffset = new CGPoint (0, View.Bounds.Height);
-			scrollView.SetContentOffset (stepTwoOffset, true);
-		}*/
 	}
 }

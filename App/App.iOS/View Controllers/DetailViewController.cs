@@ -174,6 +174,7 @@ namespace App.iOS
 				PresentPayment ();
 			} else {
 				var alert = new UIAlertView ("No Internet Connection", "Please establish an internet connection before buying parts.", null, "Okay", null);
+				alert.Show ();
 			}
 		}
 

@@ -11,12 +11,11 @@ namespace App.iOS
 	[Register ("YearView")]
 	public class YearView : UIView
 	{
-		UIButton goUpButton;
-		UIButton goDownButton;
-		UILabel stepTwoLabel;
 		UILabel yearLabel;
 		PickerButton yearButton;
+		PickerButton yearButton2;
 		UIPickerView yearPicker;
+		UIPickerView yearPicker2;
 
 		SearchViewController searchViewController;
 
@@ -36,59 +35,43 @@ namespace App.iOS
 		{
 			BackgroundColor = UIColor.Clear.FromHexString ("#094074", 1.0f);
 
-			goUpButton = new UIButton {
-				Font = UIFont.FromName ("SegoeUI-Light", 17f),
-				Frame = new CGRect (0, 5, this.Bounds.Width, 15),
-			};
-			goUpButton.SetTitle ("Go back to \"Select a Make\".", UIControlState.Normal);
-			goUpButton.SetTitleColor (UIColor.White, UIControlState.Normal);
-			goUpButton.Center = new CGPoint (this.Bounds.Width / 2, 15);
-			//goUpButton.TouchUpInside += SetupGoUpTapped;
-
-			stepTwoLabel = new UILabel {
-				Font = UIFont.FromName ("SegoeUI-Light", 42.5f),
-				Frame = new CGRect (0, 70, this.Bounds.Width, 45),
-				Text = "Step 2",
-				TextAlignment = UITextAlignment.Center,
-				TextColor = UIColor.White
-			};
-
 			yearLabel = new UILabel {
-				Font = UIFont.FromName ("SegoeUI-Light", 32f),
+				Font = UIFont.FromName ("SegoeUI-Light", 30f),
 				Frame = new CGRect (0, 0, this.Bounds.Width, 40),
-				Text = "Choose a year.",
+				Text = "Choose a range of years.",
 				TextAlignment = UITextAlignment.Center,
 				TextColor = UIColor.White
 			};
 
 			yearButton = new PickerButton {
-				Frame = new CGRect (40, Frame.Height*1/5 + 10, this.Bounds.Width - 80, 30)
+				Frame = new CGRect (20, Frame.Height*1/8 + 10, this.Bounds.Width/2 - 40, 30)
 			};
+
+			yearButton2 = new PickerButton {
+				Frame = new CGRect (this.Bounds.Width/2 + 20, Frame.Height*1/8 + 10, this.Bounds.Width/2 - 40, 30)
+			};
+
 			yearButton.SetTitleColor (UIColor.Clear.FromHexString("#9B9B9B", 1.0f), UIControlState.Normal);
+			yearButton2.SetTitleColor (UIColor.Clear.FromHexString("#9B9B9B", 1.0f), UIControlState.Normal);
 
 			yearPicker = new UIPickerView {
-				Frame = new CGRect (0, Frame.Height*1/5, this.Bounds.Width, 40),
+				Frame = new CGRect (0, 50, this.Bounds.Width/2, 40),
 				Hidden = true,
 				Model = new YearPickerViewModel (new List<string> { "Loading Years..." }, yearButton)
 			};
 
-			goDownButton = new UIButton {
-				Font = UIFont.FromName ("SegoeUI-Light", 17f),
-				Frame = new CGRect (0, this.Bounds.Height - 30, this.Bounds.Width, 15),
+			yearPicker2 = new UIPickerView {
+				Frame = new CGRect (this.Bounds.Width/2, 50, this.Bounds.Width/2, 40),
+				Hidden = true,
+				Model = new YearPickerViewModel (new List<string> { "Loading Years..." }, yearButton2)
 			};
-			goDownButton.SetTitle ("Continue to \"Select a Part\".", UIControlState.Normal);
-			goDownButton.SetTitleColor (UIColor.White, UIControlState.Normal);
-			goDownButton.Center = new CGPoint (this.Bounds.Width / 2, this.Bounds.Height - 30);
-			//goDownButton.TouchUpInside += SetupGoDownTapped;
 
 			buttonClickable = false;
 
-			//Add (goUpButton);
-			//Add (stepTwoLabel);
 			Add (yearLabel);
 			Add (yearButton);
+			Add (yearButton2);
 			Add (yearPicker);
-			//Add (goDownButton);
 		}
 
 		private void SetupEventHandlers ()
@@ -98,26 +81,20 @@ namespace App.iOS
 					yearPicker.Hidden = false;
 					yearButton.Hidden = true;
 				} else {
-					var alert = new UIAlertView ("Improper Order you shit", "Choose a Make before selecting the Year.", null, "Okay", null);
+					var alert = new UIAlertView ("Improper Order of Selection", "Choose a Make before selecting the Year.", null, "Okay", null);
+					alert.Show ();
+				}
+			};
+			yearButton2.TouchUpInside += (sender, e) => {
+				if (buttonClickable) {
+					yearPicker2.Hidden = false;
+					yearButton2.Hidden = true;
+				} else {
+					var alert = new UIAlertView ("Improper Order of Selection", "Choose a Make before selecting the Year.", null, "Okay", null);
 					alert.Show ();
 				}
 			};
 		}
-			
-		/*private void SetupGoUpTapped (object sender, EventArgs e)
-		{
-			searchViewController.StepTwoSwipeDown ();
-		}
-
-		private void SetupGoDownTapped (object sender, EventArgs e)
-		{
-			if (string.IsNullOrEmpty (SearchParameters.Make) || string.IsNullOrEmpty (SearchParameters.Year)) {
-				var alertView = new UIAlertView ("Whoops", "Select a valid year before continuing.", null, "Okay", null);
-				alertView.Show ();
-			} else {
-				searchViewController.StepTwoSwipeUp ();
-			}
-		}*/
 
 		private void SetupPropertyChanged ()
 		{
@@ -130,6 +107,7 @@ namespace App.iOS
 						BTProgressHUD.Show ("Filtering Parts");
 						var years = await API.GetPickerData (SearchParameters.Make);
 						yearPicker.Model = new YearPickerViewModel (years, yearButton);
+						//yearPicker2.Model = new YearPickerViewModel (years, yearButton2);
 						BTProgressHUD.Dismiss ();
 					} else {
 						var alert = new UIAlertView ("No Internet Connection", "Please establish an internet connection before querying for parts.", null, "Okay", null);
@@ -142,6 +120,10 @@ namespace App.iOS
 				if (e.PropertyName == "Year") {
 					yearButton.SetTitle (SearchParameters.Year, UIControlState.Normal);
 				}
+
+				/*if (e.PropertyName == "Year2") { 
+					yearButton2.SetTitle (SearchParameters.Year2, UIControlState.Normal);
+				}*/
 			};
 		}
 	}

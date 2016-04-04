@@ -1,112 +1,160 @@
-2016-04-01 11:39:59.494 AppiOS[21543:3703220] -canOpenURL: failed for URL: "ebay://" - error: "This app is not allowed to query for scheme ebay"
-2016-04-01 11:39:59.495 AppiOS[21543:3703220] -canOpenURL: failed for URL: "fb267453465127://" - error: "This app is not allowed to query for scheme fb267453465127"
-2016-04-01 11:39:59.509 AppiOS[21543:3703220] -canOpenURL: failed for URL: "ADX1140://" - error: "This app is not allowed to query for scheme ADX1140"
-2016-04-01 11:39:59.510 AppiOS[21543:3703220] -canOpenURL: failed for URL: "ppclient://" - error: "This app is not allowed to query for scheme ppclient"
-2016-04-01 11:39:59.511 AppiOS[21543:3703220] -canOpenURL: failed for URL: "paypal://" - error: "This app is not allowed to query for scheme paypal"
-2016-04-01 11:39:59.512 AppiOS[21543:3703220] -canOpenURL: failed for URL: "paypal-local-search://" - error: "This app is not allowed to query for scheme paypal-local-search"
-2016-04-01 11:39:59.513 AppiOS[21543:3703220] -canOpenURL: failed for URL: "halfdotcom://" - error: "This app is not allowed to query for scheme halfdotcom"
-2016-04-01 11:39:59.513 AppiOS[21543:3703220] -canOpenURL: failed for URL: "redlaser://" - error: "This app is not allowed to query for scheme redlaser"
-2016-04-01 11:39:59.514 AppiOS[21543:3703220] -canOpenURL: failed for URL: "where://" - error: "This app is not allowed to query for scheme where"
-2016-04-01 11:39:59.515 AppiOS[21543:3703220] -canOpenURL: failed for URL: "ebaymotors://" - error: "This app is not allowed to query for scheme ebaymotors"
-2016-04-01 11:39:59.515 AppiOS[21543:3703220] -canOpenURL: failed for URL: "fb164705030244434://" - error: "This app is not allowed to query for scheme fb164705030244434"
-2016-04-01 11:39:59.516 AppiOS[21543:3703220] -canOpenURL: failed for URL: "ebayfashion://" - error: "This app is not allowed to query for scheme ebayfashion"
-2016-04-01 11:39:59.517 AppiOS[21543:3703220] -canOpenURL: failed for URL: "stubhub://" - error: "This app is not allowed to query for scheme stubhub"
-2016-04-01 11:39:59.517 AppiOS[21543:3703220] -canOpenURL: failed for URL: "sdc://" - error: "This app is not allowed to query for scheme sdc"
-2016-04-01 11:39:59.518 AppiOS[21543:3703220] -canOpenURL: failed for URL: "fb299473330131984://" - error: "This app is not allowed to query for scheme fb299473330131984"
-2016-04-01 11:39:59.518 AppiOS[21543:3703220] -canOpenURL: failed for URL: "paypalhere://" - error: "This app is not allowed to query for scheme paypalhere"
-2016-04-01 11:39:59.519 AppiOS[21543:3703220] -canOpenURL: failed for URL: "ebaynow://" - error: "This app is not allowed to query for scheme ebaynow"
-2016-04-01 11:39:59.519 AppiOS[21543:3703220] -canOpenURL: failed for URL: "cydia://" - error: "This app is not allowed to query for scheme cydia"
-2016-04-01 11:39:59.520 AppiOS[21543:3703220] -canOpenURL: failed for URL: "loch://" - error: "This app is not allowed to query for scheme loch"
-2016-04-01 11:39:59.546 AppiOS[21543:3703220] -canOpenURL: failed for URL: "fb1b1cca46cd75ebc75ad67e6904d5f176://" - error: "This app is not allowed to query for scheme fb1b1cca46cd75ebc75ad67e6904d5f176"
-2016-04-01 11:39:59.557 AppiOS[21543:3703220] -canOpenURL: failed for URL: "hotspotshield://" - error: "This app is not allowed to query for scheme hotspotshield"
-2016-04-01 11:39:59.571 AppiOS[21543:3703220] -canOpenURL: failed for URL: "cydia://" - error: "This app is not allowed to query for scheme cydia"
-2016-04-01 11:39:59.787 AppiOS[21543:3703220] Error loading /System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib:  dlopen(/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib, 262): no suitable image found.  Did find:
+2016-04-04 17:25:56.796 AppiOS[24235:4278924] -canOpenURL: failed for URL: "ebay://" - error: "This app is not allowed to query for scheme ebay"
+2016-04-04 17:25:56.797 AppiOS[24235:4278924] -canOpenURL: failed for URL: "fb267453465127://" - error: "This app is not allowed to query for scheme fb267453465127"
+2016-04-04 17:25:56.797 AppiOS[24235:4278924] -canOpenURL: failed for URL: "ADX1140://" - error: "This app is not allowed to query for scheme ADX1140"
+2016-04-04 17:25:56.798 AppiOS[24235:4278924] -canOpenURL: failed for URL: "ppclient://" - error: "This app is not allowed to query for scheme ppclient"
+2016-04-04 17:25:56.799 AppiOS[24235:4278924] -canOpenURL: failed for URL: "paypal://" - error: "This app is not allowed to query for scheme paypal"
+2016-04-04 17:25:56.799 AppiOS[24235:4278924] -canOpenURL: failed for URL: "paypal-local-search://" - error: "This app is not allowed to query for scheme paypal-local-search"
+2016-04-04 17:25:56.800 AppiOS[24235:4278924] -canOpenURL: failed for URL: "halfdotcom://" - error: "This app is not allowed to query for scheme halfdotcom"
+2016-04-04 17:25:56.800 AppiOS[24235:4278924] -canOpenURL: failed for URL: "redlaser://" - error: "This app is not allowed to query for scheme redlaser"
+2016-04-04 17:25:56.800 AppiOS[24235:4278924] -canOpenURL: failed for URL: "where://" - error: "This app is not allowed to query for scheme where"
+2016-04-04 17:25:56.801 AppiOS[24235:4278924] -canOpenURL: failed for URL: "ebaymotors://" - error: "This app is not allowed to query for scheme ebaymotors"
+2016-04-04 17:25:56.801 AppiOS[24235:4278924] -canOpenURL: failed for URL: "fb164705030244434://" - error: "This app is not allowed to query for scheme fb164705030244434"
+2016-04-04 17:25:56.802 AppiOS[24235:4278924] -canOpenURL: failed for URL: "ebayfashion://" - error: "This app is not allowed to query for scheme ebayfashion"
+2016-04-04 17:25:56.802 AppiOS[24235:4278924] -canOpenURL: failed for URL: "stubhub://" - error: "This app is not allowed to query for scheme stubhub"
+2016-04-04 17:25:56.803 AppiOS[24235:4278924] -canOpenURL: failed for URL: "sdc://" - error: "This app is not allowed to query for scheme sdc"
+2016-04-04 17:25:56.803 AppiOS[24235:4278924] -canOpenURL: failed for URL: "fb299473330131984://" - error: "This app is not allowed to query for scheme fb299473330131984"
+2016-04-04 17:25:56.804 AppiOS[24235:4278924] -canOpenURL: failed for URL: "paypalhere://" - error: "This app is not allowed to query for scheme paypalhere"
+2016-04-04 17:25:56.804 AppiOS[24235:4278924] -canOpenURL: failed for URL: "ebaynow://" - error: "This app is not allowed to query for scheme ebaynow"
+2016-04-04 17:25:56.805 AppiOS[24235:4278924] -canOpenURL: failed for URL: "cydia://" - error: "This app is not allowed to query for scheme cydia"
+2016-04-04 17:25:56.805 AppiOS[24235:4278924] -canOpenURL: failed for URL: "loch://" - error: "This app is not allowed to query for scheme loch"
+2016-04-04 17:25:56.806 AppiOS[24235:4278924] -canOpenURL: failed for URL: "fb1b1cca46cd75ebc75ad67e6904d5f176://" - error: "This app is not allowed to query for scheme fb1b1cca46cd75ebc75ad67e6904d5f176"
+2016-04-04 17:25:56.806 AppiOS[24235:4278924] -canOpenURL: failed for URL: "hotspotshield://" - error: "This app is not allowed to query for scheme hotspotshield"
+2016-04-04 17:25:56.808 AppiOS[24235:4278924] -canOpenURL: failed for URL: "cydia://" - error: "This app is not allowed to query for scheme cydia"
+2016-04-04 17:25:56.898 AppiOS[24235:4278924] Error loading /System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib:  dlopen(/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib, 262): no suitable image found.  Did find:
 	/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib: mach-o, but not built for iOS simulator
-2016-04-01 11:39:59.788 AppiOS[21543:3703220] Cannot find function pointer IOHIDLibFactory for factory 13AA9C44-6F1B-11D4-907C-0005028F18D5 in CFBundle/CFPlugIn 0x7a781310 </System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin> (bundle, not loaded)
-2016-04-01 11:39:59.788 AppiOS[21543:3703220] Error loading /System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib:  dlopen(/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib, 262): no suitable image found.  Did find:
+2016-04-04 17:25:56.898 AppiOS[24235:4278924] Cannot find function pointer IOHIDLibFactory for factory 13AA9C44-6F1B-11D4-907C-0005028F18D5 in CFBundle/CFPlugIn 0x796f5120 </System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin> (bundle, not loaded)
+2016-04-04 17:25:56.899 AppiOS[24235:4278924] Error loading /System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib:  dlopen(/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib, 262): no suitable image found.  Did find:
 	/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib: mach-o, but not built for iOS simulator
-2016-04-01 11:39:59.788 AppiOS[21543:3703220] Cannot find function pointer IOHIDLibFactory for factory 13AA9C44-6F1B-11D4-907C-0005028F18D5 in CFBundle/CFPlugIn 0x7a781310 </System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin> (bundle, not loaded)
-2016-04-01 11:39:59.789 AppiOS[21543:3703220] Error loading /System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib:  dlopen(/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib, 262): no suitable image found.  Did find:
+2016-04-04 17:25:56.899 AppiOS[24235:4278924] Cannot find function pointer IOHIDLibFactory for factory 13AA9C44-6F1B-11D4-907C-0005028F18D5 in CFBundle/CFPlugIn 0x796f5120 </System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin> (bundle, not loaded)
+2016-04-04 17:25:56.899 AppiOS[24235:4278924] Error loading /System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib:  dlopen(/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib, 262): no suitable image found.  Did find:
 	/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib: mach-o, but not built for iOS simulator
-2016-04-01 11:39:59.789 AppiOS[21543:3703220] Cannot find function pointer IOHIDLibFactory for factory 13AA9C44-6F1B-11D4-907C-0005028F18D5 in CFBundle/CFPlugIn 0x7a781310 </System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin> (bundle, not loaded)
-2016-04-01 11:39:59.789 AppiOS[21543:3703220] Error loading /System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib:  dlopen(/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib, 262): no suitable image found.  Did find:
+2016-04-04 17:25:56.899 AppiOS[24235:4278924] Cannot find function pointer IOHIDLibFactory for factory 13AA9C44-6F1B-11D4-907C-0005028F18D5 in CFBundle/CFPlugIn 0x796f5120 </System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin> (bundle, not loaded)
+2016-04-04 17:25:56.900 AppiOS[24235:4278924] Error loading /System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib:  dlopen(/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib, 262): no suitable image found.  Did find:
 	/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib: mach-o, but not built for iOS simulator
-2016-04-01 11:39:59.789 AppiOS[21543:3703220] Cannot find function pointer IOHIDLibFactory for factory 13AA9C44-6F1B-11D4-907C-0005028F18D5 in CFBundle/CFPlugIn 0x7a781310 </System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin> (bundle, not loaded)
-2016-04-01 11:39:59.790 AppiOS[21543:3703220] Error loading /System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib:  dlopen(/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib, 262): no suitable image found.  Did find:
+2016-04-04 17:25:56.900 AppiOS[24235:4278924] Cannot find function pointer IOHIDLibFactory for factory 13AA9C44-6F1B-11D4-907C-0005028F18D5 in CFBundle/CFPlugIn 0x796f5120 </System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin> (bundle, not loaded)
+2016-04-04 17:25:56.901 AppiOS[24235:4278924] Error loading /System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib:  dlopen(/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib, 262): no suitable image found.  Did find:
 	/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib: mach-o, but not built for iOS simulator
-2016-04-01 11:39:59.790 AppiOS[21543:3703220] Cannot find function pointer IOHIDLibFactory for factory 13AA9C44-6F1B-11D4-907C-0005028F18D5 in CFBundle/CFPlugIn 0x7a781310 </System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin> (bundle, not loaded)
-2016-04-01 11:39:59.790 AppiOS[21543:3703220] Error loading /System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib:  dlopen(/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib, 262): no suitable image found.  Did find:
+2016-04-04 17:25:56.901 AppiOS[24235:4278924] Cannot find function pointer IOHIDLibFactory for factory 13AA9C44-6F1B-11D4-907C-0005028F18D5 in CFBundle/CFPlugIn 0x796f5120 </System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin> (bundle, not loaded)
+2016-04-04 17:25:56.901 AppiOS[24235:4278924] Error loading /System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib:  dlopen(/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib, 262): no suitable image found.  Did find:
 	/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib: mach-o, but not built for iOS simulator
-2016-04-01 11:39:59.790 AppiOS[21543:3703220] Cannot find function pointer IOHIDLibFactory for factory 13AA9C44-6F1B-11D4-907C-0005028F18D5 in CFBundle/CFPlugIn 0x7a781310 </System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin> (bundle, not loaded)
-2016-04-01 11:39:59.794 AppiOS[21543:3703601] CFNetwork SSLHandshake failed (-9824)
-2016-04-01 11:39:59.794 AppiOS[21543:3703220] -canOpenURL: failed for URL: "ebay://" - error: "This app is not allowed to query for scheme ebay"
-2016-04-01 11:39:59.794 AppiOS[21543:3703601] NSURLSession/NSURLConnection HTTP load failed (kCFStreamErrorDomainSSL, -9824)
-2016-04-01 11:39:59.795 AppiOS[21543:3703220] -canOpenURL: failed for URL: "fb267453465127://" - error: "This app is not allowed to query for scheme fb267453465127"
-2016-04-01 11:39:59.806 AppiOS[21543:3703220] -canOpenURL: failed for URL: "ADX1140://" - error: "This app is not allowed to query for scheme ADX1140"
-2016-04-01 11:39:59.807 AppiOS[21543:3703220] -canOpenURL: failed for URL: "ppclient://" - error: "This app is not allowed to query for scheme ppclient"
-2016-04-01 11:39:59.808 AppiOS[21543:3703220] -canOpenURL: failed for URL: "paypal://" - error: "This app is not allowed to query for scheme paypal"
-2016-04-01 11:39:59.817 AppiOS[21543:3703220] -canOpenURL: failed for URL: "paypal-local-search://" - error: "This app is not allowed to query for scheme paypal-local-search"
-2016-04-01 11:39:59.818 AppiOS[21543:3703220] -canOpenURL: failed for URL: "halfdotcom://" - error: "This app is not allowed to query for scheme halfdotcom"
-2016-04-01 11:39:59.819 AppiOS[21543:3703220] -canOpenURL: failed for URL: "redlaser://" - error: "This app is not allowed to query for scheme redlaser"
-2016-04-01 11:39:59.819 AppiOS[21543:3703220] -canOpenURL: failed for URL: "where://" - error: "This app is not allowed to query for scheme where"
-2016-04-01 11:39:59.820 AppiOS[21543:3703220] -canOpenURL: failed for URL: "ebaymotors://" - error: "This app is not allowed to query for scheme ebaymotors"
-2016-04-01 11:39:59.820 AppiOS[21543:3703220] -canOpenURL: failed for URL: "fb164705030244434://" - error: "This app is not allowed to query for scheme fb164705030244434"
-2016-04-01 11:39:59.821 AppiOS[21543:3703220] -canOpenURL: failed for URL: "ebayfashion://" - error: "This app is not allowed to query for scheme ebayfashion"
-2016-04-01 11:39:59.822 AppiOS[21543:3703220] -canOpenURL: failed for URL: "stubhub://" - error: "This app is not allowed to query for scheme stubhub"
-2016-04-01 11:39:59.822 AppiOS[21543:3703220] -canOpenURL: failed for URL: "sdc://" - error: "This app is not allowed to query for scheme sdc"
-2016-04-01 11:39:59.823 AppiOS[21543:3703220] -canOpenURL: failed for URL: "fb299473330131984://" - error: "This app is not allowed to query for scheme fb299473330131984"
-2016-04-01 11:39:59.823 AppiOS[21543:3703220] -canOpenURL: failed for URL: "paypalhere://" - error: "This app is not allowed to query for scheme paypalhere"
-2016-04-01 11:39:59.824 AppiOS[21543:3703220] -canOpenURL: failed for URL: "ebaynow://" - error: "This app is not allowed to query for scheme ebaynow"
-2016-04-01 11:39:59.824 AppiOS[21543:3703220] -canOpenURL: failed for URL: "cydia://" - error: "This app is not allowed to query for scheme cydia"
-2016-04-01 11:39:59.825 AppiOS[21543:3703220] -canOpenURL: failed for URL: "loch://" - error: "This app is not allowed to query for scheme loch"
-2016-04-01 11:39:59.826 AppiOS[21543:3703220] -canOpenURL: failed for URL: "fb1b1cca46cd75ebc75ad67e6904d5f176://" - error: "This app is not allowed to query for scheme fb1b1cca46cd75ebc75ad67e6904d5f176"
-2016-04-01 11:39:59.826 AppiOS[21543:3703220] -canOpenURL: failed for URL: "hotspotshield://" - error: "This app is not allowed to query for scheme hotspotshield"
-2016-04-01 11:39:59.828 AppiOS[21543:3703220] -canOpenURL: failed for URL: "cydia://" - error: "This app is not allowed to query for scheme cydia"
-2016-04-01 11:40:00.098 AppiOS[21543:3703601] CFNetwork SSLHandshake failed (-9824)
-2016-04-01 11:40:00.099 AppiOS[21543:3703601] NSURLSession/NSURLConnection HTTP load failed (kCFStreamErrorDomainSSL, -9824)
-2016-04-01 11:40:00.161 AppiOS[21543:3703220] -canOpenURL: failed for URL: "ebay://" - error: "This app is not allowed to query for scheme ebay"
-2016-04-01 11:40:00.161 AppiOS[21543:3703220] -canOpenURL: failed for URL: "fb267453465127://" - error: "This app is not allowed to query for scheme fb267453465127"
-2016-04-01 11:40:00.162 AppiOS[21543:3703220] -canOpenURL: failed for URL: "ADX1140://" - error: "This app is not allowed to query for scheme ADX1140"
-2016-04-01 11:40:00.162 AppiOS[21543:3703220] -canOpenURL: failed for URL: "ppclient://" - error: "This app is not allowed to query for scheme ppclient"
-2016-04-01 11:40:00.163 AppiOS[21543:3703220] -canOpenURL: failed for URL: "paypal://" - error: "This app is not allowed to query for scheme paypal"
-2016-04-01 11:40:00.163 AppiOS[21543:3703220] -canOpenURL: failed for URL: "paypal-local-search://" - error: "This app is not allowed to query for scheme paypal-local-search"
-2016-04-01 11:40:00.164 AppiOS[21543:3703220] -canOpenURL: failed for URL: "halfdotcom://" - error: "This app is not allowed to query for scheme halfdotcom"
-2016-04-01 11:40:00.164 AppiOS[21543:3703220] -canOpenURL: failed for URL: "redlaser://" - error: "This app is not allowed to query for scheme redlaser"
-2016-04-01 11:40:00.165 AppiOS[21543:3703220] -canOpenURL: failed for URL: "where://" - error: "This app is not allowed to query for scheme where"
-2016-04-01 11:40:00.166 AppiOS[21543:3703220] -canOpenURL: failed for URL: "ebaymotors://" - error: "This app is not allowed to query for scheme ebaymotors"
-2016-04-01 11:40:00.167 AppiOS[21543:3703220] -canOpenURL: failed for URL: "fb164705030244434://" - error: "This app is not allowed to query for scheme fb164705030244434"
-2016-04-01 11:40:00.167 AppiOS[21543:3703220] -canOpenURL: failed for URL: "ebayfashion://" - error: "This app is not allowed to query for scheme ebayfashion"
-2016-04-01 11:40:00.168 AppiOS[21543:3703220] -canOpenURL: failed for URL: "stubhub://" - error: "This app is not allowed to query for scheme stubhub"
-2016-04-01 11:40:00.168 AppiOS[21543:3703220] -canOpenURL: failed for URL: "sdc://" - error: "This app is not allowed to query for scheme sdc"
-2016-04-01 11:40:00.169 AppiOS[21543:3703220] -canOpenURL: failed for URL: "fb299473330131984://" - error: "This app is not allowed to query for scheme fb299473330131984"
-2016-04-01 11:40:00.170 AppiOS[21543:3703220] -canOpenURL: failed for URL: "paypalhere://" - error: "This app is not allowed to query for scheme paypalhere"
-2016-04-01 11:40:00.170 AppiOS[21543:3703220] -canOpenURL: failed for URL: "ebaynow://" - error: "This app is not allowed to query for scheme ebaynow"
-2016-04-01 11:40:00.171 AppiOS[21543:3703220] -canOpenURL: failed for URL: "cydia://" - error: "This app is not allowed to query for scheme cydia"
-2016-04-01 11:40:00.171 AppiOS[21543:3703220] -canOpenURL: failed for URL: "loch://" - error: "This app is not allowed to query for scheme loch"
-2016-04-01 11:40:00.172 AppiOS[21543:3703220] -canOpenURL: failed for URL: "fb1b1cca46cd75ebc75ad67e6904d5f176://" - error: "This app is not allowed to query for scheme fb1b1cca46cd75ebc75ad67e6904d5f176"
-2016-04-01 11:40:00.172 AppiOS[21543:3703220] -canOpenURL: failed for URL: "hotspotshield://" - error: "This app is not allowed to query for scheme hotspotshield"
-2016-04-01 11:40:00.174 AppiOS[21543:3703220] -canOpenURL: failed for URL: "cydia://" - error: "This app is not allowed to query for scheme cydia"
-2016-04-01 11:40:00.177 AppiOS[21543:3703220] -canOpenURL: failed for URL: "ebay://" - error: "This app is not allowed to query for scheme ebay"
-2016-04-01 11:40:00.178 AppiOS[21543:3703220] -canOpenURL: failed for URL: "fb267453465127://" - error: "This app is not allowed to query for scheme fb267453465127"
-2016-04-01 11:40:00.178 AppiOS[21543:3703220] -canOpenURL: failed for URL: "ADX1140://" - error: "This app is not allowed to query for scheme ADX1140"
-2016-04-01 11:40:00.179 AppiOS[21543:3703220] -canOpenURL: failed for URL: "ppclient://" - error: "This app is not allowed to query for scheme ppclient"
-2016-04-01 11:40:00.179 AppiOS[21543:3703220] -canOpenURL: failed for URL: "paypal://" - error: "This app is not allowed to query for scheme paypal"
-2016-04-01 11:40:00.180 AppiOS[21543:3703220] -canOpenURL: failed for URL: "paypal-local-search://" - error: "This app is not allowed to query for scheme paypal-local-search"
-2016-04-01 11:40:00.180 AppiOS[21543:3703220] -canOpenURL: failed for URL: "halfdotcom://" - error: "This app is not allowed to query for scheme halfdotcom"
-2016-04-01 11:40:00.181 AppiOS[21543:3703220] -canOpenURL: failed for URL: "redlaser://" - error: "This app is not allowed to query for scheme redlaser"
-2016-04-01 11:40:00.181 AppiOS[21543:3703220] -canOpenURL: failed for URL: "where://" - error: "This app is not allowed to query for scheme where"
-2016-04-01 11:40:00.182 AppiOS[21543:3703220] -canOpenURL: failed for URL: "ebaymotors://" - error: "This app is not allowed to query for scheme ebaymotors"
-2016-04-01 11:40:00.183 AppiOS[21543:3703220] -canOpenURL: failed for URL: "fb164705030244434://" - error: "This app is not allowed to query for scheme fb164705030244434"
-2016-04-01 11:40:00.183 AppiOS[21543:3703220] -canOpenURL: failed for URL: "ebayfashion://" - error: "This app is not allowed to query for scheme ebayfashion"
-2016-04-01 11:40:00.184 AppiOS[21543:3703220] -canOpenURL: failed for URL: "stubhub://" - error: "This app is not allowed to query for scheme stubhub"
-2016-04-01 11:40:00.184 AppiOS[21543:3703220] -canOpenURL: failed for URL: "sdc://" - error: "This app is not allowed to query for scheme sdc"
-2016-04-01 11:40:00.185 AppiOS[21543:3703220] -canOpenURL: failed for URL: "fb299473330131984://" - error: "This app is not allowed to query for scheme fb299473330131984"
-2016-04-01 11:40:00.186 AppiOS[21543:3703220] -canOpenURL: failed for URL: "paypalhere://" - error: "This app is not allowed to query for scheme paypalhere"
-2016-04-01 11:40:00.186 AppiOS[21543:3703220] -canOpenURL: failed for URL: "ebaynow://" - error: "This app is not allowed to query for scheme ebaynow"
-2016-04-01 11:40:00.187 AppiOS[21543:3703220] -canOpenURL: failed for URL: "cydia://" - error: "This app is not allowed to query for scheme cydia"
-2016-04-01 11:40:00.187 AppiOS[21543:3703220] -canOpenURL: failed for URL: "loch://" - error: "This app is not allowed to query for scheme loch"
-2016-04-01 11:40:00.188 AppiOS[21543:3703220] -canOpenURL: failed for URL: "fb1b1cca46cd75ebc75ad67e6904d5f176://" - error: "This app is not allowed to query for scheme fb1b1cca46cd75ebc75ad67e6904d5f176"
-2016-04-01 11:40:00.188 AppiOS[21543:3703220] -canOpenURL: failed for URL: "hotspotshield://" - error: "This app is not allowed to query for scheme hotspotshield"
-2016-04-01 11:40:00.192 AppiOS[21543:3703220] -canOpenURL: failed for URL: "cydia://" - error: "This app is not allowed to query for scheme cydia"
-2016-04-01 11:40:00.394 AppiOS[21543:3703601] CFNetwork SSLHandshake failed (-9824)
-2016-04-01 11:40:00.395 AppiOS[21543:3703601] NSURLSession/NSURLConnection HTTP load failed (kCFStreamErrorDomainSSL, -9824)
+2016-04-04 17:25:56.902 AppiOS[24235:4278924] Cannot find function pointer IOHIDLibFactory for factory 13AA9C44-6F1B-11D4-907C-0005028F18D5 in CFBundle/CFPlugIn 0x796f5120 </System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin> (bundle, not loaded)
+2016-04-04 17:25:56.906 AppiOS[24235:4278924] -canOpenURL: failed for URL: "ebay://" - error: "This app is not allowed to query for scheme ebay"
+2016-04-04 17:25:56.907 AppiOS[24235:4278924] -canOpenURL: failed for URL: "fb267453465127://" - error: "This app is not allowed to query for scheme fb267453465127"
+2016-04-04 17:25:56.907 AppiOS[24235:4278924] -canOpenURL: failed for URL: "ADX1140://" - error: "This app is not allowed to query for scheme ADX1140"
+2016-04-04 17:25:56.908 AppiOS[24235:4278924] -canOpenURL: failed for URL: "ppclient://" - error: "This app is not allowed to query for scheme ppclient"
+2016-04-04 17:25:56.908 AppiOS[24235:4278924] -canOpenURL: failed for URL: "paypal://" - error: "This app is not allowed to query for scheme paypal"
+2016-04-04 17:25:56.909 AppiOS[24235:4278924] -canOpenURL: failed for URL: "paypal-local-search://" - error: "This app is not allowed to query for scheme paypal-local-search"
+2016-04-04 17:25:56.909 AppiOS[24235:4278924] -canOpenURL: failed for URL: "halfdotcom://" - error: "This app is not allowed to query for scheme halfdotcom"
+2016-04-04 17:25:56.910 AppiOS[24235:4278924] -canOpenURL: failed for URL: "redlaser://" - error: "This app is not allowed to query for scheme redlaser"
+2016-04-04 17:25:56.911 AppiOS[24235:4278924] -canOpenURL: failed for URL: "where://" - error: "This app is not allowed to query for scheme where"
+2016-04-04 17:25:56.911 AppiOS[24235:4278924] -canOpenURL: failed for URL: "ebaymotors://" - error: "This app is not allowed to query for scheme ebaymotors"
+2016-04-04 17:25:56.912 AppiOS[24235:4278924] -canOpenURL: failed for URL: "fb164705030244434://" - error: "This app is not allowed to query for scheme fb164705030244434"
+2016-04-04 17:25:56.912 AppiOS[24235:4278924] -canOpenURL: failed for URL: "ebayfashion://" - error: "This app is not allowed to query for scheme ebayfashion"
+2016-04-04 17:25:56.913 AppiOS[24235:4278924] -canOpenURL: failed for URL: "stubhub://" - error: "This app is not allowed to query for scheme stubhub"
+2016-04-04 17:25:56.913 AppiOS[24235:4278924] -canOpenURL: failed for URL: "sdc://" - error: "This app is not allowed to query for scheme sdc"
+2016-04-04 17:25:56.914 AppiOS[24235:4278924] -canOpenURL: failed for URL: "fb299473330131984://" - error: "This app is not allowed to query for scheme fb299473330131984"
+2016-04-04 17:25:56.914 AppiOS[24235:4278924] -canOpenURL: failed for URL: "paypalhere://" - error: "This app is not allowed to query for scheme paypalhere"
+2016-04-04 17:25:56.915 AppiOS[24235:4278924] -canOpenURL: failed for URL: "ebaynow://" - error: "This app is not allowed to query for scheme ebaynow"
+2016-04-04 17:25:56.915 AppiOS[24235:4278924] -canOpenURL: failed for URL: "cydia://" - error: "This app is not allowed to query for scheme cydia"
+2016-04-04 17:25:56.916 AppiOS[24235:4278924] -canOpenURL: failed for URL: "loch://" - error: "This app is not allowed to query for scheme loch"
+2016-04-04 17:25:56.917 AppiOS[24235:4278924] -canOpenURL: failed for URL: "fb1b1cca46cd75ebc75ad67e6904d5f176://" - error: "This app is not allowed to query for scheme fb1b1cca46cd75ebc75ad67e6904d5f176"
+2016-04-04 17:25:56.917 AppiOS[24235:4278924] -canOpenURL: failed for URL: "hotspotshield://" - error: "This app is not allowed to query for scheme hotspotshield"
+2016-04-04 17:25:56.919 AppiOS[24235:4278924] -canOpenURL: failed for URL: "cydia://" - error: "This app is not allowed to query for scheme cydia"
+2016-04-04 17:25:56.962 AppiOS[24235:4278977] CFNetwork SSLHandshake failed (-9824)
+2016-04-04 17:25:56.962 AppiOS[24235:4278977] NSURLSession/NSURLConnection HTTP load failed (kCFStreamErrorDomainSSL, -9824)
+2016-04-04 17:25:57.086 AppiOS[24235:4278977] CFNetwork SSLHandshake failed (-9824)
+2016-04-04 17:25:57.087 AppiOS[24235:4278977] NSURLSession/NSURLConnection HTTP load failed (kCFStreamErrorDomainSSL, -9824)
+2016-04-04 17:26:02.625 AppiOS[24235:4278924] 
+Unhandled Exception:
+System.NullReferenceException: Object reference not set to an instance of an object
+  at App.iOS.YearPickerViewModel.GetRowsInComponent (UIKit.UIPickerView pickerView, nint component) <0x199a5d00 + 0x0000e> in <filename unknown>:0 
+  at (wrapper managed-to-native) UIKit.UIApplication:UIApplicationMain (int,string[],intptr,intptr)
+  at UIKit.UIApplication.Main (System.String[] args, IntPtr principal, IntPtr delegate) <0x14ae1a58 + 0x0002b> in <filename unknown>:0 
+  at UIKit.UIApplication.Main (System.String[] args, System.String principalClassName, System.String delegateClassName) <0x14ae07f8 + 0x00087> in <filename unknown>:0 
+  at App.iOS.Application.Main (System.String[] args) <0x14ae06f0 + 0x00023> in <filename unknown>:0 
+2016-04-04 17:26:02.626 AppiOS[24235:4278924] Unhandled managed exception:
+Object reference not set to an instance of an object (System.NullReferenceException)
+  at App.iOS.YearPickerViewModel.GetRowsInComponent (UIKit.UIPickerView pickerView, nint component) <0x199a5d00 + 0x0000e> in <filename unknown>:0 
+  at (wrapper managed-to-native) UIKit.UIApplication:UIApplicationMain (int,string[],intptr,intptr)
+  at UIKit.UIApplication.Main (System.String[] args, IntPtr principal, IntPtr delegate) <0x14ae1a58 + 0x0002b> in <filename unknown>:0 
+  at UIKit.UIApplication.Main (System.String[] args, System.String principalClassName, System.String delegateClassName) <0x14ae07f8 + 0x00087> in <filename unknown>:0 
+  at App.iOS.Application.Main (System.String[] args) <0x14ae06f0 + 0x00023> in <filename unknown>:0 
+2016-04-04 17:26:02.626 AppiOS[24235:4278924] critical: Stacktrace:
+
+2016-04-04 17:26:02.626 AppiOS[24235:4278924] critical: 
+Native stacktrace:
+
+2016-04-04 17:26:02.631 AppiOS[24235:4278924] critical: 	0   AppiOS                              0x0020d91d mono_handle_native_sigsegv + 317
+2016-04-04 17:26:02.631 AppiOS[24235:4278924] critical: 	1   AppiOS                              0x00214fd1 sigabrt_signal_handler + 145
+2016-04-04 17:26:02.631 AppiOS[24235:4278924] critical: 	2   libsystem_platform.dylib            0x095a903b _sigtramp + 43
+2016-04-04 17:26:02.631 AppiOS[24235:4278924] critical: 	3   ???                                 0xffffffff 0x0 + 4294967295
+2016-04-04 17:26:02.631 AppiOS[24235:4278924] critical: 	4   libsystem_c.dylib                   0x0933f65d abort + 156
+2016-04-04 17:26:02.631 AppiOS[24235:4278924] critical: 	5   AppiOS                              0x00391135 xamarin_unhandled_exception_handler + 325
+2016-04-04 17:26:02.631 AppiOS[24235:4278924] critical: 	6   AppiOS                              0x0020e18b mono_invoke_unhandled_exception_hook + 91
+2016-04-04 17:26:02.631 AppiOS[24235:4278924] critical: 	7   AppiOS                              0x0020cffd mono_handle_exception_internal + 6029
+2016-04-04 17:26:02.632 AppiOS[24235:4278924] critical: 	8   AppiOS                              0x0020b869 mono_handle_exception + 41
+2016-04-04 17:26:02.632 AppiOS[24235:4278924] critical: 	9   AppiOS                              0x001aaa40 altstack_handle_and_restore + 80
+2016-04-04 17:26:02.632 AppiOS[24235:4278924] critical: 	10  ???                                 0x199a5d0e 0x0 + 429546766
+2016-04-04 17:26:02.632 AppiOS[24235:4278924] critical: 	11  ???                                 0x199a52b6 0x0 + 429544118
+2016-04-04 17:26:02.632 AppiOS[24235:4278924] critical: 	12  AppiOS                              0x0021a5b1 mono_jit_runtime_invoke + 705
+2016-04-04 17:26:02.632 AppiOS[24235:4278924] critical: 	13  AppiOS                              0x002cd2ef mono_runtime_invoke + 127
+2016-04-04 17:26:02.632 AppiOS[24235:4278924] critical: 	14  AppiOS                              0x0039af5d xamarin_trampoline + 5053
+2016-04-04 17:26:02.632 AppiOS[24235:4278924] critical: 	15  UIKit                               0x017a6fad -[UIPickerView _delegateNumberOfRowsInComponent:] + 144
+2016-04-04 17:26:02.633 AppiOS[24235:4278924] critical: 	16  UIKit                               0x017abd11 -[UIPickerView tableView:numberOfRowsInSection:] + 263
+2016-04-04 17:26:02.633 AppiOS[24235:4278924] critical: 	17  UIKit                               0x02166eb5 -[UIPickerColumnView tableView:numberOfRowsInSection:] + 76
+2016-04-04 17:26:02.633 AppiOS[24235:4278924] critical: 	18  UIKit                               0x01b8ebad -[UISectionRowData refreshWithSection:tableView:tableViewRowData:] + 3172
+2016-04-04 17:26:02.633 AppiOS[24235:4278924] critical: 	19  UIKit                               0x01b957d9 -[UITableViewRowData rectForFooterInSection:heightCanBeGuessed:] + 367
+2016-04-04 17:26:02.633 AppiOS[24235:4278924] critical: 	20  UIKit                               0x01b9595a -[UITableViewRowData heightForTable] + 69
+2016-04-04 17:26:02.633 AppiOS[24235:4278924] critical: 	21  UIKit                               0x0191a180 -[UITableView _updateContentSize] + 390
+2016-04-04 17:26:02.633 AppiOS[24235:4278924] critical: 	22  UIKit                               0x019449be -[UITableView _rebuildGeometry] + 53
+2016-04-04 17:26:02.633 AppiOS[24235:4278924] critical: 	23  UIKit                               0x0194271c -[UITableView didMoveToWindow] + 147
+2016-04-04 17:26:02.634 AppiOS[24235:4278924] critical: 	24  UIKit                               0x0189043c -[UIView(Internal) _didMoveFromWindow:toWindow:] + 2051
+2016-04-04 17:26:02.634 AppiOS[24235:4278924] critical: 	25  UIKit                               0x018a7683 -[UIScrollView _didMoveFromWindow:toWindow:] + 85
+2016-04-04 17:26:02.634 AppiOS[24235:4278924] critical: 	26  UIKit                               0x01890013 -[UIView(Internal) _didMoveFromWindow:toWindow:] + 986
+2016-04-04 17:26:02.634 AppiOS[24235:4278924] critical: 	27  UIKit                               0x01890013 -[UIView(Internal) _didMoveFromWindow:toWindow:] + 986
+2016-04-04 17:26:02.634 AppiOS[24235:4278924] critical: 	28  UIKit                               0x01883a03 __45-[UIView(Hierarchy) _postMovedFromSuperview:]_block_invoke + 180
+2016-04-04 17:26:02.634 AppiOS[24235:4278924] critical: 	29  UIKit                               0x018838db -[UIView(Hierarchy) _postMovedFromSuperview:] + 484
+2016-04-04 17:26:02.634 AppiOS[24235:4278924] critical: 	30  UIKit                               0x01893425 -[UIView(Internal) _addSubview:positioned:relativeTo:] + 2367
+2016-04-04 17:26:02.634 AppiOS[24235:4278924] critical: 	31  UIKit                               0x018818e4 -[UIView(Hierarchy) addSubview:] + 56
+2016-04-04 17:26:02.635 AppiOS[24235:4278924] critical: 	32  UIKit                               0x017a9205 __30-[UIPickerView layoutSubviews]_block_invoke + 5398
+2016-04-04 17:26:02.635 AppiOS[24235:4278924] critical: 	33  UIKit                               0x0188a9f6 +[UIView(Animation) performWithoutAnimation:] + 82
+2016-04-04 17:26:02.635 AppiOS[24235:4278924] critical: 	34  UIKit                               0x017a7cac -[UIPickerView layoutSubviews] + 154
+2016-04-04 17:26:02.635 AppiOS[24235:4278924] critical: 	35  UIKit                               0x01897008 -[UIView(CALayerDelegate) layoutSublayersOfLayer:] + 810
+2016-04-04 17:26:02.635 AppiOS[24235:4278924] critical: 	36  libobjc.A.dylib                     0x08dd3059 -[NSObject performSelector:withObject:] + 70
+2016-04-04 17:26:02.635 AppiOS[24235:4278924] critical: 	37  QuartzCore                          0x0101180a -[CALayer layoutSublayers] + 144
+2016-04-04 17:26:02.635 AppiOS[24235:4278924] critical: 	38  QuartzCore                          0x010054ee _ZN2CA5Layer16layout_if_neededEPNS_11TransactionE + 388
+2016-04-04 17:26:02.635 AppiOS[24235:4278924] critical: 	39  QuartzCore                          0x01005352 _ZN2CA5Layer28layout_and_display_if_neededEPNS_11TransactionE + 26
+2016-04-04 17:26:02.636 AppiOS[24235:4278924] critical: 	40  QuartzCore                          0x00ff7e8b _ZN2CA7Context18commit_transactionEPNS_11TransactionE + 317
+2016-04-04 17:26:02.636 AppiOS[24235:4278924] critical: 	41  QuartzCore                          0x0102be03 _ZN2CA11Transaction6commitEv + 561
+2016-04-04 17:26:02.636 AppiOS[24235:4278924] critical: 	42  QuartzCore                          0x0102d674 _ZN2CA11Transaction17flush_transactionEv + 50
+2016-04-04 17:26:02.636 AppiOS[24235:4278924] critical: 	43  QuartzCore                          0x0103cc4f _ZN2CA7Display11DisplayLink14dispatch_itemsEyyy + 593
+2016-04-04 17:26:02.636 AppiOS[24235:4278924] critical: 	44  QuartzCore                          0x0103d0b5 _ZN2CA7Display16TimerDisplayLink8callbackEP16__CFRunLoopTimerPv + 123
+2016-04-04 17:26:02.636 AppiOS[24235:4278924] critical: 	45  CoreFoundation                      0x08975f56 __CFRUNLOOP_IS_CALLING_OUT_TO_A_TIMER_CALLBACK_FUNCTION__ + 22
+2016-04-04 17:26:02.636 AppiOS[24235:4278924] critical: 	46  CoreFoundation                      0x08975952 __CFRunLoopDoTimer + 1250
+2016-04-04 17:26:02.636 AppiOS[24235:4278924] critical: 	47  CoreFoundation                      0x08933c3a __CFRunLoopRun + 2202
+2016-04-04 17:26:02.637 AppiOS[24235:4278924] critical: 	48  CoreFoundation                      0x089330e6 CFRunLoopRunSpecific + 470
+2016-04-04 17:26:02.637 AppiOS[24235:4278924] critical: 	49  CoreFoundation                      0x08932efb CFRunLoopRunInMode + 123
+2016-04-04 17:26:02.637 AppiOS[24235:4278924] critical: 	50  GraphicsServices                    0x09b60664 GSEventRunModal + 192
+2016-04-04 17:26:02.637 AppiOS[24235:4278924] critical: 	51  GraphicsServices                    0x09b604a1 GSEventRun + 104
+2016-04-04 17:26:02.637 AppiOS[24235:4278924] critical: 	52  UIKit                               0x017cabfa UIApplicationMain + 160
+2016-04-04 17:26:02.637 AppiOS[24235:4278924] critical: 	53  ???                                 0x14ae1b98 0x0 + 346954648
+2016-04-04 17:26:02.637 AppiOS[24235:4278924] critical: 	54  ???                                 0x14ae1a84 0x0 + 346954372
+2016-04-04 17:26:02.637 AppiOS[24235:4278924] critical: 	55  ???                                 0x14ae0880 0x0 + 346949760
+2016-04-04 17:26:02.638 AppiOS[24235:4278924] critical: 	56  ???                                 0x14ae0714 0x0 + 346949396
+2016-04-04 17:26:02.638 AppiOS[24235:4278924] critical: 	57  ???                                 0x14ae07cc 0x0 + 346949580
+2016-04-04 17:26:02.638 AppiOS[24235:4278924] critical: 	58  AppiOS                              0x0021a5b1 mono_jit_runtime_invoke + 705
+2016-04-04 17:26:02.638 AppiOS[24235:4278924] critical: 	59  AppiOS                              0x002cd2ef mono_runtime_invoke + 127
+2016-04-04 17:26:02.638 AppiOS[24235:4278924] critical: 	60  AppiOS                              0x002d1eb1 mono_runtime_exec_main + 401
+2016-04-04 17:26:02.638 AppiOS[24235:4278924] critical: 	61  AppiOS                              0x002d1c75 mono_runtime_run_main + 629
+2016-04-04 17:26:02.638 AppiOS[24235:4278924] critical: 	62  AppiOS                              0x001a4b9d mono_jit_exec + 93
+2016-04-04 17:26:02.638 AppiOS[24235:4278924] critical: 	63  AppiOS                              0x003a48e4 xamarin_main + 1972
+2016-04-04 17:26:02.638 AppiOS[24235:4278924] critical: 	64  AppiOS                              0x001668a1 main + 113
+2016-04-04 17:26:02.639 AppiOS[24235:4278924] critical: 	65  libdyld.dylib                       0x09298a21 start + 1
+2016-04-04 17:26:02.639 AppiOS[24235:4278924] critical: 	66  ???                                 0x00000001 0x0 + 1
+2016-04-04 17:26:02.639 AppiOS[24235:4278924] critical: 
+=================================================================
+Got a SIGABRT while executing native code. This usually indicates
+a fatal error in the mono runtime or one of the native libraries 
+used by your application.
+=================================================================
+

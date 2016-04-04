@@ -42,6 +42,7 @@ namespace App.iOS
 			var paymentStatus = await API.VerifyCompletedPayment (jsonConfirmation, part);
 			Console.WriteLine (paymentStatus);
 			var alert = new UIAlertView ("Payment Result", paymentStatus, null, "Okay", null);
+			alert.Show ();
 		}
 	}
 }
