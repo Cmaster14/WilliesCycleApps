@@ -74,7 +74,7 @@ namespace App.iOS
 	public class API
 	{
 		private const string pass = "Password = Williescycles1;";
-		private const string BASE_URL = "Data Source=willies.database.windows.net;Initial Catalog='Willies Database';User ID=seniordesign;" + pass;
+		private const string BASE_URL = "Data Source=willies.database.windows.net;Initial Catalog='Willies Database';Persist Security Info=True;User ID=seniordesign;Password=Williescycles1";
 		private const string KEY = "y8fN9sLekaKFNvi2apo409MxBv0e";
 
 		public static async Task<List<string>> GetPickerData (string make)

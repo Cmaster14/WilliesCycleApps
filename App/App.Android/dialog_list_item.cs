@@ -65,9 +65,16 @@ namespace App.Android
 				mListener.contactPressed(true);
 				Dismiss();
 			};
-			var purcahseButton = view.FindViewById<Button> (Resource.Id.dialog_purchase);
-			purcahseButton.SetTypeface (f, TypefaceStyle.Normal);
-			purcahseButton.Click += delegate {
+			var purchaseButton = view.FindViewById<Button> (Resource.Id.dialog_purchase);
+               if (Arguments.GetString("price").Equals("")) {
+                    purchaseButton.Visibility = ViewStates.Invisible;
+               }
+               else
+               {
+                    contactButton.Visibility = ViewStates.Invisible;
+               }
+			purchaseButton.SetTypeface (f, TypefaceStyle.Normal);
+			purchaseButton.Click += delegate {
 				mListener.purchasePressed(true);
 				Dismiss();
 

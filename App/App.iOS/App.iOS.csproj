@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -145,6 +145,17 @@
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
     <None Include="packages.config" />
+    <None Include="Willies_DatabaseDataSet.xsc">
+      <DependentUpon>Willies_DatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Willies_DatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Willies_DatabaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Willies_DatabaseDataSet.xss">
+      <DependentUpon>Willies_DatabaseDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
@@ -179,6 +190,11 @@
     <Compile Include="Controls\ContactUsButton.cs" />
     <Compile Include="Model\PaymentStatus.cs" />
     <Compile Include="View Controllers\InlineDisclaimerViewController.cs" />
+    <Compile Include="Willies_DatabaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Willies_DatabaseDataSet.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
