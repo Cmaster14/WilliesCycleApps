@@ -38,21 +38,21 @@
 	-r \
 	/Users/TheRiddler/WilliesCycleApps/App/Components/json.net-4.5.11.1/lib/ios-unified/Newtonsoft.Json.dll \
 	-r \
-	/Users/TheRiddler/WilliesCycleApps/App/packages/Xam.Plugin.Connectivity.2.1.1/lib/Xamarin.iOS10/Plugin.Connectivity.dll \
-	-r \
-	/Users/TheRiddler/WilliesCycleApps/App/packages/Xam.Plugin.Connectivity.2.1.1/lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.dll \
-	-r \
 	/Users/TheRiddler/WilliesCycleApps/App/packages/Splat.1.6.2/lib/Xamarin.iOS10/Splat.dll \
 	-r \
 	/Users/TheRiddler/WilliesCycleApps/App/packages/Acr.Support.1.1.1/lib/Xamarin.iOS10/Acr.Support.iOS.dll \
 	-r \
-	/Users/TheRiddler/WilliesCycleApps/App/packages/Acr.UserDialogs.4.3.2/lib/Xamarin.iOS10/Acr.UserDialogs.dll \
-	-r \
-	/Users/TheRiddler/WilliesCycleApps/App/packages/Acr.UserDialogs.4.3.2/lib/Xamarin.iOS10/Acr.UserDialogs.Interface.dll \
-	-r \
-	/Users/TheRiddler/WilliesCycleApps/App/packages/Acr.UserDialogs.4.3.2/lib/Xamarin.iOS10/BTProgressHUD.dll \
-	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Data.dll \
+	-r \
+	/Users/TheRiddler/WilliesCycleApps/App/packages/Xam.Plugin.Connectivity.2.1.2/lib/Xamarin.iOS10/Plugin.Connectivity.dll \
+	-r \
+	/Users/TheRiddler/WilliesCycleApps/App/packages/Xam.Plugin.Connectivity.2.1.2/lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.dll \
+	-r \
+	/Users/TheRiddler/WilliesCycleApps/App/packages/Acr.UserDialogs.4.3.4/lib/Xamarin.iOS10/Acr.UserDialogs.dll \
+	-r \
+	/Users/TheRiddler/WilliesCycleApps/App/packages/Acr.UserDialogs.4.3.4/lib/Xamarin.iOS10/Acr.UserDialogs.Interface.dll \
+	-r \
+	/Users/TheRiddler/WilliesCycleApps/App/packages/Acr.UserDialogs.4.3.4/lib/Xamarin.iOS10/BTProgressHUD.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
 	-r \
@@ -156,19 +156,19 @@
 	-r \
 	/Users/TheRiddler/WilliesCycleApps/App/Components/json.net-4.5.11.1/lib/ios-unified/Newtonsoft.Json.dll \
 	-r \
-	/Users/TheRiddler/WilliesCycleApps/App/packages/Xam.Plugin.Connectivity.2.1.1/lib/Xamarin.iOS10/Plugin.Connectivity.dll \
-	-r \
-	/Users/TheRiddler/WilliesCycleApps/App/packages/Xam.Plugin.Connectivity.2.1.1/lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.dll \
-	-r \
 	/Users/TheRiddler/WilliesCycleApps/App/packages/Splat.1.6.2/lib/Xamarin.iOS10/Splat.dll \
 	-r \
 	/Users/TheRiddler/WilliesCycleApps/App/packages/Acr.Support.1.1.1/lib/Xamarin.iOS10/Acr.Support.iOS.dll \
 	-r \
-	/Users/TheRiddler/WilliesCycleApps/App/packages/Acr.UserDialogs.4.3.2/lib/Xamarin.iOS10/Acr.UserDialogs.dll \
+	/Users/TheRiddler/WilliesCycleApps/App/packages/Xam.Plugin.Connectivity.2.1.2/lib/Xamarin.iOS10/Plugin.Connectivity.dll \
 	-r \
-	/Users/TheRiddler/WilliesCycleApps/App/packages/Acr.UserDialogs.4.3.2/lib/Xamarin.iOS10/Acr.UserDialogs.Interface.dll \
+	/Users/TheRiddler/WilliesCycleApps/App/packages/Xam.Plugin.Connectivity.2.1.2/lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.dll \
 	-r \
-	/Users/TheRiddler/WilliesCycleApps/App/packages/Acr.UserDialogs.4.3.2/lib/Xamarin.iOS10/BTProgressHUD.dll \
+	/Users/TheRiddler/WilliesCycleApps/App/packages/Acr.UserDialogs.4.3.4/lib/Xamarin.iOS10/Acr.UserDialogs.dll \
+	-r \
+	/Users/TheRiddler/WilliesCycleApps/App/packages/Acr.UserDialogs.4.3.4/lib/Xamarin.iOS10/Acr.UserDialogs.Interface.dll \
+	-r \
+	/Users/TheRiddler/WilliesCycleApps/App/packages/Acr.UserDialogs.4.3.4/lib/Xamarin.iOS10/BTProgressHUD.dll \
 	--target-framework \
 	"Xamarin.iOS,v1.0" \
 	/Users/TheRiddler/WilliesCycleApps/App/App.iOS/bin/iPhoneSimulator/Debug//AppiOS.exe \

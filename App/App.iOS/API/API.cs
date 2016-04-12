@@ -69,8 +69,8 @@ namespace App.iOS
 			var json = await client.GetStringAsync (request);
 			return JsonConvert.DeserializeObject<string> (json);
 		}
-	}
-	*/
+	}*/
+
 	public class API
 	{
 		private const string pass = "Password = Williescycles1;";

@@ -1,28 +1,16 @@
 ﻿<Properties StartupItem="App.Portable/App.Portable.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workbench ActiveDocument="App.Android\LicensureActivity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="App.iOS/API/API.cs">
     <Files>
-      <File FileName="App.Android\LicensureActivity.cs" Line="30" Column="29" />
-=======
-  <MonoDevelop.Ide.Workbench ActiveDocument="App.iOS/Views/YearView.cs">
-    <Files>
-      <File FileName="App.iOS/Views/YearView.cs" Line="1" Column="1" />
->>>>>>> master
-=======
-  <MonoDevelop.Ide.Workbench ActiveDocument="App.iOS/Views/YearView.cs">
-    <Files>
-      <File FileName="App.iOS/Views/YearView.cs" Line="1" Column="1" />
->>>>>>> master
+      <File FileName="App.iOS/Views/YearView.cs" Line="63" Column="4" />
+      <File FileName="App.iOS/API/API.cs" Line="27" Column="4" />
+      <File FileName="App.iOS/Views/MakeView.cs" Line="1" Column="1" />
+      <File FileName="App.iOS/View Models/MakePickerViewModel.cs" Line="44" Column="6" />
+      <File FileName="App.iOS/Helper/SearchParameters.cs" Line="33" Column="7" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="c:\Users\swalk_000\Documents\GitHub\WilliesCycles\App\App.Android\dialog_list_item.cs" line="48" column="1" />
-      <Breakpoint file="C:\Users\swalk_000\Documents\GitHub\WilliesCycles\App\App.Android\SearchMakeFragment.cs" line="47" column="1" />
-      <Breakpoint file="C:\Users\Jeremy Woods\Desktop\Willies\WilliesCycles-master\App\App.Android\API\API.cs" line="26" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

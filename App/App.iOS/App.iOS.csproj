@@ -113,28 +113,28 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\Components\json.net-4.5.11.1\lib\ios-unified\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Plugin.Connectivity">
-      <HintPath>..\packages\Xam.Plugin.Connectivity.2.1.1\lib\Xamarin.iOS10\Plugin.Connectivity.dll</HintPath>
-    </Reference>
-    <Reference Include="Plugin.Connectivity.Abstractions">
-      <HintPath>..\packages\Xam.Plugin.Connectivity.2.1.1\lib\Xamarin.iOS10\Plugin.Connectivity.Abstractions.dll</HintPath>
-    </Reference>
     <Reference Include="Splat">
       <HintPath>..\packages\Splat.1.6.2\lib\Xamarin.iOS10\Splat.dll</HintPath>
     </Reference>
     <Reference Include="Acr.Support.iOS">
       <HintPath>..\packages\Acr.Support.1.1.1\lib\Xamarin.iOS10\Acr.Support.iOS.dll</HintPath>
     </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="Plugin.Connectivity">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.2.1.2\lib\Xamarin.iOS10\Plugin.Connectivity.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.2.1.2\lib\Xamarin.iOS10\Plugin.Connectivity.Abstractions.dll</HintPath>
+    </Reference>
     <Reference Include="Acr.UserDialogs">
-      <HintPath>..\packages\Acr.UserDialogs.4.3.2\lib\Xamarin.iOS10\Acr.UserDialogs.dll</HintPath>
+      <HintPath>..\packages\Acr.UserDialogs.4.3.4\lib\Xamarin.iOS10\Acr.UserDialogs.dll</HintPath>
     </Reference>
     <Reference Include="Acr.UserDialogs.Interface">
-      <HintPath>..\packages\Acr.UserDialogs.4.3.2\lib\Xamarin.iOS10\Acr.UserDialogs.Interface.dll</HintPath>
+      <HintPath>..\packages\Acr.UserDialogs.4.3.4\lib\Xamarin.iOS10\Acr.UserDialogs.Interface.dll</HintPath>
     </Reference>
     <Reference Include="BTProgressHUD">
-      <HintPath>..\packages\Acr.UserDialogs.4.3.2\lib\Xamarin.iOS10\BTProgressHUD.dll</HintPath>
+      <HintPath>..\packages\Acr.UserDialogs.4.3.4\lib\Xamarin.iOS10\BTProgressHUD.dll</HintPath>
     </Reference>
-    <Reference Include="System.Data" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json">
