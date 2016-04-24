@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Paths>
-  <ManifestDocuments />
-  <NativeLibraries />
-  <Jars>
-    <Jar>obj\Debug\__library_projects__\Paypal.Droid.Test\library_project_imports\PayPalAndroidSDK-2.8.8.jar</Jar>
-  </Jars>
-</Paths>

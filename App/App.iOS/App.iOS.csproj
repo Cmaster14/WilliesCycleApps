@@ -195,6 +195,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Willies_DatabaseDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="View Models\Year2PickerViewModel.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>

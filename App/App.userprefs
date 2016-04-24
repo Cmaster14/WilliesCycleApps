@@ -1,12 +1,11 @@
 ﻿<Properties StartupItem="App.Portable/App.Portable.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="App.iOS/API/API.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="App.iOS/Views/YearView.cs">
     <Files>
-      <File FileName="App.iOS/Views/YearView.cs" Line="63" Column="4" />
-      <File FileName="App.iOS/API/API.cs" Line="27" Column="4" />
-      <File FileName="App.iOS/Views/MakeView.cs" Line="1" Column="1" />
-      <File FileName="App.iOS/View Models/MakePickerViewModel.cs" Line="44" Column="6" />
-      <File FileName="App.iOS/Helper/SearchParameters.cs" Line="33" Column="7" />
+      <File FileName="App.iOS/API/API.cs" Line="62" Column="45" />
+      <File FileName="App.iOS/Info.plist" />
+      <File FileName="App.iOS/Views/MakeView.cs" Line="16" Column="24" />
+      <File FileName="App.iOS/Views/YearView.cs" Line="23" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

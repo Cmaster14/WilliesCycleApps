@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data.OleDb;
 using System.Linq;
@@ -61,6 +61,7 @@ namespace WebAPI.Server.Database
                             var price = reader.GetString(reader.GetOrdinal("Price"));
                             var location = reader.GetString(reader.GetOrdinal("Location"));
                             var pkParts = reader.GetInt32(reader.GetOrdinal("pkParts"));
+                            var interchange = reader.GetString(reader.GetOrdinal("Interchange"));
                             list.Add(new Part
                             {
                                 PartName = partName.Trim(),
@@ -69,7 +70,8 @@ namespace WebAPI.Server.Database
                                 Model = model,
                                 Price = price.Trim(),
                                 Location = location.Trim(),
-                                PKParts = pkParts
+                                PKParts = pkParts,
+                                Interchange = interchange
                             });
 
                             count++;
@@ -221,7 +223,9 @@ namespace WebAPI.Server.Database
                         while (reader.Read())
                         {
                             var partName = reader.GetString(reader.GetOrdinal("PartName"));
-                            list.Add(partName.Trim());
+                            var hyphenIndex = partName.Trim().IndexOf("-"); // Added to fix -xx issue in search results display
+				            partName = partName.Substring(0,hyphenIndex)
+                            list.Add(partName);
 
                             count++;
                         }

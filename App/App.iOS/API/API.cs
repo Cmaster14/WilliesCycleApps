@@ -11,7 +11,7 @@ using System.Data.SqlClient;
 
 namespace App.iOS
 {
-	/*public class API
+	public class API
 	{
 		private const string TOKEN = "y8fN9sLekaKFNvi2apo409MxBv0e";
 		private const string BASE_URL = "http://173.186.190.173:1336/";
@@ -42,6 +42,25 @@ namespace App.iOS
 			return JsonConvert.DeserializeObject <List<string>> (json);
 		}
 
+
+
+		//4/23/2016 addition begin
+		public static async Task<List<string>> GetPickerData (string year, string year2, string make)
+		{
+			var request = string.Format ("api/Parts?year={0}&year2={1}&make={2}&token={3}", year, year2, make, TOKEN);
+
+			var client = new HttpClient () {
+				BaseAddress = new Uri (BASE_URL),
+			};
+			client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+
+			var json = await client.GetStringAsync (request);
+			return JsonConvert.DeserializeObject <List<string>> (json);
+		}
+		//4/23/2016 addition end
+
+
+
 		public static async Task<List<Part>> GetParts (string partName, string make, string year)
 		{
 			var request = string.Format ("api/Parts?year={0}&make={1}&partName={2}&token={3}", year, make, partName, TOKEN);
@@ -56,6 +75,22 @@ namespace App.iOS
 			return JsonConvert.DeserializeObject <List<Part>> (json);
 		}
 
+		/*
+		public static async Task<List<Part>> GetParts (string partName, string make, string year, string year2)
+		{
+			var request = string.Format ("api/Parts?year={0}&year2={1}&make={2}&partName={3}&token={4}", year, year2, make, partName, TOKEN);
+
+			var client = new HttpClient () {
+				BaseAddress = new Uri (BASE_URL),
+			};
+			client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+
+			var json = await client.GetStringAsync (request);
+			Console.WriteLine (json);
+			return JsonConvert.DeserializeObject <List<Part>> (json);
+		}
+		*/
+
 		public static async Task<string> VerifyCompletedPayment (string transactionJson, Part partSold)
 		{
 			var request = string.Format ("api/Payment?year={0}&make={1}&model={2}&partName={3}&location={4}&seqNumber={5}&price={6}&transaction={7}&modify={8}&token={9}",
@@ -69,8 +104,8 @@ namespace App.iOS
 			var json = await client.GetStringAsync (request);
 			return JsonConvert.DeserializeObject<string> (json);
 		}
-	}*/
-
+	}
+	/*
 	public class API
 	{
 		private const string pass = "Password = Williescycles1;";
@@ -186,5 +221,5 @@ namespace App.iOS
 			var json = await client.GetStringAsync (request);
 			return JsonConvert.DeserializeObject<string> (json);
 		}
-	}
+	}*/
 }

@@ -23,14 +23,14 @@ namespace App.iOS
 		public static string Year
 		{
 			get { return year; }
-			set { year = value; OnPropertyChanged("Year"); }
+			set { year = value; year2 = value; OnPropertyChanged("Year"); }
 		}
 
-		/*public static string Year2 
+		public static string Year2 
 		{
 			get { return year2; }
 			set { year2 = value; OnPropertyChanged ("Year2"); }
-		}	*/
+		}	
 
 		public static string PartName
 		{
