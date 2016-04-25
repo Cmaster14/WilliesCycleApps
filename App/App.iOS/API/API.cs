@@ -15,6 +15,7 @@ namespace App.iOS
 	{
 		private const string TOKEN = "y8fN9sLekaKFNvi2apo409MxBv0e";
 		private const string BASE_URL = "http://173.186.190.173:1336/";
+		//TEST SERVER BASE URL private const string BASE_URL = "131.204.27.105";
 
 		public static async Task<List<string>> GetPickerData (string make)
 		{
@@ -29,7 +30,7 @@ namespace App.iOS
 			return JsonConvert.DeserializeObject <List<string>> (json);
 		}
 
-		public static async Task<List<string>> GetPickerData (string year, string make)
+		/*public static async Task<List<string>> GetPickerData (string year, string make)
 		{
 			var request = string.Format ("api/Parts?year={0}&make={1}&token={2}", year, make, TOKEN);
 
@@ -40,7 +41,7 @@ namespace App.iOS
 
 			var json = await client.GetStringAsync (request);
 			return JsonConvert.DeserializeObject <List<string>> (json);
-		}
+		}*/
 
 
 
@@ -60,7 +61,7 @@ namespace App.iOS
 		//4/23/2016 addition end
 
 
-
+		/*
 		public static async Task<List<Part>> GetParts (string partName, string make, string year)
 		{
 			var request = string.Format ("api/Parts?year={0}&make={1}&partName={2}&token={3}", year, make, partName, TOKEN);
@@ -73,9 +74,9 @@ namespace App.iOS
 			var json = await client.GetStringAsync (request);
 			Console.WriteLine (json);
 			return JsonConvert.DeserializeObject <List<Part>> (json);
-		}
+		}*/
 
-		/*
+
 		public static async Task<List<Part>> GetParts (string partName, string make, string year, string year2)
 		{
 			var request = string.Format ("api/Parts?year={0}&year2={1}&make={2}&partName={3}&token={4}", year, year2, make, partName, TOKEN);
@@ -89,7 +90,6 @@ namespace App.iOS
 			Console.WriteLine (json);
 			return JsonConvert.DeserializeObject <List<Part>> (json);
 		}
-		*/
 
 		public static async Task<string> VerifyCompletedPayment (string transactionJson, Part partSold)
 		{
@@ -108,8 +108,8 @@ namespace App.iOS
 	/*
 	public class API
 	{
-		private const string pass = "Password = Williescycles1;";
-		private const string BASE_URL = "Data Source=willies.database.windows.net;Initial Catalog='Willies Database';Persist Security Info=True;User ID=seniordesign;Password=Williescycles1";
+		//private const string pass = "Password = Williescycles1;";
+		private const string BASE_URL = "Data Source=WIN-NU9I51T7GFV\\SQLEXPRESS;Initial Catalog=master;UserID=sa;Password=Williescycle1";
 		private const string KEY = "y8fN9sLekaKFNvi2apo409MxBv0e";
 
 		public static async Task<List<string>> GetPickerData (string make)

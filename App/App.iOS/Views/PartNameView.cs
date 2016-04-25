@@ -12,7 +12,6 @@ namespace App.iOS
 	[Register ("PartNameView")]
 	public class PartNameView : UIView
 	{
-		UIButton goUpButton;
 		UILabel partNameLabel;
 		PickerButton partNameButton;
 		UIPickerView partNamePicker;
@@ -92,13 +91,16 @@ namespace App.iOS
 			// The code below was changed so that the query to filter the part names to display in the 
 			// partName picker only once the second year picker has made a selection
 			SearchParameters.PropertyChanged += async (sender, e) => {
-				if (e.PropertyName == "Year2") {
+				if (e.PropertyName == "Year") {
 					buttonClickable = false;
 					BTProgressHUD.Show ("Filtering Parts");
 					var partNames = await API.GetPickerData (SearchParameters.Year, SearchParameters.Year2, SearchParameters.Make);
 					partNamePicker.Model = new PartNamePickerViewModel (partNames, partNameButton, searchButton);
 					BTProgressHUD.Dismiss ();
-					buttonClickable = true;
+					if (!SearchParameters.Year2.Equals(""))
+					{
+						buttonClickable = true;
+					}
 				}
 				if (e.PropertyName == "PartName") {
 					string name;
@@ -117,6 +119,7 @@ namespace App.iOS
 			var partName = SearchParameters.PartName;
 			var make = SearchParameters.Make [0].ToString ();
 			var year = SearchParameters.Year;
+			var year2 = SearchParameters.Year2;
 			if (string.IsNullOrEmpty (partName) || string.IsNullOrEmpty (make) || string.IsNullOrEmpty (year) || string.Equals (partName, "Loading") || string.Equals (year, "Loading")) {
 				var alertView = new UIAlertView ("Error", "Select a valid make, range of years, and part name before searching.", null, "Okay", null);
 				alertView.Show ();
@@ -124,7 +127,7 @@ namespace App.iOS
 				var connected = CrossConnectivity.Current.IsConnected;
 				if (connected) {
 					BTProgressHUD.Show ();
-					var parts = await API.GetParts (partName, make, year);
+					var parts = await API.GetParts (partName, make, year, year2);
 					BTProgressHUD.Dismiss ();
 
 					searchViewController.NavigationController.PushViewController (new SearchResultsTableViewController (parts), true);

@@ -20,7 +20,9 @@ namespace WebAPI.Server.Database
             var list = new List<Part>();
             try
             {
+                //old connection string
                 var connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source=E:\MUPS_2015\Parts\McPartsFinal-03 Edition.mdb;";
+                /*var connectionString = @"Provider=SQLOLEDB.1;Data Source=WIN-NU9I51T7GFV\SQLEXPRESS;Initial Catalog=master;UserId=sa;Password=Williescycles1";*/
 
                 using (var connection = new OleDbConnection(connectionString))
                 {

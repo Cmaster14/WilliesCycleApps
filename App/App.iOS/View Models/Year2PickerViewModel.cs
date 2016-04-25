@@ -3,13 +3,6 @@ using System.Collections.Generic;
 using Foundation;
 using UIKit;
 
-/*
- * Added into the codebase 4/23/2016
- * This set of code may not be necessary, but it is used to create the picker for the upper year.
- */
-
-
-
 namespace App.iOS
 {
 	public class Year2PickerViewModel : UIPickerViewModel
@@ -41,7 +34,6 @@ namespace App.iOS
 
 		public override void Selected (UIPickerView pickerView, System.nint row, System.nint component)
 		{
-			SearchParameters.PartName = "";
 			SearchParameters.Year2 = items [(int) row];
 			selectedButton.Hidden = false;
 			pickerView.Hidden = true;

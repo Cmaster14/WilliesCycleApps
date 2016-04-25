@@ -23,7 +23,7 @@ namespace App.iOS
 		public static string Year
 		{
 			get { return year; }
-			set { year = value; year2 = value; OnPropertyChanged("Year"); }
+			set { year = value; OnPropertyChanged("Year"); }
 		}
 
 		public static string Year2 
