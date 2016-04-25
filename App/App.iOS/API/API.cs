@@ -30,7 +30,7 @@ namespace App.iOS
 			return JsonConvert.DeserializeObject <List<string>> (json);
 		}
 
-		/*public static async Task<List<string>> GetPickerData (string year, string make)
+		public static async Task<List<string>> GetPickerData (string year, string make)
 		{
 			var request = string.Format ("api/Parts?year={0}&make={1}&token={2}", year, make, TOKEN);
 
@@ -41,7 +41,7 @@ namespace App.iOS
 
 			var json = await client.GetStringAsync (request);
 			return JsonConvert.DeserializeObject <List<string>> (json);
-		}*/
+		}
 
 
 

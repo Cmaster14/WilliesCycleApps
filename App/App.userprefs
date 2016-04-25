@@ -1,12 +1,17 @@
 ﻿<Properties StartupItem="App.Portable/App.Portable.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="App.iOS/Views/YearView.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="App.Android/PartsActivity.cs">
     <Files>
-      <File FileName="App.iOS/Views/YearView.cs" Line="151" Column="2" />
+      <File FileName="App.iOS/Views/YearView.cs" Line="120" Column="22" />
       <File FileName="App.iOS/View Models/YearPickerViewModel.cs" Line="8" Column="19" />
-      <File FileName="App.iOS/Views/PartNameView.cs" Line="103" Column="7" />
-      <File FileName="App.iOS/API/API.cs" Line="49" Column="78" />
-      <File FileName="App.iOS/View Controllers/SearchResultsTableViewController.cs" Line="14" Column="4" />
+      <File FileName="App.iOS/Views/PartNameView.cs" Line="99" Column="33" />
+      <File FileName="App.iOS/API/API.cs" Line="44" Column="4" />
+      <File FileName="App.iOS/View Controllers/SearchResultsTableViewController.cs" Line="30" Column="45" />
+      <File FileName="App.iOS/Helper/SearchParameters.cs" Line="1" Column="1" />
+      <File FileName="App.iOS/View Models/MakePickerViewModel.cs" Line="1" Column="1" />
+      <File FileName="App.iOS/View Controllers/SearchViewController.cs" Line="1" Column="1" />
+      <File FileName="App.iOS/Sources/SearchResultsTableViewSource.cs" Line="1" Column="1" />
+      <File FileName="App.Android/PartsActivity.cs" Line="12" Column="7" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

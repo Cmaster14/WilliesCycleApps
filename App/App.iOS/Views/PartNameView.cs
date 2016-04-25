@@ -75,7 +75,7 @@ namespace App.iOS
 					partNameButton.Hidden = true;
 					searchButton.Hidden = true;
 				} else {
-					var alert = new UIAlertView ("Improper Order of Selection", "Choose a Range of Years before selecting the Make.", null, "Okay", null);
+					var alert = new UIAlertView ("Improper Order of Selection", "Choose a Range of Years before selecting the Part Name.", null, "Okay", null);
 					alert.Show ();
 				}
 			};
@@ -94,8 +94,18 @@ namespace App.iOS
 				if (e.PropertyName == "Year") {
 					buttonClickable = false;
 					BTProgressHUD.Show ("Filtering Parts");
-					var partNames = await API.GetPickerData (SearchParameters.Year, SearchParameters.Year2, SearchParameters.Make);
-					partNamePicker.Model = new PartNamePickerViewModel (partNames, partNameButton, searchButton);
+					if(SearchParameters.Year == SearchParameters.Year2)
+					{
+						var partNames = await API.GetPickerData (SearchParameters.Year, SearchParameters.Make);
+						partNamePicker.Model = new PartNamePickerViewModel (partNames, partNameButton, searchButton);
+
+					}
+					else
+					{
+						var partNames = await API.GetPickerData (SearchParameters.Year, SearchParameters.Year2, SearchParameters.Make);
+						partNamePicker.Model = new PartNamePickerViewModel (partNames, partNameButton, searchButton);
+
+					}
 					BTProgressHUD.Dismiss ();
 					if (!SearchParameters.Year2.Equals(""))
 					{

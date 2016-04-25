@@ -13,7 +13,8 @@ using System.Globalization;
 namespace WebAPI.Server.Controllers
 {
     public class PartsController : ApiController
-    {
+    {   //        private static string key = "y8fN9sLekaKFNvi2apo409MxBv0e";
+
         private static string key = "y8fN9sLekaKFNvi2apo409MxBv0e";
 
         // api/Parts
@@ -104,8 +105,7 @@ namespace WebAPI.Server.Controllers
 
                 if (queryPartName != null && !queryPartName.Equals(""))
                 {
-                    var list = connector.Get("SELECT * FROM Parts WHERE YR BETWEEN\'" + year + "\' AND \'" + year2 + "\' AND "
-                        + "PartName = \'" + queryPartName + "\' AND " + "Make like \'" + make + "%\'");
+                    var list = connector.Get("SELECT * FROM Parts WHERE (YR BETWEEN\'" + year + "\' AND \'" + year2 + "\') AND (PartName = \'" + queryPartName + "\') AND (Make like \'" + make + "%\')");
 
                     return list;
                 }
@@ -138,7 +138,7 @@ namespace WebAPI.Server.Controllers
                 {
                     make = make.Substring(0, 1);
                 }
-                return connector.GetYearSpinner("SELECT DISTINCT YR FROM FROM Parts WHERE Make like \'" + make + "%\'");
+                return connector.GetYearSpinner("SELECT DISTINCT YR FROM Parts WHERE Make like \'" + make + "%\'");
             }
         }
 
@@ -150,7 +150,7 @@ namespace WebAPI.Server.Controllers
         /// <param name="make">The make to check.</param>
         /// <param name="token">The private key.</param>
         /// <returns>A list of valid part names for the selected year and make.</returns>
-        /*public IEnumerable<string> GetPartNameSpinner(string year, string make, string token)
+        public IEnumerable<string> GetPartNameSpinner(string year, string make, string token)
         {
             if (!token.Equals(key))
             {
@@ -184,7 +184,7 @@ namespace WebAPI.Server.Controllers
 
                 return list;
             }
-        }*/
+        }
         
         // This addition was made so that the PartName list would be populated for the range of years and not just a single year
         //4/23/2016 addition 2 begin
@@ -202,8 +202,8 @@ namespace WebAPI.Server.Controllers
                     make = make.Substring(0, 1);
                 }
 
-                var list = connector.GetPartNameSpinner("SELECT DISTINCT PartName FROM Parts WHERE (YR >= \'" + year + "\' AND YR <= \'" + year2 + "\') AND "
-                    + "Make like \'" + make + "%\'");
+                var list = connector.GetPartNameSpinner("SELECT DISTINCT PartName FROM Parts WHERE (YR BETWEEN \'" + year + "\' AND \'" + year2 + "\') AND "
+                    + "(Make like \'" + make + ")%\'");
 
                 for (int i = 0; i < list.Count; i++)
                 {

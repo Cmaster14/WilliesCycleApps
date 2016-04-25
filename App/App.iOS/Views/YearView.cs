@@ -117,6 +117,7 @@ namespace App.iOS
 						BTProgressHUD.Show ("Filtering Parts");
 						years = await API.GetPickerData (SearchParameters.Make);
 						yearPicker.Model = new YearPickerViewModel (years, yearButton);
+						years2.Clear();
 						BTProgressHUD.Dismiss ();
 
 					} else {
@@ -127,7 +128,7 @@ namespace App.iOS
 					buttonClickable = true;
 				}
 
-				if (e.PropertyName == "Year") {
+				else if (e.PropertyName == "Year") {
 					button2Clickable = false;
 					yearButton.SetTitle (SearchParameters.Year, UIControlState.Normal);
 
