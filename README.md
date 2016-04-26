@@ -1,33 +1,28 @@
 # Willy's Motorcycles
 
-## Software Process
-### Pre-Commit Checklist
-#### General Items
-* Builds on your local machine
-* Debugging smoke test passes
-* Passes all local unit tests
-* Passes all local UI tests
-* If applicable, unit and/or UI test were written for the code added in this commit
+## Version Number
+2.0
 
-#### Structure and Form
-* Conforms to established coding standards
-* No unneeded or uncalled methods
-* All variables, methods, and classes are descriptively named
-* Most common cases are first in if-then loops
-* Nullable data is checked before using it
+### Product Description
+* The Willie's Cycles project is comprised of two mobile applications - one for iOS, and one for Android.
+* The purpose of the mobile applications is to allow clients of Willie’s Cycles to search for and purchase parts (or request price quotes) from Willie's vast inventory of motorcycle parts.
+* A user will search for parts by make, year, and part name.
+* Make refers to the brand of motorcycle that the part is from. 
+* Year refers to the production year of the motorcycle that the part is from.
+* Part name refers to the name of the particular type of part the user is looking for, such as headlight, frame, etc. 
+* After a part is found it is possible that it may also have a description. 
+* Description refers to any describable traits of the part which includes a large range of resources. 
+* The search will return a list of all parts that match the search criteria along with their descriptions and prices if available.
+* Once a user has searched for a part, they will have the option to purchase that part for the listed price (where applicable). 
+* Payments will be handled through PayPal. If a price is not listed, the user will have the option to request a quote for the part. 
+* Quote requests will be handled via email correspondence between Willie’s Cycles and the user. 
 
-#### Documentation
-* Code is written in a self-documenting manner
-* [XML documentation](https://msdn.microsoft.com/en-us/library/vstudio/b2s063f7(v=vs.100).aspx) is added above every class or method you have written
-   * It's not necessary to compile your XML docs after individual commits. We will do this at the end of each cycle.
+### Key Features
+* Range of Years Search Functionality.
+* Flexibile Query Functionality. As long as the query return the proper information, any method of querying works.
+* Ability to Contact Willie's Cycles to negotiate price.
+* Dialog Box to notify user that the application is down with Willie's contact information.
 
-### Bugs & Enhancements
-#### Bugs
-When you encouter a bug, file an issue on the GitHub repository for the issue. Include a descriptive title, relevant tags, as well as how to reproduce as well as a test case, if applicable. If you suspect you know what the issue is, include this in the issue as well. Even if the issue is a fairly trivial fix, we should file a bug on it. When you commit a fix, say "Fix #" followed by the issue number. Example: "Fix #1".
-
-#### Enhancement
-If you suspect you have room for an enhancement (such as a performance improvement or feature idea), file an enhancement issue on the GitHub repository. Include a descriptive title, relevant tags, as well as a description of the enhancement, along with possible implementation strategies. When the enhancement is fully completed (not 1/2, 3/4, but all the way), commit "Fix #" followed by the issue number, along with the feature or enhancement's name. Example: "Fix #1 - Account System".
-
-### Coding Standards
-* [.NET Naming Guidelines](https://msdn.microsoft.com/en-us/library/ms229002(v=vs.110).aspx)
-* [C# Coding Conventions](https://msdn.microsoft.com/en-us/library/ff926074.aspx)
+### Known Bugs/Issues
+* If Willie's database is down, the application will not work.
+* The spinners are displayed to the user, so they see the delay in updates.

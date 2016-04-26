@@ -37,7 +37,14 @@ namespace App.Android
 			parts = await FetchPartsFromServer ();
 			listview.Adapter = new PartListViewAdapter (this, parts);
 			listview.ItemClick += OnListItemClick;
-               this.ActionBar.Title = "Search Results for " + parts[0].Model + " " + parts[0].PartName.Substring(0, parts[0].PartName.IndexOf('-'));
+               try
+               {
+                    this.ActionBar.Title = "Search Results for " + parts[0].Make + " " + parts[0].PartName.Substring(0, parts[0].PartName.LastIndexOf('-'));
+               }
+               catch
+               {
+                    this.ActionBar.Title = "Search Results for " + parts[0].Make + " " + parts[0].PartName;
+               }
                this.ActionBar.Subtitle = " from " + searchCriteria[1] + " to " + searchCriteria[3];
 		}
 		protected override void OnDestroy ()

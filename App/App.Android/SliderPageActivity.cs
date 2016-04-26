@@ -131,7 +131,7 @@ namespace App.Android
           private async Task<List<string>> getParts(string year)
           {
                List<string> parts = await API.GetPickerData(year, make);
-               parts = parts.Where(s => !string.IsNullOrWhiteSpace(s)).Distinct().ToList();
+               parts = parts.Where(s => !string.IsNullOrWhiteSpace(s)).Distinct().ToList();    
                return parts;
           }
 	}

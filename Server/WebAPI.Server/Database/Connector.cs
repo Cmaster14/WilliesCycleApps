@@ -61,6 +61,8 @@ namespace WebAPI.Server.Database
                             var price = reader.GetString(reader.GetOrdinal("Price"));
                             var location = reader.GetString(reader.GetOrdinal("Location"));
                             var pkParts = reader.GetInt32(reader.GetOrdinal("pkParts"));
+                            var interchange = reader.GetString(reader.GetOrdinal("Interchange"));
+                            var partNumber = reader.GetString(reader.GetOrdinal("PartNumber"));
                             list.Add(new Part
                             {
                                 PartName = partName.Trim(),
@@ -69,7 +71,9 @@ namespace WebAPI.Server.Database
                                 Model = model,
                                 Price = price.Trim(),
                                 Location = location.Trim(),
-                                PKParts = pkParts
+                                PKParts = pkParts,
+                                Interchange = interchange.Trim(),
+                                PartNumber = partNumber
                             });
 
                             count++;
