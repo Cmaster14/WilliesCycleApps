@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using CoreGraphics;
@@ -18,6 +19,9 @@ namespace App.iOS
 		SearchButton searchButton;
 
 		SearchViewController searchViewController;
+
+		List<string> partNames = new List<string>();
+		List<Part> parts = new List<Part>();
 
 		bool buttonClickable;
 
@@ -91,21 +95,26 @@ namespace App.iOS
 			// The code below was changed so that the query to filter the part names to display in the 
 			// partName picker only once the second year picker has made a selection
 			SearchParameters.PropertyChanged += async (sender, e) => {
-				if (e.PropertyName == "Year") {
+				if (e.PropertyName == "Year2") {
 					buttonClickable = false;
 					BTProgressHUD.Show ("Filtering Parts");
+					partNames.Clear();
 					if(SearchParameters.Year == SearchParameters.Year2)
 					{
-						var partNames = await API.GetPickerData (SearchParameters.Year, SearchParameters.Make);
-						partNamePicker.Model = new PartNamePickerViewModel (partNames, partNameButton, searchButton);
-
+						partNames = await API.GetPickerData (SearchParameters.Year, SearchParameters.Make);
+						partNames.Distinct().ToList();
 					}
 					else
-					{
-						var partNames = await API.GetPickerData (SearchParameters.Year, SearchParameters.Year2, SearchParameters.Make);
-						partNamePicker.Model = new PartNamePickerViewModel (partNames, partNameButton, searchButton);
-
+					{ // Similar to the android application, the way that we get the range of years to be implemented
+						// by running a for loop for each possible year between the first and last year
+						for (int i = int.Parse(SearchParameters.Year); i <= int.Parse(SearchParameters.Year2); i++)
+						{
+							partNames.AddRange(await API.GetPickerData (i.ToString(), SearchParameters.Make));
+						}
+						partNames.Distinct().ToList();
 					}
+					partNamePicker.Model = new PartNamePickerViewModel (partNames, partNameButton, searchButton);
+
 					BTProgressHUD.Dismiss ();
 					if (!SearchParameters.Year2.Equals(""))
 					{
@@ -126,6 +135,7 @@ namespace App.iOS
 
 		private async Task HandleSearchButtonTapped ()
 		{
+			parts.Clear ();
 			var partName = SearchParameters.PartName;
 			var make = SearchParameters.Make [0].ToString ();
 			var year = SearchParameters.Year;
@@ -137,7 +147,20 @@ namespace App.iOS
 				var connected = CrossConnectivity.Current.IsConnected;
 				if (connected) {
 					BTProgressHUD.Show ();
-					var parts = await API.GetParts (partName, make, year, year2);
+					// This is the statement that can be used if the API is updated with the overloads that
+					// allow for the multiple year query
+					//parts = await API.GetParts (partName, make, year, year2);
+					if(SearchParameters.Year == SearchParameters.Year2)
+					{
+						parts = await API.GetParts (SearchParameters.PartName, SearchParameters.Make, SearchParameters.Year);
+					}
+					else
+					{
+						for (int i = int.Parse(SearchParameters.Year); i <= int.Parse(SearchParameters.Year2); i++)
+						{
+							parts.AddRange(await API.GetParts (SearchParameters.PartName, SearchParameters.Make, i.ToString()));
+						}
+					}
 					BTProgressHUD.Dismiss ();
 
 					searchViewController.NavigationController.PushViewController (new SearchResultsTableViewController (parts), true);

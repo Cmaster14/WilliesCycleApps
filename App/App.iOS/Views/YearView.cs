@@ -59,7 +59,7 @@ namespace App.iOS
 			yearButton2.SetTitleColor (UIColor.Clear.FromHexString("#9B9B9B", 1.0f), UIControlState.Normal);
 
 			yearPicker = new UIPickerView {
-				Frame = new CGRect (0, 50, this.Bounds.Width/2, 40),
+				Frame = new CGRect (20, Frame.Height*1/8, this.Bounds.Width/2 - 40, 50),
 				Hidden = true,
 				Model = new YearPickerViewModel (new List<string> { "Loading Years..." }, yearButton)
 			};
@@ -67,7 +67,7 @@ namespace App.iOS
 
 			// This is the second picker that denotes the highest year in the range of years
 			yearPicker2 = new UIPickerView {
-				Frame = new CGRect (this.Bounds.Width/2, 50, this.Bounds.Width/2, 40),
+				Frame = new CGRect (this.Bounds.Width/2 + 20, Frame.Height*1/8, this.Bounds.Width/2 - 40, 50),
 				Hidden = true,
 				Model = new Year2PickerViewModel (new List<string> { "Loading Years..." }, yearButton2)
 			};
@@ -137,13 +137,19 @@ namespace App.iOS
 					// Edited on 4/25 after finally being tested. years.IndexOf(...) was added in today
 					if (!SearchParameters.Year.Equals(""))
 					{
+						years2.Clear();
 						for(int i = years.IndexOf(SearchParameters.Year); i < years.Count; i++)
 						{
 							years2.Add(years[i]);
 						}
 						yearPicker2.Model = new Year2PickerViewModel (years2, yearButton2);
+						SearchParameters.Year2 = SearchParameters.Year;
+						yearButton2.SetTitle (SearchParameters.Year2, UIControlState.Normal);
 						button2Clickable = true;
 					}
+				}
+				else if (e.PropertyName == "Year2")
+				{
 					yearButton2.SetTitle (SearchParameters.Year2, UIControlState.Normal);
 				}
 			};

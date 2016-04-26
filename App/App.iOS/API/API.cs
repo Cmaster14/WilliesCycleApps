@@ -56,12 +56,14 @@ namespace App.iOS
 			client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
 
 			var json = await client.GetStringAsync (request);
-			return JsonConvert.DeserializeObject <List<string>> (json);
+			List<string> result = JsonConvert.DeserializeObject <List<string>> (json);
+			Console.Write (result.Count);
+			return result;
 		}
 		//4/23/2016 addition end
 
 
-		/*
+
 		public static async Task<List<Part>> GetParts (string partName, string make, string year)
 		{
 			var request = string.Format ("api/Parts?year={0}&make={1}&partName={2}&token={3}", year, make, partName, TOKEN);
@@ -74,7 +76,7 @@ namespace App.iOS
 			var json = await client.GetStringAsync (request);
 			Console.WriteLine (json);
 			return JsonConvert.DeserializeObject <List<Part>> (json);
-		}*/
+		}
 
 
 		public static async Task<List<Part>> GetParts (string partName, string make, string year, string year2)
@@ -109,7 +111,7 @@ namespace App.iOS
 	public class API
 	{
 		//private const string pass = "Password = Williescycles1;";
-		private const string BASE_URL = "Data Source=WIN-NU9I51T7GFV\\SQLEXPRESS;Initial Catalog=master;UserID=sa;Password=Williescycle1";
+		private const string BASE_URL = "Data Source=sdesign7.cse.eng.auburn.edu;Initial Catalog='master';User ID=sa;Password=;";
 		private const string KEY = "y8fN9sLekaKFNvi2apo409MxBv0e";
 
 		public static async Task<List<string>> GetPickerData (string make)
@@ -170,6 +172,31 @@ namespace App.iOS
 			return result;
 		}
 
+	public static async Task<List<string>> GetPickerData (string year, string year2, string make)
+		{
+			List<string> result = new List<string>();
+
+			using (SqlConnection conn = new SqlConnection(BASE_URL))
+			{
+				conn.Open();
+
+			using (SqlCommand myCommand = new SqlCommand("SELECT DISTINCT PartName FROM Parts Where Make LIKE '" + make.Substring(0, 1) + "%' AND (YR BETWEEN " + year + " AND " + year2 + ") ORDER BY PartName", conn))
+				{
+					using (SqlDataReader myReader = myCommand.ExecuteReader())
+					{
+
+						while (myReader.Read())
+						{
+							result.Add(myReader.GetString(0).Substring(0, myReader.GetString(0).IndexOf('-')));
+						}
+					}
+				}
+				conn.Close();
+			}
+
+			return result;
+		}
+
 		public static async Task<List<Part>> GetParts (string partName, string make, string year)
 		{
 			List<Part> result = new List<Part>();
@@ -183,6 +210,44 @@ namespace App.iOS
 					partName = partName.Replace("'", "''");
 				}
 				using (SqlCommand myCommand = new SqlCommand("SELECT * FROM Parts Where Make LIKE '" + make.Substring(0, 1) + "%' AND YR LIKE " + year + " AND PartName LIKE '" + partName + "%'", conn))
+				{
+					using (SqlDataReader myReader = myCommand.ExecuteReader())
+					{
+
+						while (myReader.Read())
+						{
+							result.Add(new Part()
+								{
+									PartName = myReader.GetString(myReader.GetOrdinal("PartName")),
+									Year = myReader.GetString(myReader.GetOrdinal("YR")),
+									Make = myReader.GetString(myReader.GetOrdinal("Make")),
+									Model = make,
+									Price = myReader.GetString(myReader.GetOrdinal("Price")),
+									Interchange = myReader.GetString(myReader.GetOrdinal("Interchange")),
+
+								});
+						}
+					}
+				}
+				conn.Close();
+			}
+
+			return result;
+		}
+
+	public static async Task<List<Part>> GetParts (string partName, string make, string year, string year2)
+		{
+			List<Part> result = new List<Part>();
+	
+			using (SqlConnection conn = new SqlConnection(BASE_URL))
+			{
+				conn.Open();
+
+				if (partName.Contains("'"))
+				{
+					partName = partName.Replace("'", "''");
+				}
+			using (SqlCommand myCommand = new SqlCommand("SELECT * FROM Parts Where Make LIKE '" + make.Substring(0, 1) + "%' AND (YR BETWEEN " + year + " AND " + year2 + ") AND PartName LIKE '" + partName + "%'", conn))
 				{
 					using (SqlDataReader myReader = myCommand.ExecuteReader())
 					{
