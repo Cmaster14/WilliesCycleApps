@@ -39,11 +39,11 @@ namespace App.Android
 			listview.ItemClick += OnListItemClick;
                try
                {
-                    this.ActionBar.Title = "Search Results for " + parts[0].Make + " " + parts[0].PartName.Substring(0, parts[0].PartName.LastIndexOf('-'));
+                    this.ActionBar.Title = "Search Results for " + parts[0].Model + " " + parts[0].PartName.Substring(0, parts[0].PartName.IndexOf('-'));
                }
                catch
                {
-                    this.ActionBar.Title = "Search Results for " + parts[0].Make + " " + parts[0].PartName;
+                    this.ActionBar.Title = "Search Results for " + parts[0].Model + " " + parts[0].PartName;
                }
                this.ActionBar.Subtitle = " from " + searchCriteria[1] + " to " + searchCriteria[3];
 		}
@@ -125,7 +125,7 @@ namespace App.Android
 					try {
 						Log.Info ("payment", confirm.ToJSONObject ().ToString (4));
 
-						//API.VerifyCompletedPayment(confirm.ToJSONObject().ToString(), selectedPart);
+						API.VerifyCompletedPayment(confirm.ToJSONObject().ToString(), selectedPart);
 
 					} catch (Exception e) {
 						Log.Error ("payment", "an extremely unlikely failure occurred: ", e);

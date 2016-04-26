@@ -54,11 +54,7 @@ C:\Users\Jeremy Woods\Desktop\Willies\WilliesCycles-master\App\App.Android\bin\D
 C:\Users\Jeremy Woods\Desktop\Willies\WilliesCycles-master\App\App.Android\obj\Debug\App.Android.csprojResolveAssemblyReference.cache
 C:\Users\Jeremy Woods\Desktop\Willies\WilliesCycles-master\App\App.Android\obj\Debug\App.Android.dll
 C:\Users\Jeremy Woods\Desktop\Willies\WilliesCycles-master\App\App.Android\obj\Debug\App.Android.pdb
-C:\Users\Jeremy Woods\Desktop\Willies\WilliesCycles-master\App\App.Android\bin\Debug\Willie_s_Cycle.Willie_s_Cycle.apk
-C:\Users\Jeremy Woods\Desktop\Willies\WilliesCycles-master\App\App.Android\bin\Debug\Willie_s_Cycle.Willie_s_Cycle-Signed.apk
-C:\Users\Jeremy Woods\Desktop\Willies\WilliesCycles-master\App\App.Android\obj\Debug\android\bin\Willie_s_Cycle.Willie_s_Cycle.apk
 C:\Users\Jeremy Woods\Desktop\Willies\WilliesCycles-master\App\App.Android\obj\Debug\res\values\strings.xml
-C:\Users\Jeremy Woods\Desktop\Willies\WilliesCycles-master\App\App.Android\obj\Debug\res\layout\main.xml
 C:\Users\Jeremy Woods\Desktop\Willies\WilliesCycles-master\App\App.Android\obj\Debug\res\layout\yearfragment.xml
 C:\Users\Jeremy Woods\Desktop\Willies\WilliesCycles-master\App\App.Android\obj\Debug\res\layout\makefragment.xml
 C:\Users\Jeremy Woods\Desktop\Willies\WilliesCycles-master\App\App.Android\obj\Debug\res\layout\partfragment.xml
@@ -72,9 +68,12 @@ C:\Users\Jeremy Woods\Desktop\Willies\WilliesCycles-master\App\App.Android\obj\D
 C:\Users\Jeremy Woods\Desktop\Willies\WilliesCycles-master\App\App.Android\obj\Debug\res\drawable\logo.png
 C:\Users\Jeremy Woods\Desktop\Willies\WilliesCycles-master\App\App.Android\obj\Debug\R.cs.flag
 C:\Users\Jeremy Woods\Desktop\Willies\WilliesCycles-master\App\App.Android\obj\Debug\uploadflags.txt
-C:\Users\Jeremy Woods\Desktop\Willies\WilliesCycles-master\App\App.Android\bin\Debug\App.Portable.dll.mdb
-C:\Users\Jeremy Woods\Desktop\Willies\WilliesCycles-master\App\App.Android\obj\Debug\App.Android.dll.mdb
-C:\Users\Jeremy Woods\Desktop\Willies\WilliesCycles-master\App\App.Android\bin\Debug\App.Android.dll.mdb
 C:\Users\Jeremy Woods\Desktop\WilliesCycleApps\App\App.Android\bin\Debug\App.Portable.dll.mdb
 C:\Users\Jeremy Woods\Desktop\WilliesCycleApps\App\App.Android\obj\Debug\App.Android.dll.mdb
 C:\Users\Jeremy Woods\Desktop\WilliesCycleApps\App\App.Android\bin\Debug\App.Android.dll.mdb
+C:\Users\Jeremy Woods\Desktop\Willies\WilliesCycles-master\App\App.Android\bin\Debug\Willie_s_Cycle.Willie_s_Cycle2.apk
+C:\Users\Jeremy Woods\Desktop\Willies\WilliesCycles-master\App\App.Android\bin\Debug\Willie_s_Cycle.Willie_s_Cycle2-Signed.apk
+C:\Users\Jeremy Woods\Desktop\Willies\WilliesCycles-master\App\App.Android\obj\Debug\android\bin\Willie_s_Cycle.Willie_s_Cycle2.apk
+C:\Users\Jeremy Woods\Desktop\Willies\WilliesCycles-master\App\App.Android\bin\Debug\App.Portable.dll.mdb
+C:\Users\Jeremy Woods\Desktop\Willies\WilliesCycles-master\App\App.Android\obj\Debug\App.Android.dll.mdb
+C:\Users\Jeremy Woods\Desktop\Willies\WilliesCycles-master\App\App.Android\bin\Debug\App.Android.dll.mdb

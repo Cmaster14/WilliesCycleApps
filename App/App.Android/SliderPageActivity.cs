@@ -17,7 +17,7 @@ using App.Portable;
 
 namespace App.Android
 {
-	[Activity (Label = "Willie's Cycle", MainLauncher = true, Icon = "@drawable/logo", ScreenOrientation = global::Android.Content.PM.ScreenOrientation.Portrait)]			
+	[Activity (Label = "Willie's Cycle2", MainLauncher = true, Icon = "@drawable/logo", ScreenOrientation = global::Android.Content.PM.ScreenOrientation.Portrait)]			
 	public class SliderPageActivity : FragmentActivity, SearchMakeFragment.MakeListener, SearchYearFragment.YearListener, SearchPartFragment.PartListener
 
 	{
@@ -122,7 +122,7 @@ namespace App.Android
                          Process.KillProcess(Process.MyPid());
                     })
                     .SetMessage("There is currently an issue connecting to the Willie's Cycles Database" +
-                         " Please contact Willie's Cycles at 555-555-5555 to purchase a part").SetTitle("Database" +
+                         " Please contact Willie's Cycles at (800) 334-4045 to purchase a part").SetTitle("Database" +
                          " Connection Error").SetCancelable(false).Show();       
                }
                return years;
@@ -131,7 +131,7 @@ namespace App.Android
           private async Task<List<string>> getParts(string year)
           {
                List<string> parts = await API.GetPickerData(year, make);
-               parts = parts.Where(s => !string.IsNullOrWhiteSpace(s)).Distinct().ToList();    
+               parts = parts.Where(s => !string.IsNullOrWhiteSpace(s)).Distinct().ToList();
                return parts;
           }
 	}

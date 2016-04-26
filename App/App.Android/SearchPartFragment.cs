@@ -54,19 +54,7 @@ namespace App.Android
 		public override View OnCreateView (LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 		{
 			var view = inflater.Inflate (Resource.Layout.PartFragment, container, false);
-               List<string> change = new List<string>();
-               for (int i = 0; i < mParts.Count; i++)
-               {
-                    try
-                    {
-                         change.Add(mParts[i].Substring(0, mParts[i].LastIndexOf('-')));
-                    }
-                    catch (Exception e)
-                    {
-                         change.Add(mParts[i]);
-                    }
-               }
-			ArrayAdapter<string> partAdapter = new ArrayAdapter<string> (this.Activity, global::Android.Resource.Layout.SimpleListItem1, change);
+			ArrayAdapter<string> partAdapter = new ArrayAdapter<string> (this.Activity, global::Android.Resource.Layout.SimpleListItem1, mParts);
 			Spinner partSpinner =  view.FindViewById<Spinner> (Resource.Id.part_spinner);
 			partSpinner.Adapter = partAdapter;
 			TextView header = view.FindViewById<TextView> (Resource.Id.partHeader);
@@ -100,14 +88,7 @@ namespace App.Android
 		{
 			Spinner spinner = (Spinner)sender;
 			var partToPass = Convert.ToString (spinner.GetItemAtPosition (e.Position));
-               for (int i = 0; i < mParts.Count; i++)
-               {
-                    if (mParts[i].Contains(partToPass))
-                    {
-                         part = mParts[i];
-                         break;
-                    }
-               }
+			part = partToPass;
 		}
 		public static SearchPartFragment newInstance(List<string> partsIn)
 		{

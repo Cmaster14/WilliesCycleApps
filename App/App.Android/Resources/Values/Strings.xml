@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="ApplicationName">Willies Cycles</string>
+    <string name="ApplicationName">Willies Cycles2</string>
     <string name="TitleFrame">Search Results for %1$s %1$s</string>
     <color name="red">#FF0000</color>
     <color name="blue">#330099</color>
