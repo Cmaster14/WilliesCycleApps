@@ -17,9 +17,13 @@ namespace App.iOS
 		UIPickerView yearPicker;
 		UIPickerView yearPicker2;
 
+		List<string> years = new List<string>();
+		List<string> years2 = new List<string>();
+
 		SearchViewController searchViewController;
 
 		bool buttonClickable;
+		bool button2Clickable;
 
 		public YearView (CGRect frame, SearchViewController searchViewController)
 		{
@@ -60,18 +64,22 @@ namespace App.iOS
 				Model = new YearPickerViewModel (new List<string> { "Loading Years..." }, yearButton)
 			};
 
+
+			// This is the second picker that denotes the highest year in the range of years
 			yearPicker2 = new UIPickerView {
 				Frame = new CGRect (this.Bounds.Width/2, 50, this.Bounds.Width/2, 40),
 				Hidden = true,
-				Model = new YearPickerViewModel (new List<string> { "Loading Years..." }, yearButton2)
+				Model = new Year2PickerViewModel (new List<string> { "Loading Years..." }, yearButton2)
 			};
 
 			buttonClickable = false;
+			button2Clickable = false;
 
 			Add (yearLabel);
 			Add (yearButton);
 			Add (yearButton2);
 			Add (yearPicker);
+			Add (yearPicker2);
 		}
 
 		private void SetupEventHandlers ()
@@ -85,12 +93,13 @@ namespace App.iOS
 					alert.Show ();
 				}
 			};
+
 			yearButton2.TouchUpInside += (sender, e) => {
-				if (buttonClickable) {
+				if (buttonClickable && button2Clickable) {
 					yearPicker2.Hidden = false;
 					yearButton2.Hidden = true;
 				} else {
-					var alert = new UIAlertView ("Improper Order of Selection", "Choose a Make before selecting the Year.", null, "Okay", null);
+					var alert = new UIAlertView ("Improper Order of Selection", "Choose a starting year before selecting the ending year.", null, "Okay", null);
 					alert.Show ();
 				}
 			};
@@ -101,14 +110,16 @@ namespace App.iOS
 			SearchParameters.PropertyChanged += async (sender, e) => {
 				if (e.PropertyName == "Make") {
 					buttonClickable = false;
+					button2Clickable = false;
 
 					var connected = CrossConnectivity.Current.IsConnected;
 					if (connected) {
 						BTProgressHUD.Show ("Filtering Parts");
-						var years = await API.GetPickerData (SearchParameters.Make);
+						years = await API.GetPickerData (SearchParameters.Make);
 						yearPicker.Model = new YearPickerViewModel (years, yearButton);
-						//yearPicker2.Model = new YearPickerViewModel (years, yearButton2);
+						years2.Clear();
 						BTProgressHUD.Dismiss ();
+
 					} else {
 						var alert = new UIAlertView ("No Internet Connection", "Please establish an internet connection before querying for parts.", null, "Okay", null);
 						alert.Show ();
@@ -117,13 +128,24 @@ namespace App.iOS
 					buttonClickable = true;
 				}
 
-				if (e.PropertyName == "Year") {
+				else if (e.PropertyName == "Year") {
+					button2Clickable = false;
 					yearButton.SetTitle (SearchParameters.Year, UIControlState.Normal);
-				}
 
-				/*if (e.PropertyName == "Year2") { 
+					// This portion was added on 4/23/2016 to give the set of selectable years in the second picker
+					// The set will start at the selected year of the first picker
+					// Edited on 4/25 after finally being tested. years.IndexOf(...) was added in today
+					if (!SearchParameters.Year.Equals(""))
+					{
+						for(int i = years.IndexOf(SearchParameters.Year); i < years.Count; i++)
+						{
+							years2.Add(years[i]);
+						}
+						yearPicker2.Model = new Year2PickerViewModel (years2, yearButton2);
+						button2Clickable = true;
+					}
 					yearButton2.SetTitle (SearchParameters.Year2, UIControlState.Normal);
-				}*/
+				}
 			};
 		}
 	}

@@ -55,6 +55,8 @@ namespace App.iOS
 				flyout.ToggleMenu ();
 			};
 				
+			// In the three steps below, each of the views take up 1/3 of the main view
+
 			// Step 1: Choose a make.
 			makeView = new MakeView (View.Frame, this) {
 				Frame = new CGRect (0, 0, View.Frame.Width, View.Frame.Height/3)

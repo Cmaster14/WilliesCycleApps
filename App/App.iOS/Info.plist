@@ -43,5 +43,10 @@
 	</array>
 	<key>CFBundleIdentifier</key>
 	<string>com.pierceboggan.willies</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>

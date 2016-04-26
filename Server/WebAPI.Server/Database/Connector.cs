@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data.OleDb;
 using System.Linq;
@@ -20,7 +20,9 @@ namespace WebAPI.Server.Database
             var list = new List<Part>();
             try
             {
+                //old connection string
                 var connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source=E:\MUPS_2015\Parts\McPartsFinal-03 Edition.mdb;";
+                /*var connectionString = @"Provider=SQLOLEDB.1;Data Source=WIN-NU9I51T7GFV\SQLEXPRESS;Initial Catalog=master;UserId=sa;Password=Williescycles1";*/
 
                 using (var connection = new OleDbConnection(connectionString))
                 {
@@ -62,7 +64,10 @@ namespace WebAPI.Server.Database
                             var location = reader.GetString(reader.GetOrdinal("Location"));
                             var pkParts = reader.GetInt32(reader.GetOrdinal("pkParts"));
                             var interchange = reader.GetString(reader.GetOrdinal("Interchange"));
+<<<<<<< HEAD
                             var partNumber = reader.GetString(reader.GetOrdinal("PartNumber"));
+=======
+>>>>>>> origin/master
                             list.Add(new Part
                             {
                                 PartName = partName.Trim(),
@@ -72,8 +77,12 @@ namespace WebAPI.Server.Database
                                 Price = price.Trim(),
                                 Location = location.Trim(),
                                 PKParts = pkParts,
+<<<<<<< HEAD
                                 Interchange = interchange.Trim(),
                                 PartNumber = partNumber
+=======
+                                Interchange = interchange
+>>>>>>> origin/master
                             });
 
                             count++;
@@ -225,7 +234,9 @@ namespace WebAPI.Server.Database
                         while (reader.Read())
                         {
                             var partName = reader.GetString(reader.GetOrdinal("PartName"));
-                            list.Add(partName.Trim());
+                            var hyphenIndex = partName.Trim().IndexOf("-"); // Added to fix -xx issue in search results display
+				            partName = partName.Substring(0,hyphenIndex)
+                            list.Add(partName);
 
                             count++;
                         }

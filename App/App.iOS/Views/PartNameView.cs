@@ -12,7 +12,6 @@ namespace App.iOS
 	[Register ("PartNameView")]
 	public class PartNameView : UIView
 	{
-		UIButton goUpButton;
 		UILabel partNameLabel;
 		PickerButton partNameButton;
 		UIPickerView partNamePicker;
@@ -35,14 +34,6 @@ namespace App.iOS
 		private void SetupUserInterface ()
 		{
 			BackgroundColor = UIColor.Clear.FromHexString ("#094074", 1.0f);
-
-			goUpButton = new UIButton {
-				Font = UIFont.FromName ("SegoeUI-Light", 17f),
-				Frame = new CGRect (0, 5, this.Bounds.Width, 15),
-			};
-			goUpButton.SetTitle ("Go back to \"Select a Year\".", UIControlState.Normal);
-			goUpButton.SetTitleColor (UIColor.White, UIControlState.Normal);
-			goUpButton.Center = new CGPoint (this.Bounds.Width / 2, 15);
 
 			partNameLabel = new UILabel {
 				Font = UIFont.FromName ("SegoeUI-Light", 32f),
@@ -84,7 +75,7 @@ namespace App.iOS
 					partNameButton.Hidden = true;
 					searchButton.Hidden = true;
 				} else {
-					var alert = new UIAlertView ("One Moment Please", "Interaction with the Willie's Cycles inventory is taking longer than expected.", null, "Okay", null);
+					var alert = new UIAlertView ("Improper Order of Selection", "Choose a Range of Years before selecting the Part Name.", null, "Okay", null);
 					alert.Show ();
 				}
 			};
@@ -96,14 +87,30 @@ namespace App.iOS
 
 		private void SetupPropertyChanged ()
 		{
+
+			// The code below was changed so that the query to filter the part names to display in the 
+			// partName picker only once the second year picker has made a selection
 			SearchParameters.PropertyChanged += async (sender, e) => {
 				if (e.PropertyName == "Year") {
 					buttonClickable = false;
 					BTProgressHUD.Show ("Filtering Parts");
-					var partNames = await API.GetPickerData (SearchParameters.Year, SearchParameters.Make);
-					partNamePicker.Model = new PartNamePickerViewModel (partNames, partNameButton, searchButton);
+					if(SearchParameters.Year == SearchParameters.Year2)
+					{
+						var partNames = await API.GetPickerData (SearchParameters.Year, SearchParameters.Make);
+						partNamePicker.Model = new PartNamePickerViewModel (partNames, partNameButton, searchButton);
+
+					}
+					else
+					{
+						var partNames = await API.GetPickerData (SearchParameters.Year, SearchParameters.Year2, SearchParameters.Make);
+						partNamePicker.Model = new PartNamePickerViewModel (partNames, partNameButton, searchButton);
+
+					}
 					BTProgressHUD.Dismiss ();
-					buttonClickable = true;
+					if (!SearchParameters.Year2.Equals(""))
+					{
+						buttonClickable = true;
+					}
 				}
 				if (e.PropertyName == "PartName") {
 					string name;
@@ -122,14 +129,15 @@ namespace App.iOS
 			var partName = SearchParameters.PartName;
 			var make = SearchParameters.Make [0].ToString ();
 			var year = SearchParameters.Year;
+			var year2 = SearchParameters.Year2;
 			if (string.IsNullOrEmpty (partName) || string.IsNullOrEmpty (make) || string.IsNullOrEmpty (year) || string.Equals (partName, "Loading") || string.Equals (year, "Loading")) {
-				var alertView = new UIAlertView ("Error", "Select a valid make, year, and part name before searching.", null, "Okay", null);
+				var alertView = new UIAlertView ("Error", "Select a valid make, range of years, and part name before searching.", null, "Okay", null);
 				alertView.Show ();
 			} else {
 				var connected = CrossConnectivity.Current.IsConnected;
 				if (connected) {
 					BTProgressHUD.Show ();
-					var parts = await API.GetParts (partName, make, year);
+					var parts = await API.GetParts (partName, make, year, year2);
 					BTProgressHUD.Dismiss ();
 
 					searchViewController.NavigationController.PushViewController (new SearchResultsTableViewController (parts), true);
