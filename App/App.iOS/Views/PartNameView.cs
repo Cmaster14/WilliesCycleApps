@@ -102,7 +102,7 @@ namespace App.iOS
 					if(SearchParameters.Year == SearchParameters.Year2)
 					{
 						partNames = await API.GetPickerData (SearchParameters.Year, SearchParameters.Make);
-						partNames.Distinct().ToList();
+						partNames = partNames.Distinct().ToList();
 					}
 					else
 					{ // Similar to the android application, the way that we get the range of years to be implemented
@@ -112,6 +112,8 @@ namespace App.iOS
 							partNames.AddRange(await API.GetPickerData (i.ToString(), SearchParameters.Make));
 						}
 						partNames.Distinct().ToList();
+						partNames = partNames.Distinct().ToList();
+
 					}
 					partNamePicker.Model = new PartNamePickerViewModel (partNames, partNameButton, searchButton);
 
